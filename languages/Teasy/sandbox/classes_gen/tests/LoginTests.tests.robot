@@ -10,10 +10,8 @@ Test Setup          Start Test
 Test Teardown       Finish Test
 
 *** Test Cases ***
-LoginWithSuccess 
-    LoginWithYuryUser
-    VerifyLogin
-
-ExampleName 
-    LoginWithYuryUser
+Scenario: Test invalid login 
+    Alice fills form with invalid data
+    Alice clicks to Login
+    Alice sees data not found message
 
