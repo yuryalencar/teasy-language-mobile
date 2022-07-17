@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="3xkksuh1ey6ktv8vxl66nunlx0k8q3s">
+<product version="3" modelHash="-awnwuw3s51zwadt1g47ppyamao208h">
   <files dir="components" names="components.robot" />
   <files dir="config" names="config.robot:page_register.config.robot" />
   <files dir="pages" names="MySampleLoginPage.pages.robot:PAGE_ALL_ACTIONS.pages.robot" />

@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class PageShouldNotContain_Editor extends DefaultNodeEditor {
+public class TextShouldBeVisible_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new PageShouldNotContain_EditorBuilder_a(editorContext, node).createCell();
+    return new TextShouldBeVisible_EditorBuilder_a(editorContext, node).createCell();
   }
 }

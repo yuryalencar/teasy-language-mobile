@@ -328,8 +328,8 @@
   <node concept="1TIwiD" id="1FUO_j1X3gt">
     <property role="EcuMT" value="1944097450636882973" />
     <property role="3GE5qa" value="steps_types" />
-    <property role="TrG5h" value="PageShouldContain" />
-    <property role="34LRSv" value="Page Should Contain" />
+    <property role="TrG5h" value="PageShouldContainText" />
+    <property role="34LRSv" value="Page Should Contain Text" />
     <property role="R4oN_" value="To Verify if page contains a text" />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="1FUO_j1X3gu" role="1TKVEl">
@@ -343,7 +343,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="PageShouldContainElement" />
     <property role="34LRSv" value="Page Should Contain Element" />
-    <property role="R4oN_" value="To verify if web page contains a element" />
+    <property role="R4oN_" value="To verify if application page contains a element" />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyj" id="1FUO_j1X3hv" role="1TKVEi">
       <property role="IQ2ns" value="1944097450636883039" />
@@ -355,9 +355,9 @@
   <node concept="1TIwiD" id="1FUO_j1X3iE">
     <property role="EcuMT" value="1944097450636883114" />
     <property role="3GE5qa" value="steps_types" />
-    <property role="TrG5h" value="PageShouldNotContain" />
-    <property role="34LRSv" value="Page Should Not Contain" />
-    <property role="R4oN_" value="For verify if Web Page not contains a text" />
+    <property role="TrG5h" value="PageShouldNotContainText" />
+    <property role="34LRSv" value="Page Should Not Contain Text" />
+    <property role="R4oN_" value="For verify if application Page not contains a text" />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="1FUO_j1X3iF" role="1TKVEl">
       <property role="IQ2nx" value="1944097450636883115" />
@@ -370,7 +370,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="PageShouldNotContainElement" />
     <property role="34LRSv" value="Page Should Not Contain Element" />
-    <property role="R4oN_" value="To verify if Web Page not contains a element" />
+    <property role="R4oN_" value="To verify if application Page not contains a element" />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyj" id="1FUO_j1X3iH" role="1TKVEi">
       <property role="IQ2ns" value="1944097450636883117" />
@@ -727,6 +727,24 @@
       <property role="IQ2nx" value="7480654520859967380" />
       <property role="TrG5h" value="function" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbjCyU">
+    <property role="EcuMT" value="7480654520860444858" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="TextShouldBeVisible" />
+    <property role="34LRSv" value="Text Should Be Visible" />
+    <property role="R4oN_" value="Verifies that element identified with text is visible." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbjCyV" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520860444859" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbjCyW" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520860444860" />
+      <property role="TrG5h" value="exact_match" />
+      <ref role="AX2Wp" node="6vgBUsbd$Sa" resolve="StringBoolean" />
     </node>
   </node>
 </model>

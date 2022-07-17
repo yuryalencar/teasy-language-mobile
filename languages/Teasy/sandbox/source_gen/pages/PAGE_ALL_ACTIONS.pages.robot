@@ -17,3 +17,9 @@ EXECUTES
     Execute Adb Shell    example adb script    param1 param2
     Execute Script    document.querySelector("sample")
 
+SHOULD BE 
+    Text Should Be Visible    Sample    exact_match=True
+    Page Should Contain Text    Sample
+    Page Should Contain Element    ${CpfField}
+    Page Should Not Contain Element    ${DataNotFound}
+

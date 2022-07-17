@@ -59,16 +59,18 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Page_TextGen();
       case LanguageConceptSwitch.PageRegisterConfig:
         return new PageRegisterConfig_TextGen();
-      case LanguageConceptSwitch.PageShouldContain:
-        return new PageShouldContain_TextGen();
       case LanguageConceptSwitch.PageShouldContainElement:
         return new PageShouldContainElement_TextGen();
-      case LanguageConceptSwitch.PageShouldNotContain:
-        return new PageShouldNotContain_TextGen();
+      case LanguageConceptSwitch.PageShouldContainText:
+        return new PageShouldContainText_TextGen();
       case LanguageConceptSwitch.PageShouldNotContainElement:
         return new PageShouldNotContainElement_TextGen();
+      case LanguageConceptSwitch.PageShouldNotContainText:
+        return new PageShouldNotContainText_TextGen();
       case LanguageConceptSwitch.PageToRegister:
         return new PageToRegister_TextGen();
+      case LanguageConceptSwitch.TextShouldBeVisible:
+        return new TextShouldBeVisible_TextGen();
       case LanguageConceptSwitch.WaitForCondition:
         return new WaitForCondition_TextGen();
       case LanguageConceptSwitch.WaitUntilElementIsEnabled:

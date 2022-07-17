@@ -26,12 +26,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Keyword;
   private ConceptPresentation props_Page;
   private ConceptPresentation props_PageRegisterConfig;
-  private ConceptPresentation props_PageShouldContain;
   private ConceptPresentation props_PageShouldContainElement;
-  private ConceptPresentation props_PageShouldNotContain;
+  private ConceptPresentation props_PageShouldContainText;
   private ConceptPresentation props_PageShouldNotContainElement;
+  private ConceptPresentation props_PageShouldNotContainText;
   private ConceptPresentation props_PageToRegister;
   private ConceptPresentation props_Step;
+  private ConceptPresentation props_TextShouldBeVisible;
   private ConceptPresentation props_WaitForCondition;
   private ConceptPresentation props_WaitUntilElementIsEnabled;
   private ConceptPresentation props_WaitUntilElementIsNotVisible;
@@ -182,38 +183,38 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PageRegisterConfig = cpb.create();
         }
         return props_PageRegisterConfig;
-      case LanguageConceptSwitch.PageShouldContain:
-        if (props_PageShouldContain == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("To Verify if page contains a text");
-          cpb.rawPresentation("Page Should Contain");
-          props_PageShouldContain = cpb.create();
-        }
-        return props_PageShouldContain;
       case LanguageConceptSwitch.PageShouldContainElement:
         if (props_PageShouldContainElement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("To verify if web page contains a element");
+          cpb.shortDesc("To verify if application page contains a element");
           cpb.rawPresentation("Page Should Contain Element");
           props_PageShouldContainElement = cpb.create();
         }
         return props_PageShouldContainElement;
-      case LanguageConceptSwitch.PageShouldNotContain:
-        if (props_PageShouldNotContain == null) {
+      case LanguageConceptSwitch.PageShouldContainText:
+        if (props_PageShouldContainText == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("For verify if Web Page not contains a text");
-          cpb.rawPresentation("Page Should Not Contain");
-          props_PageShouldNotContain = cpb.create();
+          cpb.shortDesc("To Verify if page contains a text");
+          cpb.rawPresentation("Page Should Contain Text");
+          props_PageShouldContainText = cpb.create();
         }
-        return props_PageShouldNotContain;
+        return props_PageShouldContainText;
       case LanguageConceptSwitch.PageShouldNotContainElement:
         if (props_PageShouldNotContainElement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("To verify if Web Page not contains a element");
+          cpb.shortDesc("To verify if application Page not contains a element");
           cpb.rawPresentation("Page Should Not Contain Element");
           props_PageShouldNotContainElement = cpb.create();
         }
         return props_PageShouldNotContainElement;
+      case LanguageConceptSwitch.PageShouldNotContainText:
+        if (props_PageShouldNotContainText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("For verify if application Page not contains a text");
+          cpb.rawPresentation("Page Should Not Contain Text");
+          props_PageShouldNotContainText = cpb.create();
+        }
+        return props_PageShouldNotContainText;
       case LanguageConceptSwitch.PageToRegister:
         if (props_PageToRegister == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -229,6 +230,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Step = cpb.create();
         }
         return props_Step;
+      case LanguageConceptSwitch.TextShouldBeVisible:
+        if (props_TextShouldBeVisible == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Verifies that element identified with text is visible.");
+          cpb.rawPresentation("Text Should Be Visible");
+          props_TextShouldBeVisible = cpb.create();
+        }
+        return props_TextShouldBeVisible;
       case LanguageConceptSwitch.WaitForCondition:
         if (props_WaitForCondition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

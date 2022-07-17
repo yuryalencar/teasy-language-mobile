@@ -9,16 +9,16 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class PageShouldContain_TextGen extends TextGenDescriptorBase {
+public class PageShouldNotContainText_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("    Page Should Contain    ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.text$kH$d));
+    tgs.append("    Page Should Not Contain Text    ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.text$BDPd));
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty text$kH$d = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f4341dL, 0x1afad254c1f4341eL, "text");
+    /*package*/ static final SProperty text$BDPd = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f434aaL, 0x1afad254c1f434abL, "text");
   }
 }

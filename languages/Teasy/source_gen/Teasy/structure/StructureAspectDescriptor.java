@@ -33,12 +33,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptKeyword = createDescriptorForKeyword();
   /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
   /*package*/ final ConceptDescriptor myConceptPageRegisterConfig = createDescriptorForPageRegisterConfig();
-  /*package*/ final ConceptDescriptor myConceptPageShouldContain = createDescriptorForPageShouldContain();
   /*package*/ final ConceptDescriptor myConceptPageShouldContainElement = createDescriptorForPageShouldContainElement();
-  /*package*/ final ConceptDescriptor myConceptPageShouldNotContain = createDescriptorForPageShouldNotContain();
+  /*package*/ final ConceptDescriptor myConceptPageShouldContainText = createDescriptorForPageShouldContainText();
   /*package*/ final ConceptDescriptor myConceptPageShouldNotContainElement = createDescriptorForPageShouldNotContainElement();
+  /*package*/ final ConceptDescriptor myConceptPageShouldNotContainText = createDescriptorForPageShouldNotContainText();
   /*package*/ final ConceptDescriptor myConceptPageToRegister = createDescriptorForPageToRegister();
   /*package*/ final ConceptDescriptor myConceptStep = createDescriptorForStep();
+  /*package*/ final ConceptDescriptor myConceptTextShouldBeVisible = createDescriptorForTextShouldBeVisible();
   /*package*/ final ConceptDescriptor myConceptWaitForCondition = createDescriptorForWaitForCondition();
   /*package*/ final ConceptDescriptor myConceptWaitUntilElementIsEnabled = createDescriptorForWaitUntilElementIsEnabled();
   /*package*/ final ConceptDescriptor myConceptWaitUntilElementIsNotVisible = createDescriptorForWaitUntilElementIsNotVisible();
@@ -65,7 +66,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContain, myConceptPageShouldContainElement, myConceptPageShouldNotContain, myConceptPageShouldNotContainElement, myConceptPageToRegister, myConceptStep, myConceptWaitForCondition, myConceptWaitUntilElementIsEnabled, myConceptWaitUntilElementIsNotVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
+    return Arrays.asList(myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContainElement, myConceptPageShouldContainText, myConceptPageShouldNotContainElement, myConceptPageShouldNotContainText, myConceptPageToRegister, myConceptStep, myConceptTextShouldBeVisible, myConceptWaitForCondition, myConceptWaitUntilElementIsEnabled, myConceptWaitUntilElementIsNotVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
   }
 
   @Override
@@ -106,18 +107,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPage;
       case LanguageConceptSwitch.PageRegisterConfig:
         return myConceptPageRegisterConfig;
-      case LanguageConceptSwitch.PageShouldContain:
-        return myConceptPageShouldContain;
       case LanguageConceptSwitch.PageShouldContainElement:
         return myConceptPageShouldContainElement;
-      case LanguageConceptSwitch.PageShouldNotContain:
-        return myConceptPageShouldNotContain;
+      case LanguageConceptSwitch.PageShouldContainText:
+        return myConceptPageShouldContainText;
       case LanguageConceptSwitch.PageShouldNotContainElement:
         return myConceptPageShouldNotContainElement;
+      case LanguageConceptSwitch.PageShouldNotContainText:
+        return myConceptPageShouldNotContainText;
       case LanguageConceptSwitch.PageToRegister:
         return myConceptPageToRegister;
       case LanguageConceptSwitch.Step:
         return myConceptStep;
+      case LanguageConceptSwitch.TextShouldBeVisible:
+        return myConceptTextShouldBeVisible;
       case LanguageConceptSwitch.WaitForCondition:
         return myConceptWaitForCondition;
       case LanguageConceptSwitch.WaitUntilElementIsEnabled:
@@ -334,17 +337,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("PageRegisterConfig");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForPageShouldContain() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "PageShouldContain", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f4341dL);
-    b.class_(false, false, false);
-    // extends: Teasy.structure.Step
-    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
-    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/1944097450636882973");
-    b.version(3);
-    b.property("text", 0x1afad254c1f4341eL).type(PrimitiveTypeId.STRING).origin("1944097450636882974").done();
-    b.alias("Page Should Contain");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForPageShouldContainElement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "PageShouldContainElement", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f4345eL);
     b.class_(false, false, false);
@@ -356,15 +348,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Page Should Contain Element");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForPageShouldNotContain() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "PageShouldNotContain", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f434aaL);
+  private static ConceptDescriptor createDescriptorForPageShouldContainText() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "PageShouldContainText", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f4341dL);
     b.class_(false, false, false);
     // extends: Teasy.structure.Step
     b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
-    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/1944097450636883114");
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/1944097450636882973");
     b.version(3);
-    b.property("text", 0x1afad254c1f434abL).type(PrimitiveTypeId.STRING).origin("1944097450636883115").done();
-    b.alias("Page Should Not Contain");
+    b.property("text", 0x1afad254c1f4341eL).type(PrimitiveTypeId.STRING).origin("1944097450636882974").done();
+    b.alias("Page Should Contain Text");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPageShouldNotContainElement() {
@@ -376,6 +368,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.associate("component", 0x1afad254c1f434adL).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e118846bL).optional(false).origin("1944097450636883117").done();
     b.alias("Page Should Not Contain Element");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPageShouldNotContainText() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "PageShouldNotContainText", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f434aaL);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/1944097450636883114");
+    b.version(3);
+    b.property("text", 0x1afad254c1f434abL).type(PrimitiveTypeId.STRING).origin("1944097450636883115").done();
+    b.alias("Page Should Not Contain Text");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPageToRegister() {
@@ -393,6 +396,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/3004182411412977312");
     b.version(3);
     b.alias("Step");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTextShouldBeVisible() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "TextShouldBeVisible", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b4e88baL);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520860444858");
+    b.version(3);
+    b.property("text", 0x67d09fa70b4e88bbL).type(PrimitiveTypeId.STRING).origin("7480654520860444859").done();
+    b.property("exact_match", 0x67d09fa70b4e88bcL).type(MetaIdFactory.dataTypeId(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b364e0aL)).origin("7480654520860444860").done();
+    b.alias("Text Should Be Visible");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForWaitForCondition() {

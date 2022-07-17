@@ -50,6 +50,15 @@
       <concept id="1944097450636883038" name="Teasy.structure.PageShouldContainElement" flags="ng" index="3r3Ioa">
         <reference id="1944097450636883039" name="component" index="3r3Iob" />
       </concept>
+      <concept id="1944097450636882973" name="Teasy.structure.PageShouldContainText" flags="ng" index="3r3Ip9">
+        <property id="1944097450636882974" name="text" index="3r3Ipa" />
+      </concept>
+      <concept id="1944097450636883116" name="Teasy.structure.PageShouldNotContainElement" flags="ng" index="3r3IrS">
+        <reference id="1944097450636883117" name="component" index="3r3IrT" />
+      </concept>
+      <concept id="1944097450636883114" name="Teasy.structure.PageShouldNotContainText" flags="ng" index="3r3IrY">
+        <property id="1944097450636883115" name="text" index="3r3IrZ" />
+      </concept>
       <concept id="4838803795106586973" name="Teasy.structure.Flow" flags="ng" index="1y1gcR">
         <child id="4838803795106586978" name="flow_item" index="1y1gc8" />
       </concept>
@@ -61,6 +70,9 @@
       </concept>
       <concept id="7480654520859967379" name="Teasy.structure.ExecuteScript" flags="ng" index="1G_U0O">
         <property id="7480654520859967380" name="function" index="1G_U0N" />
+      </concept>
+      <concept id="7480654520860444858" name="Teasy.structure.TextShouldBeVisible" flags="ng" index="1GBxst">
+        <property id="7480654520860444859" name="text" index="1GBxss" />
       </concept>
       <concept id="7480654520858856496" name="Teasy.structure.ClickText" flags="ng" index="1GTHen">
         <property id="7480654520858856497" name="text" index="1GTHem" />
@@ -198,6 +210,24 @@
       </node>
       <node concept="1G_U0O" id="6vgBUsbiqYG" role="2D3W_k">
         <property role="1G_U0N" value="document.querySelector(&quot;sample&quot;)" />
+      </node>
+    </node>
+    <node concept="2D3W_x" id="6vgBUsbjCGs" role="2D3W_o">
+      <property role="TrG5h" value="SHOULD BE" />
+      <node concept="1GBxst" id="6vgBUsbkgwQ" role="2D3W_k">
+        <property role="1GBxss" value="Sample" />
+      </node>
+      <node concept="3r3Ip9" id="6vgBUsbkSAC" role="2D3W_k">
+        <property role="3r3Ipa" value="Sample" />
+      </node>
+      <node concept="3r3IrY" id="6vgBUsbnobE" role="2D3W_k">
+        <property role="3r3IrZ" value="Sampl21" />
+      </node>
+      <node concept="3r3Ioa" id="6vgBUsbm8jS" role="2D3W_k">
+        <ref role="3r3Iob" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="3r3IrS" id="6vgBUsbmKhH" role="2D3W_k">
+        <ref role="3r3IrT" node="6vgBUsbacoL" resolve="DataNotFound" />
       </node>
     </node>
   </node>

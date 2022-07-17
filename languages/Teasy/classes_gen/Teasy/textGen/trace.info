@@ -15,9 +15,9 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TextGenAspectDescriptor.java">
-      <unit at="197,0,200,0" name="Teasy.textGen.TextGenAspectDescriptor$PROPS" />
-      <unit at="188,0,196,0" name="Teasy.textGen.TextGenAspectDescriptor$CONCEPTS" />
-      <unit at="18,0,201,0" name="Teasy.textGen.TextGenAspectDescriptor" />
+      <unit at="199,0,202,0" name="Teasy.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="190,0,198,0" name="Teasy.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="18,0,203,0" name="Teasy.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/4416820227523971321">
@@ -101,31 +101,31 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="4416820227523971321" at="52,39,53,35" concept="8" />
-      <node id="4416820227523971321" at="125,55,126,47" concept="7" />
-      <node id="4416820227523971321" at="126,47,127,50" concept="7" />
-      <node id="4416820227523971321" at="127,50,128,105" concept="3" />
-      <node id="4416820227523971321" at="128,105,129,17" concept="1" />
-      <node id="4416820227524394176" at="148,55,149,19" concept="8" />
-      <node id="4416820227524398097" at="166,60,167,33" concept="8" />
-      <node id="4416820227524395723" at="184,51,185,27" concept="8" />
-      <node id="4416820227523971321" at="148,0,151,0" concept="12" trace="getFileName_Hooks#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4416820227523971321" at="166,0,169,0" concept="12" trace="getFileExtension_Hooks#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4416820227523971321" at="184,0,187,0" concept="12" trace="getPath_Hooks#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4416820227523971321" at="124,7,130,7" concept="5" />
+      <node id="4416820227523971321" at="127,55,128,47" concept="7" />
+      <node id="4416820227523971321" at="128,47,129,50" concept="7" />
+      <node id="4416820227523971321" at="129,50,130,105" concept="3" />
+      <node id="4416820227523971321" at="130,105,131,17" concept="1" />
+      <node id="4416820227524394176" at="150,55,151,19" concept="8" />
+      <node id="4416820227524398097" at="168,60,169,33" concept="8" />
+      <node id="4416820227524395723" at="186,51,187,27" concept="8" />
+      <node id="4416820227523971321" at="150,0,153,0" concept="12" trace="getFileName_Hooks#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4416820227523971321" at="168,0,171,0" concept="12" trace="getFileExtension_Hooks#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4416820227523971321" at="186,0,189,0" concept="12" trace="getPath_Hooks#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4416820227523971321" at="126,7,132,7" concept="5" />
       <scope id="4416820227523971321" at="52,39,53,35" />
-      <scope id="4416820227523971321" at="148,55,149,19" />
-      <scope id="4416820227523971321" at="166,60,167,33" />
-      <scope id="4416820227523971321" at="184,51,185,27" />
-      <scope id="4416820227523971321" at="148,0,151,0">
+      <scope id="4416820227523971321" at="150,55,151,19" />
+      <scope id="4416820227523971321" at="168,60,169,33" />
+      <scope id="4416820227523971321" at="186,51,187,27" />
+      <scope id="4416820227523971321" at="150,0,153,0">
         <var name="node" id="4416820227523971321" />
       </scope>
-      <scope id="4416820227523971321" at="166,0,169,0">
+      <scope id="4416820227523971321" at="168,0,171,0">
         <var name="node" id="4416820227523971321" />
       </scope>
-      <scope id="4416820227523971321" at="184,0,187,0">
+      <scope id="4416820227523971321" at="186,0,189,0">
         <var name="node" id="4416820227523971321" />
       </scope>
-      <scope id="4416820227523971321" at="125,55,129,17">
+      <scope id="4416820227523971321" at="127,55,131,17">
         <var name="ext" id="4416820227523971321" />
         <var name="fname" id="4416820227523971321" />
       </scope>
@@ -204,31 +204,31 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="5430697704123812747" at="38,44,39,40" concept="8" />
-      <node id="5430697704123812747" at="119,61,120,52" concept="7" />
-      <node id="5430697704123812747" at="120,52,121,55" concept="7" />
-      <node id="5430697704123812747" at="121,55,122,110" concept="3" />
-      <node id="5430697704123812747" at="122,110,123,17" concept="1" />
-      <node id="5430697704123956305" at="145,60,146,24" concept="8" />
-      <node id="5430697704123812816" at="163,65,164,19" concept="8" />
-      <node id="5430697704123958527" at="181,56,182,24" concept="8" />
-      <node id="5430697704123812747" at="145,0,148,0" concept="12" trace="getFileName_Components#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123812747" at="163,0,166,0" concept="12" trace="getFileExtension_Components#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123812747" at="181,0,184,0" concept="12" trace="getPath_Components#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123812747" at="118,7,124,7" concept="5" />
+      <node id="5430697704123812747" at="121,61,122,52" concept="7" />
+      <node id="5430697704123812747" at="122,52,123,55" concept="7" />
+      <node id="5430697704123812747" at="123,55,124,110" concept="3" />
+      <node id="5430697704123812747" at="124,110,125,17" concept="1" />
+      <node id="5430697704123956305" at="147,60,148,24" concept="8" />
+      <node id="5430697704123812816" at="165,65,166,19" concept="8" />
+      <node id="5430697704123958527" at="183,56,184,24" concept="8" />
+      <node id="5430697704123812747" at="147,0,150,0" concept="12" trace="getFileName_Components#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123812747" at="165,0,168,0" concept="12" trace="getFileExtension_Components#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123812747" at="183,0,186,0" concept="12" trace="getPath_Components#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123812747" at="120,7,126,7" concept="5" />
       <scope id="5430697704123812747" at="38,44,39,40" />
-      <scope id="5430697704123812747" at="145,60,146,24" />
-      <scope id="5430697704123812747" at="163,65,164,19" />
-      <scope id="5430697704123812747" at="181,56,182,24" />
-      <scope id="5430697704123812747" at="145,0,148,0">
+      <scope id="5430697704123812747" at="147,60,148,24" />
+      <scope id="5430697704123812747" at="165,65,166,19" />
+      <scope id="5430697704123812747" at="183,56,184,24" />
+      <scope id="5430697704123812747" at="147,0,150,0">
         <var name="node" id="5430697704123812747" />
       </scope>
-      <scope id="5430697704123812747" at="163,0,166,0">
+      <scope id="5430697704123812747" at="165,0,168,0">
         <var name="node" id="5430697704123812747" />
       </scope>
-      <scope id="5430697704123812747" at="181,0,184,0">
+      <scope id="5430697704123812747" at="183,0,186,0">
         <var name="node" id="5430697704123812747" />
       </scope>
-      <scope id="5430697704123812747" at="119,61,123,17">
+      <scope id="5430697704123812747" at="121,61,125,17">
         <var name="ext" id="5430697704123812747" />
         <var name="fname" id="5430697704123812747" />
       </scope>
@@ -298,31 +298,31 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="5430697704123812896" at="40,47,41,43" concept="8" />
-      <node id="5430697704123812896" at="113,64,114,55" concept="7" />
-      <node id="5430697704123812896" at="114,55,115,58" concept="7" />
-      <node id="5430697704123812896" at="115,58,116,113" concept="3" />
-      <node id="5430697704123812896" at="116,113,117,17" concept="1" />
-      <node id="4416820227519896948" at="142,63,143,20" concept="8" />
-      <node id="5430697704123813157" at="160,68,161,19" concept="8" />
-      <node id="4416820227519898449" at="178,59,179,20" concept="8" />
-      <node id="5430697704123812896" at="142,0,145,0" concept="12" trace="getFileName_Configuration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123812896" at="160,0,163,0" concept="12" trace="getFileExtension_Configuration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123812896" at="178,0,181,0" concept="12" trace="getPath_Configuration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123812896" at="112,7,118,7" concept="5" />
+      <node id="5430697704123812896" at="115,64,116,55" concept="7" />
+      <node id="5430697704123812896" at="116,55,117,58" concept="7" />
+      <node id="5430697704123812896" at="117,58,118,113" concept="3" />
+      <node id="5430697704123812896" at="118,113,119,17" concept="1" />
+      <node id="4416820227519896948" at="144,63,145,20" concept="8" />
+      <node id="5430697704123813157" at="162,68,163,19" concept="8" />
+      <node id="4416820227519898449" at="180,59,181,20" concept="8" />
+      <node id="5430697704123812896" at="144,0,147,0" concept="12" trace="getFileName_Configuration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123812896" at="162,0,165,0" concept="12" trace="getFileExtension_Configuration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123812896" at="180,0,183,0" concept="12" trace="getPath_Configuration#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123812896" at="114,7,120,7" concept="5" />
       <scope id="5430697704123812896" at="40,47,41,43" />
-      <scope id="5430697704123812896" at="142,63,143,20" />
-      <scope id="5430697704123812896" at="160,68,161,19" />
-      <scope id="5430697704123812896" at="178,59,179,20" />
-      <scope id="5430697704123812896" at="142,0,145,0">
+      <scope id="5430697704123812896" at="144,63,145,20" />
+      <scope id="5430697704123812896" at="162,68,163,19" />
+      <scope id="5430697704123812896" at="180,59,181,20" />
+      <scope id="5430697704123812896" at="144,0,147,0">
         <var name="node" id="5430697704123812896" />
       </scope>
-      <scope id="5430697704123812896" at="160,0,163,0">
+      <scope id="5430697704123812896" at="162,0,165,0">
         <var name="node" id="5430697704123812896" />
       </scope>
-      <scope id="5430697704123812896" at="178,0,181,0">
+      <scope id="5430697704123812896" at="180,0,183,0">
         <var name="node" id="5430697704123812896" />
       </scope>
-      <scope id="5430697704123812896" at="113,64,117,17">
+      <scope id="5430697704123812896" at="115,64,119,17">
         <var name="ext" id="5430697704123812896" />
         <var name="fname" id="5430697704123812896" />
       </scope>
@@ -469,8 +469,8 @@
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123813748">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123813748" at="72,50,73,46" concept="8" />
-      <scope id="5430697704123813748" at="72,50,73,46" />
+      <node id="5430697704123813748" at="74,50,75,46" concept="8" />
+      <scope id="5430697704123813748" at="74,50,75,46" />
     </file>
     <file name="WaitForCondition_TextGen.java">
       <node id="5430697704123813748" at="14,54,15,55" concept="7" />
@@ -493,10 +493,10 @@
     </file>
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123813865">
-    <file name="PageShouldContain_TextGen.java">
+    <file name="PageShouldContainText_TextGen.java">
       <node id="5430697704123813865" at="14,54,15,55" concept="7" />
-      <node id="4416820227522438816" at="15,55,16,46" concept="3" />
-      <node id="4416820227522438817" at="16,46,17,86" concept="3" />
+      <node id="4416820227522438816" at="15,55,16,51" concept="3" />
+      <node id="4416820227522438817" at="16,51,17,86" concept="3" />
       <node id="4416820227522438821" at="17,86,18,18" concept="3" />
       <node id="5430697704123813865" at="22,0,23,0" concept="11" trace="text$kH$d" />
       <node id="5430697704123813865" at="13,0,20,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
@@ -506,12 +506,12 @@
       <scope id="5430697704123813865" at="13,0,20,0">
         <var name="ctx" id="5430697704123813865" />
       </scope>
-      <unit id="5430697704123813865" at="21,0,24,0" name="Teasy.textGen.PageShouldContain_TextGen$PROPS" />
-      <unit id="5430697704123813865" at="12,0,25,0" name="Teasy.textGen.PageShouldContain_TextGen" />
+      <unit id="5430697704123813865" at="21,0,24,0" name="Teasy.textGen.PageShouldContainText_TextGen$PROPS" />
+      <unit id="5430697704123813865" at="12,0,25,0" name="Teasy.textGen.PageShouldContainText_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123813865" at="62,51,63,47" concept="8" />
-      <scope id="5430697704123813865" at="62,51,63,47" />
+      <node id="5430697704123813865" at="64,55,65,51" concept="8" />
+      <scope id="5430697704123813865" at="64,55,65,51" />
     </file>
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123813933">
@@ -535,15 +535,15 @@
       <unit id="5430697704123813933" at="14,0,32,0" name="Teasy.textGen.PageShouldContainElement_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123813933" at="64,58,65,54" concept="8" />
-      <scope id="5430697704123813933" at="64,58,65,54" />
+      <node id="5430697704123813933" at="62,58,63,54" concept="8" />
+      <scope id="5430697704123813933" at="62,58,63,54" />
     </file>
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814002">
-    <file name="PageShouldNotContain_TextGen.java">
+    <file name="PageShouldNotContainText_TextGen.java">
       <node id="5430697704123814002" at="14,54,15,55" concept="7" />
-      <node id="4416820227522867099" at="15,55,16,50" concept="3" />
-      <node id="4416820227522867100" at="16,50,17,86" concept="3" />
+      <node id="4416820227522867099" at="15,55,16,55" concept="3" />
+      <node id="4416820227522867100" at="16,55,17,86" concept="3" />
       <node id="4416820227522867104" at="17,86,18,18" concept="3" />
       <node id="5430697704123814002" at="22,0,23,0" concept="11" trace="text$BDPd" />
       <node id="5430697704123814002" at="13,0,20,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
@@ -553,12 +553,12 @@
       <scope id="5430697704123814002" at="13,0,20,0">
         <var name="ctx" id="5430697704123814002" />
       </scope>
-      <unit id="5430697704123814002" at="21,0,24,0" name="Teasy.textGen.PageShouldNotContain_TextGen$PROPS" />
-      <unit id="5430697704123814002" at="12,0,25,0" name="Teasy.textGen.PageShouldNotContain_TextGen" />
+      <unit id="5430697704123814002" at="21,0,24,0" name="Teasy.textGen.PageShouldNotContainText_TextGen$PROPS" />
+      <unit id="5430697704123814002" at="12,0,25,0" name="Teasy.textGen.PageShouldNotContainText_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814002" at="66,54,67,50" concept="8" />
-      <scope id="5430697704123814002" at="66,54,67,50" />
+      <node id="5430697704123814002" at="68,58,69,54" concept="8" />
+      <scope id="5430697704123814002" at="68,58,69,54" />
     </file>
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814070">
@@ -582,14 +582,14 @@
       <unit id="5430697704123814070" at="14,0,32,0" name="Teasy.textGen.PageShouldNotContainElement_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814070" at="68,61,69,57" concept="8" />
-      <scope id="5430697704123814070" at="68,61,69,57" />
+      <node id="5430697704123814070" at="66,61,67,57" concept="8" />
+      <scope id="5430697704123814070" at="66,61,67,57" />
     </file>
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814148">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814148" at="78,59,79,55" concept="8" />
-      <scope id="5430697704123814148" at="78,59,79,55" />
+      <node id="5430697704123814148" at="80,59,81,55" concept="8" />
+      <scope id="5430697704123814148" at="80,59,81,55" />
     </file>
     <file name="WaitUntilElementIsVisible_TextGen.java">
       <node id="5430697704123814148" at="16,54,17,55" concept="7" />
@@ -615,8 +615,8 @@
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814260">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814260" at="76,62,77,58" concept="8" />
-      <scope id="5430697704123814260" at="76,62,77,58" />
+      <node id="5430697704123814260" at="78,62,79,58" concept="8" />
+      <scope id="5430697704123814260" at="78,62,79,58" />
     </file>
     <file name="WaitUntilElementIsNotVisible_TextGen.java">
       <node id="5430697704123814260" at="16,54,17,55" concept="7" />
@@ -642,8 +642,8 @@
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814373">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814373" at="74,59,75,55" concept="8" />
-      <scope id="5430697704123814373" at="74,59,75,55" />
+      <node id="5430697704123814373" at="76,59,77,55" concept="8" />
+      <scope id="5430697704123814373" at="76,59,77,55" />
     </file>
     <file name="WaitUntilElementIsEnabled_TextGen.java">
       <node id="5430697704123814373" at="16,54,17,55" concept="7" />
@@ -669,8 +669,8 @@
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814484">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814484" at="80,55,81,51" concept="8" />
-      <scope id="5430697704123814484" at="80,55,81,51" />
+      <node id="5430697704123814484" at="82,55,83,51" concept="8" />
+      <scope id="5430697704123814484" at="82,55,83,51" />
     </file>
     <file name="WaitUntilPageContains_TextGen.java">
       <node id="5430697704123814484" at="14,54,15,55" concept="7" />
@@ -694,8 +694,8 @@
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814614">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814614" at="82,62,83,58" concept="8" />
-      <scope id="5430697704123814614" at="82,62,83,58" />
+      <node id="5430697704123814614" at="84,62,85,58" concept="8" />
+      <scope id="5430697704123814614" at="84,62,85,58" />
     </file>
     <file name="WaitUntilPageContainsElement_TextGen.java">
       <node id="5430697704123814614" at="16,54,17,55" concept="7" />
@@ -721,8 +721,8 @@
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814725">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814725" at="84,61,85,57" concept="8" />
-      <scope id="5430697704123814725" at="84,61,85,57" />
+      <node id="5430697704123814725" at="86,61,87,57" concept="8" />
+      <scope id="5430697704123814725" at="86,61,87,57" />
     </file>
     <file name="WaitUntilPageDoesNotContain_TextGen.java">
       <node id="5430697704123814725" at="14,54,15,55" concept="7" />
@@ -746,8 +746,8 @@
   </root>
   <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/5430697704123814855">
     <file name="TextGenAspectDescriptor.java">
-      <node id="5430697704123814855" at="86,68,87,64" concept="8" />
-      <scope id="5430697704123814855" at="86,68,87,64" />
+      <node id="5430697704123814855" at="88,68,89,64" concept="8" />
+      <scope id="5430697704123814855" at="88,68,89,64" />
     </file>
     <file name="WaitUntilPageDoesNotContainElement_TextGen.java">
       <node id="5430697704123814855" at="16,54,17,55" concept="7" />
@@ -816,31 +816,31 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="5430697704123814963" at="58,38,59,34" concept="8" />
-      <node id="5430697704123814963" at="107,55,108,46" concept="7" />
-      <node id="5430697704123814963" at="108,46,109,49" concept="7" />
-      <node id="5430697704123814963" at="109,49,110,104" concept="3" />
-      <node id="5430697704123814963" at="110,104,111,17" concept="1" />
-      <node id="4416820227521115485" at="139,54,140,64" concept="8" />
-      <node id="5430697704123815051" at="157,59,158,25" concept="8" />
-      <node id="4416820227521118342" at="175,50,176,19" concept="8" />
-      <node id="5430697704123814963" at="139,0,142,0" concept="12" trace="getFileName_Page#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123814963" at="157,0,160,0" concept="12" trace="getFileExtension_Page#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123814963" at="175,0,178,0" concept="12" trace="getPath_Page#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123814963" at="106,7,112,7" concept="5" />
+      <node id="5430697704123814963" at="109,55,110,46" concept="7" />
+      <node id="5430697704123814963" at="110,46,111,49" concept="7" />
+      <node id="5430697704123814963" at="111,49,112,104" concept="3" />
+      <node id="5430697704123814963" at="112,104,113,17" concept="1" />
+      <node id="4416820227521115485" at="141,54,142,64" concept="8" />
+      <node id="5430697704123815051" at="159,59,160,25" concept="8" />
+      <node id="4416820227521118342" at="177,50,178,19" concept="8" />
+      <node id="5430697704123814963" at="141,0,144,0" concept="12" trace="getFileName_Page#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123814963" at="159,0,162,0" concept="12" trace="getFileExtension_Page#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123814963" at="177,0,180,0" concept="12" trace="getPath_Page#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123814963" at="108,7,114,7" concept="5" />
       <scope id="5430697704123814963" at="58,38,59,34" />
-      <scope id="5430697704123814963" at="139,54,140,64" />
-      <scope id="5430697704123814963" at="157,59,158,25" />
-      <scope id="5430697704123814963" at="175,50,176,19" />
-      <scope id="5430697704123814963" at="139,0,142,0">
+      <scope id="5430697704123814963" at="141,54,142,64" />
+      <scope id="5430697704123814963" at="159,59,160,25" />
+      <scope id="5430697704123814963" at="177,50,178,19" />
+      <scope id="5430697704123814963" at="141,0,144,0">
         <var name="node" id="5430697704123814963" />
       </scope>
-      <scope id="5430697704123814963" at="157,0,160,0">
+      <scope id="5430697704123814963" at="159,0,162,0">
         <var name="node" id="5430697704123814963" />
       </scope>
-      <scope id="5430697704123814963" at="175,0,178,0">
+      <scope id="5430697704123814963" at="177,0,180,0">
         <var name="node" id="5430697704123814963" />
       </scope>
-      <scope id="5430697704123814963" at="107,55,111,17">
+      <scope id="5430697704123814963" at="109,55,113,17">
         <var name="ext" id="5430697704123814963" />
         <var name="fname" id="5430697704123814963" />
       </scope>
@@ -958,31 +958,31 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="5430697704123815266" at="50,39,51,35" concept="8" />
-      <node id="5430697704123815266" at="101,56,102,47" concept="7" />
-      <node id="5430697704123815266" at="102,47,103,50" concept="7" />
-      <node id="5430697704123815266" at="103,50,104,105" concept="3" />
-      <node id="5430697704123815266" at="104,105,105,17" concept="1" />
-      <node id="4416820227520966222" at="136,55,137,64" concept="8" />
-      <node id="5430697704123815360" at="154,60,155,25" concept="8" />
-      <node id="4416820227520968878" at="172,51,173,19" concept="8" />
-      <node id="5430697704123815266" at="136,0,139,0" concept="12" trace="getFileName_Flows#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123815266" at="154,0,157,0" concept="12" trace="getFileExtension_Flows#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123815266" at="172,0,175,0" concept="12" trace="getPath_Flows#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123815266" at="100,7,106,7" concept="5" />
+      <node id="5430697704123815266" at="103,56,104,47" concept="7" />
+      <node id="5430697704123815266" at="104,47,105,50" concept="7" />
+      <node id="5430697704123815266" at="105,50,106,105" concept="3" />
+      <node id="5430697704123815266" at="106,105,107,17" concept="1" />
+      <node id="4416820227520966222" at="138,55,139,64" concept="8" />
+      <node id="5430697704123815360" at="156,60,157,25" concept="8" />
+      <node id="4416820227520968878" at="174,51,175,19" concept="8" />
+      <node id="5430697704123815266" at="138,0,141,0" concept="12" trace="getFileName_Flows#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123815266" at="156,0,159,0" concept="12" trace="getFileExtension_Flows#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123815266" at="174,0,177,0" concept="12" trace="getPath_Flows#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123815266" at="102,7,108,7" concept="5" />
       <scope id="5430697704123815266" at="50,39,51,35" />
-      <scope id="5430697704123815266" at="136,55,137,64" />
-      <scope id="5430697704123815266" at="154,60,155,25" />
-      <scope id="5430697704123815266" at="172,51,173,19" />
-      <scope id="5430697704123815266" at="136,0,139,0">
+      <scope id="5430697704123815266" at="138,55,139,64" />
+      <scope id="5430697704123815266" at="156,60,157,25" />
+      <scope id="5430697704123815266" at="174,51,175,19" />
+      <scope id="5430697704123815266" at="138,0,141,0">
         <var name="node" id="5430697704123815266" />
       </scope>
-      <scope id="5430697704123815266" at="154,0,157,0">
+      <scope id="5430697704123815266" at="156,0,159,0">
         <var name="node" id="5430697704123815266" />
       </scope>
-      <scope id="5430697704123815266" at="172,0,175,0">
+      <scope id="5430697704123815266" at="174,0,177,0">
         <var name="node" id="5430697704123815266" />
       </scope>
-      <scope id="5430697704123815266" at="101,56,105,17">
+      <scope id="5430697704123815266" at="103,56,107,17">
         <var name="ext" id="5430697704123815266" />
         <var name="fname" id="5430697704123815266" />
       </scope>
@@ -1050,31 +1050,31 @@
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="5430697704123815431" at="60,52,61,48" concept="8" />
-      <node id="5430697704123815431" at="95,69,96,60" concept="7" />
-      <node id="5430697704123815431" at="96,60,97,63" concept="7" />
-      <node id="5430697704123815431" at="97,63,98,118" concept="3" />
-      <node id="5430697704123815431" at="98,118,99,17" concept="1" />
-      <node id="4416820227519760587" at="133,68,134,27" concept="8" />
-      <node id="5430697704123815500" at="151,73,152,26" concept="8" />
-      <node id="4416820227519761918" at="169,64,170,20" concept="8" />
-      <node id="5430697704123815431" at="133,0,136,0" concept="12" trace="getFileName_PageRegisterConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123815431" at="151,0,154,0" concept="12" trace="getFileExtension_PageRegisterConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123815431" at="169,0,172,0" concept="12" trace="getPath_PageRegisterConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5430697704123815431" at="94,58,100,7" concept="5" />
+      <node id="5430697704123815431" at="97,69,98,60" concept="7" />
+      <node id="5430697704123815431" at="98,60,99,63" concept="7" />
+      <node id="5430697704123815431" at="99,63,100,118" concept="3" />
+      <node id="5430697704123815431" at="100,118,101,17" concept="1" />
+      <node id="4416820227519760587" at="135,68,136,27" concept="8" />
+      <node id="5430697704123815500" at="153,73,154,26" concept="8" />
+      <node id="4416820227519761918" at="171,64,172,20" concept="8" />
+      <node id="5430697704123815431" at="135,0,138,0" concept="12" trace="getFileName_PageRegisterConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123815431" at="153,0,156,0" concept="12" trace="getFileExtension_PageRegisterConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123815431" at="171,0,174,0" concept="12" trace="getPath_PageRegisterConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5430697704123815431" at="96,58,102,7" concept="5" />
       <scope id="5430697704123815431" at="60,52,61,48" />
-      <scope id="5430697704123815431" at="133,68,134,27" />
-      <scope id="5430697704123815431" at="151,73,152,26" />
-      <scope id="5430697704123815431" at="169,64,170,20" />
-      <scope id="5430697704123815431" at="133,0,136,0">
+      <scope id="5430697704123815431" at="135,68,136,27" />
+      <scope id="5430697704123815431" at="153,73,154,26" />
+      <scope id="5430697704123815431" at="171,64,172,20" />
+      <scope id="5430697704123815431" at="135,0,138,0">
         <var name="node" id="5430697704123815431" />
       </scope>
-      <scope id="5430697704123815431" at="151,0,154,0">
+      <scope id="5430697704123815431" at="153,0,156,0">
         <var name="node" id="5430697704123815431" />
       </scope>
-      <scope id="5430697704123815431" at="169,0,172,0">
+      <scope id="5430697704123815431" at="171,0,174,0">
         <var name="node" id="5430697704123815431" />
       </scope>
-      <scope id="5430697704123815431" at="95,69,99,17">
+      <scope id="5430697704123815431" at="97,69,101,17">
         <var name="ext" id="5430697704123815431" />
         <var name="fname" id="5430697704123815431" />
       </scope>
@@ -1178,6 +1178,31 @@
     <file name="TextGenAspectDescriptor.java">
       <node id="7480654520859967486" at="44,47,45,43" concept="8" />
       <scope id="7480654520859967486" at="44,47,45,43" />
+    </file>
+  </root>
+  <root nodeRef="r:887a9752-2dcb-458f-817c-26b52d0aa5ce(Teasy.textGen)/7480654520860444914">
+    <file name="TextGenAspectDescriptor.java">
+      <node id="7480654520860444914" at="72,53,73,49" concept="8" />
+      <scope id="7480654520860444914" at="72,53,73,49" />
+    </file>
+    <file name="TextShouldBeVisible_TextGen.java">
+      <node id="7480654520860444914" at="15,54,16,55" concept="7" />
+      <node id="7480654520860445140" at="16,55,17,49" concept="3" />
+      <node id="7480654520860445141" at="17,49,18,86" concept="3" />
+      <node id="7480654520860445145" at="18,86,19,35" concept="3" />
+      <node id="7480654520860445146" at="19,35,20,130" concept="3" />
+      <node id="7480654520860445152" at="20,130,21,18" concept="3" />
+      <node id="7480654520860444914" at="25,0,26,0" concept="11" trace="text$$tqH" />
+      <node id="7480654520860444914" at="26,0,27,0" concept="11" trace="exact_match$$y_3" />
+      <node id="7480654520860444914" at="14,0,23,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7480654520860444914" at="15,54,21,18">
+        <var name="tgs" id="7480654520860444914" />
+      </scope>
+      <scope id="7480654520860444914" at="14,0,23,0">
+        <var name="ctx" id="7480654520860444914" />
+      </scope>
+      <unit id="7480654520860444914" at="24,0,28,0" name="Teasy.textGen.TextShouldBeVisible_TextGen$PROPS" />
+      <unit id="7480654520860444914" at="13,0,29,0" name="Teasy.textGen.TextShouldBeVisible_TextGen" />
     </file>
   </root>
 </debug-info>

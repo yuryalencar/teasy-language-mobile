@@ -198,7 +198,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
-  <dependency className="Teasy.textGen.PageShouldContain_TextGen">
+  <dependency className="Teasy.textGen.PageShouldContainText_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -218,7 +218,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
-  <dependency className="Teasy.textGen.PageShouldNotContain_TextGen">
+  <dependency className="Teasy.textGen.PageShouldNotContainText_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
@@ -268,11 +268,12 @@
     <classNode dependClassName="Teasy.textGen.Keyword_TextGen" />
     <classNode dependClassName="Teasy.textGen.PageRegisterConfig_TextGen" />
     <classNode dependClassName="Teasy.textGen.PageShouldContainElement_TextGen" />
-    <classNode dependClassName="Teasy.textGen.PageShouldContain_TextGen" />
+    <classNode dependClassName="Teasy.textGen.PageShouldContainText_TextGen" />
     <classNode dependClassName="Teasy.textGen.PageShouldNotContainElement_TextGen" />
-    <classNode dependClassName="Teasy.textGen.PageShouldNotContain_TextGen" />
+    <classNode dependClassName="Teasy.textGen.PageShouldNotContainText_TextGen" />
     <classNode dependClassName="Teasy.textGen.PageToRegister_TextGen" />
     <classNode dependClassName="Teasy.textGen.Page_TextGen" />
+    <classNode dependClassName="Teasy.textGen.TextShouldBeVisible_TextGen" />
     <classNode dependClassName="Teasy.textGen.WaitForCondition_TextGen" />
     <classNode dependClassName="Teasy.textGen.WaitUntilElementIsEnabled_TextGen" />
     <classNode dependClassName="Teasy.textGen.WaitUntilElementIsNotVisible_TextGen" />
@@ -294,6 +295,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenAspectBase" />
+  </dependency>
+  <dependency className="Teasy.textGen.TextShouldBeVisible_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
   <dependency className="Teasy.textGen.WaitForCondition_TextGen">
     <classNode dependClassName="java.lang.Integer" />

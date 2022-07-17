@@ -911,7 +911,7 @@
   </node>
   <node concept="24kQdi" id="1FUO_j1X3gV">
     <property role="3GE5qa" value="steps_types" />
-    <ref role="1XX52x" to="57va:1FUO_j1X3gt" resolve="PageShouldContain" />
+    <ref role="1XX52x" to="57va:1FUO_j1X3gt" resolve="PageShouldContainText" />
     <node concept="3EZMnI" id="1FUO_j1X3gX" role="2wV5jI">
       <node concept="3F0ifn" id="1FUO_j1X3h4" role="3EZMnx">
         <property role="3F0ifm" value="PAGE SHOULD CONTAIN TEXT: " />
@@ -995,7 +995,7 @@
   </node>
   <node concept="24kQdi" id="1FUO_j1X3j9">
     <property role="3GE5qa" value="steps_types" />
-    <ref role="1XX52x" to="57va:1FUO_j1X3iE" resolve="PageShouldNotContain" />
+    <ref role="1XX52x" to="57va:1FUO_j1X3iE" resolve="PageShouldNotContainText" />
     <node concept="3EZMnI" id="1FUO_j1X3jC" role="2wV5jI">
       <node concept="3F0ifn" id="1FUO_j1X3jD" role="3EZMnx">
         <property role="3F0ifm" value="PAGE SHOULD NOT CONTAIN TEXT: " />
@@ -2131,6 +2131,68 @@
         </node>
       </node>
       <node concept="l2Vlx" id="6vgBUsbhNYZ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vgBUsbjCz4">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbjCyU" resolve="TextShouldBeVisible" />
+    <node concept="3EZMnI" id="6vgBUsbjCz6" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbjCz7" role="3EZMnx">
+        <property role="3F0ifm" value="TEXT SHOULD BE VISIBLE" />
+        <node concept="pVoyu" id="6vgBUsbjCz8" role="3F10Kt" />
+        <node concept="Vb9p2" id="6vgBUsbjCz9" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbjCza" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbjCzb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbjCzc" role="3EZMnx" />
+      <node concept="3F0ifn" id="6vgBUsbjCzd" role="3EZMnx">
+        <property role="3F0ifm" value="TEXT:" />
+        <node concept="VechU" id="6vgBUsbjCze" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsbjCzf" role="3EZMnx">
+        <property role="1$x2rV" value="Text to verify" />
+        <ref role="1NtTu8" to="57va:6vgBUsbjCyV" resolve="text" />
+        <node concept="Vb9p2" id="6vgBUsbjCzg" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsbjCzh" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbjCzi" role="3EZMnx" />
+      <node concept="3F0ifn" id="6vgBUsbjCzj" role="3EZMnx">
+        <property role="3F0ifm" value="EXACT TEXT:" />
+        <node concept="VechU" id="6vgBUsbjCzk" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsbjCzl" role="3EZMnx">
+        <property role="1$x2rV" value="Verify same sexact text ?" />
+        <ref role="1NtTu8" to="57va:6vgBUsbjCyW" resolve="exact_match" />
+        <node concept="Vb9p2" id="6vgBUsbjCzm" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsbjCzn" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbjCzo" role="2iSdaV" />
+      <node concept="3F0ifn" id="6vgBUsbjCzp" role="3EZMnx">
+        <node concept="pVoyu" id="6vgBUsbjCzq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbjCzr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
