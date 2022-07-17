@@ -777,5 +777,38 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6vgBUsby9zq">
+    <property role="EcuMT" value="7480654520864250074" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="Swipe" />
+    <property role="34LRSv" value="Swipe" />
+    <property role="R4oN_" value="Swipe from one point to another point" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsby9zt" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520864250077" />
+      <property role="TrG5h" value="start_x" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsby9zv" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520864250079" />
+      <property role="TrG5h" value="start_y" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsby9zy" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520864250082" />
+      <property role="TrG5h" value="end_x" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsby9zA" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520864250086" />
+      <property role="TrG5h" value="end_y" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsby9zF" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520864250091" />
+      <property role="TrG5h" value="duration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

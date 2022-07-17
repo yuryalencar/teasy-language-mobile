@@ -35,6 +35,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PageToRegister;
   private ConceptPresentation props_Sleep;
   private ConceptPresentation props_Step;
+  private ConceptPresentation props_Swipe;
   private ConceptPresentation props_Tap;
   private ConceptPresentation props_TapByCoordinates;
   private ConceptPresentation props_TextShouldBeVisible;
@@ -256,6 +257,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Step = cpb.create();
         }
         return props_Step;
+      case LanguageConceptSwitch.Swipe:
+        if (props_Swipe == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Swipe from one point to another point");
+          cpb.rawPresentation("Swipe");
+          props_Swipe = cpb.create();
+        }
+        return props_Swipe;
       case LanguageConceptSwitch.Tap:
         if (props_Tap == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -42,6 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPageToRegister = createDescriptorForPageToRegister();
   /*package*/ final ConceptDescriptor myConceptSleep = createDescriptorForSleep();
   /*package*/ final ConceptDescriptor myConceptStep = createDescriptorForStep();
+  /*package*/ final ConceptDescriptor myConceptSwipe = createDescriptorForSwipe();
   /*package*/ final ConceptDescriptor myConceptTap = createDescriptorForTap();
   /*package*/ final ConceptDescriptor myConceptTapByCoordinates = createDescriptorForTapByCoordinates();
   /*package*/ final ConceptDescriptor myConceptTextShouldBeVisible = createDescriptorForTextShouldBeVisible();
@@ -68,7 +69,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClearText, myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputPassword, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContainElement, myConceptPageShouldContainText, myConceptPageShouldNotContainElement, myConceptPageShouldNotContainText, myConceptPageToRegister, myConceptSleep, myConceptStep, myConceptTap, myConceptTapByCoordinates, myConceptTextShouldBeVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
+    return Arrays.asList(myConceptClearText, myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputPassword, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContainElement, myConceptPageShouldContainText, myConceptPageShouldNotContainElement, myConceptPageShouldNotContainText, myConceptPageToRegister, myConceptSleep, myConceptStep, myConceptSwipe, myConceptTap, myConceptTapByCoordinates, myConceptTextShouldBeVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
   }
 
   @Override
@@ -127,6 +128,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSleep;
       case LanguageConceptSwitch.Step:
         return myConceptStep;
+      case LanguageConceptSwitch.Swipe:
+        return myConceptSwipe;
       case LanguageConceptSwitch.Tap:
         return myConceptTap;
       case LanguageConceptSwitch.TapByCoordinates:
@@ -435,6 +438,21 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/3004182411412977312");
     b.version(3);
     b.alias("Step");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSwipe() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "Swipe", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b8898daL);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520864250074");
+    b.version(3);
+    b.property("start_x", 0x67d09fa70b8898ddL).type(PrimitiveTypeId.STRING).origin("7480654520864250077").done();
+    b.property("start_y", 0x67d09fa70b8898dfL).type(PrimitiveTypeId.STRING).origin("7480654520864250079").done();
+    b.property("end_x", 0x67d09fa70b8898e2L).type(PrimitiveTypeId.STRING).origin("7480654520864250082").done();
+    b.property("end_y", 0x67d09fa70b8898e6L).type(PrimitiveTypeId.STRING).origin("7480654520864250086").done();
+    b.property("duration", 0x67d09fa70b8898ebL).type(PrimitiveTypeId.INTEGER).origin("7480654520864250091").done();
+    b.alias("Swipe");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTap() {

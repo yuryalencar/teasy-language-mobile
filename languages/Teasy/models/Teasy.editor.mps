@@ -2271,5 +2271,142 @@
       <node concept="l2Vlx" id="6vgBUsbwa1j" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6vgBUsby9zS">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsby9zq" resolve="Swipe" />
+    <node concept="3EZMnI" id="6vgBUsby9zU" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsby9zV" role="3EZMnx">
+        <property role="3F0ifm" value="SWIPE" />
+        <node concept="pVoyu" id="6vgBUsby9zW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="6vgBUsby9zX" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9zY" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsby9zZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsby9$0" role="3EZMnx">
+        <property role="3F0ifm" value="START X:" />
+        <node concept="pVoyu" id="6vgBUsby9$1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsby9$2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9$3" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+        <node concept="pVoyu" id="6vgBUsby9$4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsby9_y" role="3EZMnx">
+        <property role="1$x2rV" value="x-coordinate at which to start" />
+        <ref role="1NtTu8" to="57va:6vgBUsby9zt" resolve="start_x" />
+        <node concept="Vb9p2" id="6vgBUsby9KQ" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9KR" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsby9AF" role="3EZMnx" />
+      <node concept="3F0ifn" id="6vgBUsby9BR" role="3EZMnx">
+        <property role="3F0ifm" value="START Y:" />
+        <node concept="VechU" id="6vgBUsby9L0" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsby9D6" role="3EZMnx">
+        <property role="1$x2rV" value="y-coordinate at which to start" />
+        <ref role="1NtTu8" to="57va:6vgBUsby9zv" resolve="start_y" />
+        <node concept="Vb9p2" id="6vgBUsby9KI" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9KJ" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsby9$c" role="3EZMnx">
+        <property role="3F0ifm" value="OFFSET X: " />
+        <node concept="pVoyu" id="6vgBUsby9$d" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsby9$e" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9$f" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+        <node concept="pVoyu" id="6vgBUsby9$g" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsby9$h" role="3EZMnx">
+        <property role="1$x2rV" value="x-coordinate distance from start_x at which to stop" />
+        <ref role="1NtTu8" to="57va:6vgBUsby9zy" resolve="end_x" />
+        <node concept="Vb9p2" id="6vgBUsby9$i" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9$j" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsby9DW" role="3EZMnx" />
+      <node concept="3F0ifn" id="6vgBUsby9Fh" role="3EZMnx">
+        <property role="3F0ifm" value="OFFSET Y:" />
+        <node concept="VechU" id="6vgBUsby9KY" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsby9GD" role="3EZMnx">
+        <property role="1$x2rV" value="y-coordinate distance from start_y at which to stop" />
+        <ref role="1NtTu8" to="57va:6vgBUsby9zA" resolve="end_y" />
+        <node concept="Vb9p2" id="6vgBUsby9KE" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9KF" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsby9H_" role="3EZMnx">
+        <property role="3F0ifm" value="DURATION:" />
+        <node concept="pVoyu" id="6vgBUsby9J0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsby9J2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9KU" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsby9K8" role="3EZMnx">
+        <property role="1$x2rV" value="time to take the swipe, in miliseconds." />
+        <ref role="1NtTu8" to="57va:6vgBUsby9zF" resolve="duration" />
+        <node concept="Vb9p2" id="6vgBUsby9KM" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsby9KN" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsby9$k" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="lj46D" id="6vgBUsby9$l" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="6vgBUsby9$m" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsby9$n" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

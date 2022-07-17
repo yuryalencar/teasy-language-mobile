@@ -102,6 +102,13 @@
         <property id="7480654520863727661" name="count" index="1Gk3Ya" />
         <property id="7480654520863727665" name="y" index="1Gk3Ym" />
       </concept>
+      <concept id="7480654520864250074" name="Teasy.structure.Swipe" flags="ng" index="1Gm0tX">
+        <property id="7480654520864250086" name="end_y" index="1Gm0t1" />
+        <property id="7480654520864250082" name="end_x" index="1Gm0t5" />
+        <property id="7480654520864250091" name="duration" index="1Gm0tc" />
+        <property id="7480654520864250079" name="start_y" index="1Gm0tS" />
+        <property id="7480654520864250077" name="start_x" index="1Gm0tU" />
+      </concept>
       <concept id="7480654520861589412" name="Teasy.structure.InputPassword" flags="ng" index="1GzQ03">
         <property id="7480654520861589413" name="password" index="1GzQ02" />
         <reference id="7480654520861589414" name="component" index="1GzQ01" />
@@ -316,6 +323,16 @@
         <property role="1Gk3Y9" value="2.12" />
         <property role="1Gk3Ym" value="21321.21" />
         <property role="1Gk3Ya" value="3" />
+      </node>
+    </node>
+    <node concept="2D3W_x" id="6vgBUsby9L2" role="2D3W_o">
+      <property role="TrG5h" value="EXTRA COMMANDS" />
+      <node concept="1Gm0tX" id="6vgBUsbyPwG" role="2D3W_k">
+        <property role="1Gm0tU" value="500" />
+        <property role="1Gm0tS" value="400" />
+        <property role="1Gm0t5" value="100" />
+        <property role="1Gm0t1" value="100" />
+        <property role="1Gm0tc" value="1000" />
       </node>
     </node>
   </node>

@@ -35,14 +35,15 @@ public final class LanguageConceptSwitch {
   public static final int PageToRegister = 23;
   public static final int Sleep = 24;
   public static final int Step = 25;
-  public static final int Tap = 26;
-  public static final int TapByCoordinates = 27;
-  public static final int TextShouldBeVisible = 28;
-  public static final int WaitUntilElementIsVisible = 29;
-  public static final int WaitUntilPageContains = 30;
-  public static final int WaitUntilPageContainsElement = 31;
-  public static final int WaitUntilPageDoesNotContain = 32;
-  public static final int WaitUntilPageDoesNotContainElement = 33;
+  public static final int Swipe = 26;
+  public static final int Tap = 27;
+  public static final int TapByCoordinates = 28;
+  public static final int TextShouldBeVisible = 29;
+  public static final int WaitUntilElementIsVisible = 30;
+  public static final int WaitUntilPageContains = 31;
+  public static final int WaitUntilPageContainsElement = 32;
+  public static final int WaitUntilPageDoesNotContain = 33;
+  public static final int WaitUntilPageDoesNotContainElement = 34;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x67c1fa65c7ac493dL, 0xb11b664188147c91L);
@@ -72,6 +73,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x4b2c28ff7a1373d8L, PageToRegister);
     builder.put(0x1afad254c1f4486aL, Sleep);
     builder.put(0x29b0fffc80bf36a0L, Step);
+    builder.put(0x67d09fa70b8898daL, Swipe);
     builder.put(0x1afad254c1f4336bL, Tap);
     builder.put(0x67d09fa70b80a02bL, TapByCoordinates);
     builder.put(0x67d09fa70b4e88baL, TextShouldBeVisible);

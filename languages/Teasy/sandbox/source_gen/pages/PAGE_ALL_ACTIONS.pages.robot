@@ -41,3 +41,5 @@ TAPS
     Tap    ${CpfField}    count=1
     Tap    ${None}    x_offset=2.12    y_offset=21321.21    count=3
 
+EXTRA COMMANDS 
+<!TextGen not found for 'Teasy.structure.Step'!>
