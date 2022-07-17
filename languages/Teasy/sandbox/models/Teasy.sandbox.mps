@@ -39,12 +39,26 @@
         <child id="9061110883748270131" name="components" index="Pw_x$" />
       </concept>
       <concept id="4416820227523971320" name="Teasy.structure.Hooks" flags="ng" index="1763Dw" />
+      <concept id="1944097450636888169" name="Teasy.structure.WaitUntilElementIsVisible" flags="ng" index="3r3DCX">
+        <property id="1944097450636888402" name="timeout" index="3r3DG6" />
+        <reference id="1944097450636888171" name="component" index="3r3DCZ" />
+      </concept>
+      <concept id="1944097450636888170" name="Teasy.structure.Sleep" flags="ng" index="3r3DCY">
+        <property id="1944097450636888400" name="time" index="3r3DG4" />
+      </concept>
+      <concept id="1944097450636888312" name="Teasy.structure.ClearText" flags="ng" index="3r3DEG">
+        <reference id="1944097450636888313" name="component" index="3r3DEH" />
+      </concept>
       <concept id="1944097450636882683" name="Teasy.structure.ExecuteAdbShell" flags="ng" index="3r3I2J">
         <property id="1944097450636882684" name="function" index="3r3I2C" />
         <property id="7480654520859652211" name="arguments" index="1G$IZk" />
       </concept>
       <concept id="1944097450636882605" name="Teasy.structure.ClickElement" flags="ng" index="3r3I3T">
         <reference id="1944097450636882608" name="component" index="3r3I3$" />
+      </concept>
+      <concept id="1944097450636882795" name="Teasy.structure.Tap" flags="ng" index="3r3I4Z">
+        <property id="1944097450636882798" name="count" index="3r3I4U" />
+        <reference id="7480654520863100158" name="component" index="1GDTdp" />
       </concept>
       <concept id="1944097450636883038" name="Teasy.structure.PageShouldContainElement" flags="ng" index="3r3Ioa">
         <reference id="1944097450636883039" name="component" index="3r3Iob" />
@@ -58,6 +72,22 @@
       <concept id="1944097450636883114" name="Teasy.structure.PageShouldNotContainText" flags="ng" index="3r3IrY">
         <property id="1944097450636883115" name="text" index="3r3IrZ" />
       </concept>
+      <concept id="5704377929931945956" name="Teasy.structure.WaitUntilPageContains" flags="ng" index="1t0v9_">
+        <property id="5704377929931945975" name="text" index="1t0v9Q" />
+        <property id="5704377929931945977" name="timeout" index="1t0v9S" />
+      </concept>
+      <concept id="5704377929931946399" name="Teasy.structure.WaitUntilPageDoesNotContainElement" flags="ng" index="1t0vKu">
+        <property id="5704377929931946401" name="timeout" index="1t0vKw" />
+        <reference id="5704377929931946400" name="component" index="1t0vKx" />
+      </concept>
+      <concept id="5704377929931946349" name="Teasy.structure.WaitUntilPageDoesNotContain" flags="ng" index="1t0vNG">
+        <property id="5704377929931946396" name="text" index="1t0vKt" />
+        <property id="5704377929931946351" name="timeout" index="1t0vNI" />
+      </concept>
+      <concept id="5704377929931946216" name="Teasy.structure.WaitUntilPageContainsElement" flags="ng" index="1t0vPD">
+        <property id="5704377929931946218" name="timeout" index="1t0vPF" />
+        <reference id="5704377929931946220" name="component" index="1t0vPH" />
+      </concept>
       <concept id="4838803795106586973" name="Teasy.structure.Flow" flags="ng" index="1y1gcR">
         <child id="4838803795106586978" name="flow_item" index="1y1gc8" />
       </concept>
@@ -66,6 +96,11 @@
       </concept>
       <concept id="4838803795107766633" name="Teasy.structure.Flows" flags="ng" index="1y4Kc3">
         <child id="4838803795107766634" name="flow" index="1y4Kc0" />
+      </concept>
+      <concept id="7480654520863727659" name="Teasy.structure.TapByCoordinates" flags="ng" index="1Gk3Yc">
+        <property id="7480654520863727662" name="x" index="1Gk3Y9" />
+        <property id="7480654520863727661" name="count" index="1Gk3Ya" />
+        <property id="7480654520863727665" name="y" index="1Gk3Ym" />
       </concept>
       <concept id="7480654520861589412" name="Teasy.structure.InputPassword" flags="ng" index="1GzQ03">
         <property id="7480654520861589413" name="password" index="1GzQ02" />
@@ -240,6 +275,47 @@
       <node concept="1GzQ03" id="6vgBUsboDj4" role="2D3W_k">
         <property role="1GzQ02" value="STRONG.PASSWORD.COM" />
         <ref role="1GzQ01" node="6vgBUsbacoH" resolve="PasswordField" />
+      </node>
+      <node concept="3r3DEG" id="6vgBUsby9zl" role="2D3W_k">
+        <ref role="3r3DEH" node="6vgBUsbacoH" resolve="PasswordField" />
+      </node>
+    </node>
+    <node concept="2D3W_x" id="6vgBUsbpiuj" role="2D3W_o">
+      <property role="TrG5h" value="WAITS" />
+      <node concept="3r3DCY" id="6vgBUsbt8NQ" role="2D3W_k">
+        <property role="3r3DG4" value="123" />
+      </node>
+      <node concept="3r3DCX" id="6vgBUsbpiuG" role="2D3W_k">
+        <property role="3r3DG6" value="15" />
+        <ref role="3r3DCZ" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1t0v9_" id="6vgBUsbq$WG" role="2D3W_k">
+        <property role="1t0v9Q" value="Login" />
+        <property role="1t0v9S" value="10" />
+      </node>
+      <node concept="1t0vPD" id="6vgBUsbreao" role="2D3W_k">
+        <property role="1t0vPF" value="10" />
+        <ref role="1t0vPH" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1t0vNG" id="6vgBUsbrRju" role="2D3W_k">
+        <property role="1t0vKt" value="Login" />
+        <property role="1t0vNI" value="10" />
+      </node>
+      <node concept="1t0vKu" id="6vgBUsbswx$" role="2D3W_k">
+        <property role="1t0vKw" value="200" />
+        <ref role="1t0vKx" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+    </node>
+    <node concept="2D3W_x" id="6vgBUsbtKYm" role="2D3W_o">
+      <property role="TrG5h" value="TAPS" />
+      <node concept="3r3I4Z" id="6vgBUsbv2Qs" role="2D3W_k">
+        <property role="3r3I4U" value="1" />
+        <ref role="1GDTdp" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1Gk3Yc" id="6vgBUsbwOlY" role="2D3W_k">
+        <property role="1Gk3Y9" value="2.12" />
+        <property role="1Gk3Ym" value="21321.21" />
+        <property role="1Gk3Ya" value="3" />
       </node>
     </node>
   </node>

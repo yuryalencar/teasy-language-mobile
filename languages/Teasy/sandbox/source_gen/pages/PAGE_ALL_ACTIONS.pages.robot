@@ -26,4 +26,18 @@ SHOULD BE
 
 INPUTS 
     Input Text    ${CpfField}    000000000-00
+    Input Password    ${PasswordField}    STRONG.PASSWORD.COM
+    Clear Text    ${PasswordField}
+
+WAITS 
+    Sleep    123
+    Wait Until Element Is Visible    ${CpfField}    timeout=15
+    Wait Until Page Contains    Login    timeout=10
+    Wait Until Page Contains Element    ${CpfField}    timeout=10
+    Wait Until Page Does Not Contain    Login    timeout=10
+    Wait Until Page Does Not Contain Element    ${CpfField}    timeout=200
+
+TAPS 
+    Tap    ${CpfField}    count=1
+    Tap    ${None}    x_offset=2.12    y_offset=21321.21    count=3
 

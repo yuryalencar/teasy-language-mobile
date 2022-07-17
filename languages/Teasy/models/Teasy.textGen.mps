@@ -735,12 +735,12 @@
   </node>
   <node concept="WtQ9Q" id="4HtHGBKP57_">
     <property role="3GE5qa" value="steps_types" />
-    <ref role="WuzLi" to="57va:1FUO_j1X4zS" resolve="WaitUntilElementIsEnabled" />
+    <ref role="WuzLi" to="57va:1FUO_j1X4zS" resolve="ClearText" />
     <node concept="11bSqf" id="4HtHGBKP57A" role="11c4hB">
       <node concept="3clFbS" id="4HtHGBKP57B" role="2VODD2">
         <node concept="lc7rE" id="3PbGDxUik$h" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUik$i" role="lcghm">
-            <property role="lacIc" value="    Wait Until Element Is Enabled    ${" />
+            <property role="lacIc" value="    Clear Text    ${" />
           </node>
           <node concept="l9hG8" id="3PbGDxUik$j" role="lcghm">
             <node concept="2OqwBi" id="3PbGDxUil5b" role="lb14g">
@@ -756,19 +756,7 @@
             </node>
           </node>
           <node concept="la8eA" id="3PbGDxUilh_" role="lcghm">
-            <property role="lacIc" value="}    timeout=" />
-          </node>
-          <node concept="l9hG8" id="3PbGDxUilyR" role="lcghm">
-            <node concept="2YIFZM" id="3PbGDxUimvh" role="lb14g">
-              <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-              <node concept="2OqwBi" id="3PbGDxUimP8" role="37wK5m">
-                <node concept="117lpO" id="3PbGDxUimCu" role="2Oq$k0" />
-                <node concept="3TrcHB" id="3PbGDxUin9m" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:1FUO_j1X4_e" resolve="timeout" />
-                </node>
-              </node>
-            </node>
+            <property role="lacIc" value="}" />
           </node>
           <node concept="l8MVK" id="3PbGDxUik$n" role="lcghm" />
         </node>
@@ -777,28 +765,12 @@
   </node>
   <node concept="WtQ9Q" id="4HtHGBKP55O">
     <property role="3GE5qa" value="steps_types" />
-    <ref role="WuzLi" to="57va:1FUO_j1X4xE" resolve="WaitUntilElementIsNotVisible" />
+    <ref role="WuzLi" to="57va:1FUO_j1X4xE" resolve="Sleep" />
     <node concept="11bSqf" id="4HtHGBKP55P" role="11c4hB">
       <node concept="3clFbS" id="4HtHGBKP55Q" role="2VODD2">
         <node concept="lc7rE" id="3PbGDxUiwVT" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUiwVU" role="lcghm">
-            <property role="lacIc" value="    Wait Until Element Is Not Visible    ${" />
-          </node>
-          <node concept="l9hG8" id="3PbGDxUiwVV" role="lcghm">
-            <node concept="2OqwBi" id="3PbGDxUiwVW" role="lb14g">
-              <node concept="2OqwBi" id="3PbGDxUiwVX" role="2Oq$k0">
-                <node concept="117lpO" id="3PbGDxUiwVY" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3PbGDxUiwVZ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="57va:1FUO_j1X4xH" resolve="component" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="3PbGDxUiwW0" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="3PbGDxUiwW1" role="lcghm">
-            <property role="lacIc" value="}    timeout=" />
+            <property role="lacIc" value="    Sleep    " />
           </node>
           <node concept="l9hG8" id="3PbGDxUiwW2" role="lcghm">
             <node concept="2YIFZM" id="3PbGDxUiwW3" role="lb14g">
@@ -807,7 +779,7 @@
               <node concept="2OqwBi" id="3PbGDxUiwW4" role="37wK5m">
                 <node concept="117lpO" id="3PbGDxUiwW5" role="2Oq$k0" />
                 <node concept="3TrcHB" id="3PbGDxUiwW6" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:1FUO_j1X4_g" resolve="timeout" />
+                  <ref role="3TsBF5" to="57va:1FUO_j1X4_g" resolve="time" />
                 </node>
               </node>
             </node>
@@ -965,23 +937,28 @@
   </node>
   <node concept="WtQ9Q" id="4HtHGBKP4XO">
     <property role="3GE5qa" value="steps_types" />
-    <ref role="WuzLi" to="57va:1FUO_j1X3dF" resolve="WaitForCondition" />
+    <ref role="WuzLi" to="57va:1FUO_j1X3dF" resolve="Tap" />
     <node concept="11bSqf" id="4HtHGBKP4XP" role="11c4hB">
       <node concept="3clFbS" id="4HtHGBKP4XQ" role="2VODD2">
         <node concept="lc7rE" id="3PbGDxUhKC1" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUhKC2" role="lcghm">
-            <property role="lacIc" value="    Wait For Condition    " />
+            <property role="lacIc" value="    Tap    ${" />
           </node>
           <node concept="l9hG8" id="3PbGDxUhKC3" role="lcghm">
-            <node concept="2OqwBi" id="3PbGDxUhKC4" role="lb14g">
-              <node concept="117lpO" id="3PbGDxUhKC5" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3PbGDxUhKC6" role="2OqNvi">
-                <ref role="3TsBF5" to="57va:1FUO_j1X3dG" resolve="condition" />
+            <node concept="2OqwBi" id="6vgBUsbupVR" role="lb14g">
+              <node concept="2OqwBi" id="3PbGDxUhKC4" role="2Oq$k0">
+                <node concept="117lpO" id="3PbGDxUhKC5" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6vgBUsbupJR" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbtKNY" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6vgBUsbuq8G" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
           </node>
           <node concept="la8eA" id="3PbGDxUhKUm" role="lcghm">
-            <property role="lacIc" value="    timeout=" />
+            <property role="lacIc" value="}    count=" />
           </node>
           <node concept="l9hG8" id="3PbGDxUhKUn" role="lcghm">
             <node concept="2YIFZM" id="3PbGDxUhKUo" role="lb14g">
@@ -989,7 +966,7 @@
               <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
               <node concept="2OqwBi" id="3PbGDxUhKUp" role="37wK5m">
                 <node concept="3TrcHB" id="3PbGDxUhKUq" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:1FUO_j1X3dI" resolve="timeout" />
+                  <ref role="3TsBF5" to="57va:1FUO_j1X3dI" resolve="count" />
                 </node>
                 <node concept="117lpO" id="3PbGDxUhKUr" role="2Oq$k0" />
               </node>
@@ -2193,6 +2170,54 @@
             </node>
           </node>
           <node concept="l8MVK" id="6vgBUsbo05m" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbwOsV">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbwa0F" resolve="TapByCoordinates" />
+    <node concept="11bSqf" id="6vgBUsbwOsW" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbwOsX" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbwOte" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbwOtf" role="lcghm">
+            <property role="lacIc" value="    Tap    ${None}    x_offset=" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbwOHo" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbwOPr" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbwOIS" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbwOYs" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbwa0I" resolve="x" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbwP0v" role="lcghm">
+            <property role="lacIc" value="    y_offset=" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbwP7c" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbwPfG" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbwP99" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbwPoH" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbwa0L" resolve="y" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbwOtm" role="lcghm">
+            <property role="lacIc" value="    count=" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbwOtn" role="lcghm">
+            <node concept="2YIFZM" id="6vgBUsbwOto" role="lb14g">
+              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+              <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
+              <node concept="2OqwBi" id="6vgBUsbwOtp" role="37wK5m">
+                <node concept="3TrcHB" id="6vgBUsbwOtq" role="2OqNvi">
+                  <ref role="3TsBF5" to="57va:6vgBUsbwa0H" resolve="count" />
+                </node>
+                <node concept="117lpO" id="6vgBUsbwOtr" role="2Oq$k0" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="6vgBUsbwOts" role="lcghm" />
         </node>
       </node>
     </node>

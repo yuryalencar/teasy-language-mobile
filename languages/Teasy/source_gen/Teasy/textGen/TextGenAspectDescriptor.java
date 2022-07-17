@@ -25,6 +25,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
+      case LanguageConceptSwitch.ClearText:
+        return new ClearText_TextGen();
       case LanguageConceptSwitch.ClickAPoint:
         return new ClickAPoint_TextGen();
       case LanguageConceptSwitch.ClickElement:
@@ -71,14 +73,14 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new PageShouldNotContainText_TextGen();
       case LanguageConceptSwitch.PageToRegister:
         return new PageToRegister_TextGen();
+      case LanguageConceptSwitch.Sleep:
+        return new Sleep_TextGen();
+      case LanguageConceptSwitch.Tap:
+        return new Tap_TextGen();
+      case LanguageConceptSwitch.TapByCoordinates:
+        return new TapByCoordinates_TextGen();
       case LanguageConceptSwitch.TextShouldBeVisible:
         return new TextShouldBeVisible_TextGen();
-      case LanguageConceptSwitch.WaitForCondition:
-        return new WaitForCondition_TextGen();
-      case LanguageConceptSwitch.WaitUntilElementIsEnabled:
-        return new WaitUntilElementIsEnabled_TextGen();
-      case LanguageConceptSwitch.WaitUntilElementIsNotVisible:
-        return new WaitUntilElementIsNotVisible_TextGen();
       case LanguageConceptSwitch.WaitUntilElementIsVisible:
         return new WaitUntilElementIsVisible_TextGen();
       case LanguageConceptSwitch.WaitUntilPageContains:

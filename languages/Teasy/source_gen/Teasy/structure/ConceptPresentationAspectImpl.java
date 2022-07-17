@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ClearText;
   private ConceptPresentation props_ClickAPoint;
   private ConceptPresentation props_ClickElement;
   private ConceptPresentation props_ClickElementAtCoordinates;
@@ -32,11 +33,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PageShouldNotContainElement;
   private ConceptPresentation props_PageShouldNotContainText;
   private ConceptPresentation props_PageToRegister;
+  private ConceptPresentation props_Sleep;
   private ConceptPresentation props_Step;
+  private ConceptPresentation props_Tap;
+  private ConceptPresentation props_TapByCoordinates;
   private ConceptPresentation props_TextShouldBeVisible;
-  private ConceptPresentation props_WaitForCondition;
-  private ConceptPresentation props_WaitUntilElementIsEnabled;
-  private ConceptPresentation props_WaitUntilElementIsNotVisible;
   private ConceptPresentation props_WaitUntilElementIsVisible;
   private ConceptPresentation props_WaitUntilPageContains;
   private ConceptPresentation props_WaitUntilPageContainsElement;
@@ -48,6 +49,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ClearText:
+        if (props_ClearText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Clears the text field identified by locator.");
+          cpb.rawPresentation("Clear Text");
+          props_ClearText = cpb.create();
+        }
+        return props_ClearText;
       case LanguageConceptSwitch.ClickAPoint:
         if (props_ClickAPoint == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -232,6 +241,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PageToRegister = cpb.create();
         }
         return props_PageToRegister;
+      case LanguageConceptSwitch.Sleep:
+        if (props_Sleep == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("To wait the respective time in seconds");
+          cpb.rawPresentation("Sleep");
+          props_Sleep = cpb.create();
+        }
+        return props_Sleep;
       case LanguageConceptSwitch.Step:
         if (props_Step == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -239,6 +256,22 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Step = cpb.create();
         }
         return props_Step;
+      case LanguageConceptSwitch.Tap:
+        if (props_Tap == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Tap element identified by locator.");
+          cpb.rawPresentation("Tap");
+          props_Tap = cpb.create();
+        }
+        return props_Tap;
+      case LanguageConceptSwitch.TapByCoordinates:
+        if (props_TapByCoordinates == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Tap element identified by coordinates");
+          cpb.rawPresentation("Tap By Coordinates");
+          props_TapByCoordinates = cpb.create();
+        }
+        return props_TapByCoordinates;
       case LanguageConceptSwitch.TextShouldBeVisible:
         if (props_TextShouldBeVisible == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -247,34 +280,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TextShouldBeVisible = cpb.create();
         }
         return props_TextShouldBeVisible;
-      case LanguageConceptSwitch.WaitForCondition:
-        if (props_WaitForCondition == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("To Wait a respective Javascript condition");
-          cpb.rawPresentation("Wait For Condition");
-          props_WaitForCondition = cpb.create();
-        }
-        return props_WaitForCondition;
-      case LanguageConceptSwitch.WaitUntilElementIsEnabled:
-        if (props_WaitUntilElementIsEnabled == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("To wait a enable element");
-          cpb.rawPresentation("Wait Until Element Is Enabled");
-          props_WaitUntilElementIsEnabled = cpb.create();
-        }
-        return props_WaitUntilElementIsEnabled;
-      case LanguageConceptSwitch.WaitUntilElementIsNotVisible:
-        if (props_WaitUntilElementIsNotVisible == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("To wait element is not visible");
-          cpb.rawPresentation("Wait Until Element Is Not Visible");
-          props_WaitUntilElementIsNotVisible = cpb.create();
-        }
-        return props_WaitUntilElementIsNotVisible;
       case LanguageConceptSwitch.WaitUntilElementIsVisible:
         if (props_WaitUntilElementIsVisible == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("To wait element is visible");
+          cpb.shortDesc("Waits until element specified with locator is visible.");
           cpb.rawPresentation("Wait Until Element Is Visible");
           props_WaitUntilElementIsVisible = cpb.create();
         }
@@ -282,7 +291,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.WaitUntilPageContains:
         if (props_WaitUntilPageContains == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Wait page contain respective text");
+          cpb.shortDesc("Waits until text appears on current page.");
           cpb.rawPresentation("Wait Until Page Contains");
           props_WaitUntilPageContains = cpb.create();
         }
@@ -290,7 +299,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.WaitUntilPageContainsElement:
         if (props_WaitUntilPageContainsElement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Wait page contain respective Element");
+          cpb.shortDesc("Waits until element specified with locator appears on current page.");
           cpb.rawPresentation("Wait Until Page Contains Element");
           props_WaitUntilPageContainsElement = cpb.create();
         }
@@ -298,7 +307,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.WaitUntilPageDoesNotContain:
         if (props_WaitUntilPageDoesNotContain == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Wait page not contain respective text");
+          cpb.shortDesc("Waits until text disappears from current page.");
           cpb.rawPresentation("Wait Until Page Does Not Contain");
           props_WaitUntilPageDoesNotContain = cpb.create();
         }
@@ -306,7 +315,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.WaitUntilPageDoesNotContainElement:
         if (props_WaitUntilPageDoesNotContainElement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Wait page not contain a respective Element");
+          cpb.shortDesc("Waits until element specified with locator disappears from current page.");
           cpb.rawPresentation("Wait Until Page Does Not Contain Element");
           props_WaitUntilPageDoesNotContainElement = cpb.create();
         }

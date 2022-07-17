@@ -305,18 +305,19 @@
   <node concept="1TIwiD" id="1FUO_j1X3dF">
     <property role="EcuMT" value="1944097450636882795" />
     <property role="3GE5qa" value="steps_types" />
-    <property role="TrG5h" value="WaitForCondition" />
-    <property role="34LRSv" value="Wait For Condition" />
-    <property role="R4oN_" value="To Wait a respective Javascript condition" />
+    <property role="TrG5h" value="Tap" />
+    <property role="34LRSv" value="Tap" />
+    <property role="R4oN_" value="Tap element identified by locator." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
-    <node concept="1TJgyi" id="1FUO_j1X3dG" role="1TKVEl">
-      <property role="IQ2nx" value="1944097450636882796" />
-      <property role="TrG5h" value="condition" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="6vgBUsbtKNY" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520863100158" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
     </node>
     <node concept="1TJgyi" id="1FUO_j1X3dI" role="1TKVEl">
       <property role="IQ2nx" value="1944097450636882798" />
-      <property role="TrG5h" value="timeout" />
+      <property role="TrG5h" value="count" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
@@ -379,7 +380,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="WaitUntilElementIsVisible" />
     <property role="34LRSv" value="Wait Until Element Is Visible" />
-    <property role="R4oN_" value="To wait element is visible" />
+    <property role="R4oN_" value="Waits until element specified with locator is visible." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="1FUO_j1X4_i" role="1TKVEl">
       <property role="IQ2nx" value="1944097450636888402" />
@@ -389,42 +390,34 @@
     <node concept="1TJgyj" id="1FUO_j1X4xF" role="1TKVEi">
       <property role="IQ2ns" value="1944097450636888171" />
       <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
     </node>
   </node>
   <node concept="1TIwiD" id="1FUO_j1X4xE">
     <property role="EcuMT" value="1944097450636888170" />
     <property role="3GE5qa" value="steps_types" />
-    <property role="TrG5h" value="WaitUntilElementIsNotVisible" />
-    <property role="34LRSv" value="Wait Until Element Is Not Visible" />
-    <property role="R4oN_" value="To wait element is not visible" />
+    <property role="TrG5h" value="Sleep" />
+    <property role="R4oN_" value="To wait the respective time in seconds" />
+    <property role="34LRSv" value="Sleep" />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="1FUO_j1X4_g" role="1TKVEl">
       <property role="IQ2nx" value="1944097450636888400" />
-      <property role="TrG5h" value="timeout" />
+      <property role="TrG5h" value="time" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="1FUO_j1X4xH" role="1TKVEi">
-      <property role="IQ2ns" value="1944097450636888173" />
-      <property role="20kJfa" value="component" />
-      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
     </node>
   </node>
   <node concept="1TIwiD" id="1FUO_j1X4zS">
     <property role="EcuMT" value="1944097450636888312" />
     <property role="3GE5qa" value="steps_types" />
-    <property role="TrG5h" value="WaitUntilElementIsEnabled" />
-    <property role="34LRSv" value="Wait Until Element Is Enabled" />
-    <property role="R4oN_" value="To wait a enable element" />
+    <property role="TrG5h" value="ClearText" />
+    <property role="34LRSv" value="Clear Text" />
+    <property role="R4oN_" value="Clears the text field identified by locator." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
-    <node concept="1TJgyi" id="1FUO_j1X4_e" role="1TKVEl">
-      <property role="IQ2nx" value="1944097450636888398" />
-      <property role="TrG5h" value="timeout" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="1TJgyj" id="1FUO_j1X4zT" role="1TKVEi">
       <property role="IQ2ns" value="1944097450636888313" />
       <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
     </node>
   </node>
@@ -433,7 +426,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="WaitUntilPageContains" />
     <property role="34LRSv" value="Wait Until Page Contains" />
-    <property role="R4oN_" value="Wait page contain respective text" />
+    <property role="R4oN_" value="Waits until text appears on current page." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="4WE1o4iaZvR" role="1TKVEl">
       <property role="IQ2nx" value="5704377929931945975" />
@@ -451,7 +444,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="WaitUntilPageContainsElement" />
     <property role="34LRSv" value="Wait Until Page Contains Element" />
-    <property role="R4oN_" value="Wait page contain respective Element" />
+    <property role="R4oN_" value="Waits until element specified with locator appears on current page." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyj" id="4WE1o4iaZzG" role="1TKVEi">
       <property role="IQ2ns" value="5704377929931946220" />
@@ -470,7 +463,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="WaitUntilPageDoesNotContain" />
     <property role="34LRSv" value="Wait Until Page Does Not Contain" />
-    <property role="R4oN_" value="Wait page not contain respective text" />
+    <property role="R4oN_" value="Waits until text disappears from current page." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="4WE1o4iaZ_J" role="1TKVEl">
       <property role="IQ2nx" value="5704377929931946351" />
@@ -488,7 +481,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="WaitUntilPageDoesNotContainElement" />
     <property role="34LRSv" value="Wait Until Page Does Not Contain Element" />
-    <property role="R4oN_" value="Wait page not contain a respective Element" />
+    <property role="R4oN_" value="Waits until element specified with locator disappears from current page." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyj" id="4WE1o4iaZAw" role="1TKVEi">
       <property role="IQ2ns" value="5704377929931946400" />
@@ -759,6 +752,29 @@
       <property role="20kJfa" value="component" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbwa0F">
+    <property role="EcuMT" value="7480654520863727659" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="TapByCoordinates" />
+    <property role="34LRSv" value="Tap By Coordinates" />
+    <property role="R4oN_" value="Tap element identified by coordinates" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbwa0H" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520863727661" />
+      <property role="TrG5h" value="count" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbwa0I" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520863727662" />
+      <property role="TrG5h" value="x" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbwa0L" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520863727665" />
+      <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
