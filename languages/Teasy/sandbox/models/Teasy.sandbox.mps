@@ -97,18 +97,29 @@
       <concept id="4838803795107766633" name="Teasy.structure.Flows" flags="ng" index="1y4Kc3">
         <child id="4838803795107766634" name="flow" index="1y4Kc0" />
       </concept>
+      <concept id="7480654520864977595" name="Teasy.structure.Scroll" flags="ng" index="1GgMOs">
+        <reference id="7480654520864977598" name="end" index="1GgMOp" />
+        <reference id="7480654520864977596" name="start" index="1GgMOr" />
+      </concept>
+      <concept id="7480654520865550541" name="Teasy.structure.ScrollDown" flags="ng" index="1GjeXE">
+        <reference id="7480654520865550542" name="component" index="1GjeXD" />
+      </concept>
       <concept id="7480654520863727659" name="Teasy.structure.TapByCoordinates" flags="ng" index="1Gk3Yc">
         <property id="7480654520863727662" name="x" index="1Gk3Y9" />
         <property id="7480654520863727661" name="count" index="1Gk3Ya" />
         <property id="7480654520863727665" name="y" index="1Gk3Ym" />
       </concept>
       <concept id="7480654520864250074" name="Teasy.structure.Swipe" flags="ng" index="1Gm0tX">
-        <property id="7480654520864250086" name="end_y" index="1Gm0t1" />
-        <property id="7480654520864250082" name="end_x" index="1Gm0t5" />
+        <property id="7480654520864250086" name="offset_y" index="1Gm0t1" />
+        <property id="7480654520864250082" name="offset_x" index="1Gm0t5" />
         <property id="7480654520864250091" name="duration" index="1Gm0tc" />
         <property id="7480654520864250079" name="start_y" index="1Gm0tS" />
         <property id="7480654520864250077" name="start_x" index="1Gm0tU" />
       </concept>
+      <concept id="7480654520865941221" name="Teasy.structure.ScrollUp" flags="ng" index="1GsJ_2">
+        <reference id="7480654520865941222" name="component" index="1GsJ_1" />
+      </concept>
+      <concept id="7480654520866140245" name="Teasy.structure.CapturePageScreenshot" flags="ng" index="1GtuZM" />
       <concept id="7480654520861589412" name="Teasy.structure.InputPassword" flags="ng" index="1GzQ03">
         <property id="7480654520861589413" name="password" index="1GzQ02" />
         <reference id="7480654520861589414" name="component" index="1GzQ01" />
@@ -334,6 +345,17 @@
         <property role="1Gm0t1" value="100" />
         <property role="1Gm0tc" value="1000" />
       </node>
+      <node concept="1GgMOs" id="6vgBUsb_EI2" role="2D3W_k">
+        <ref role="1GgMOr" node="6vgBUsbacoC" resolve="CpfField" />
+        <ref role="1GgMOp" node="6vgBUsbacoE" resolve="LoginButton" />
+      </node>
+      <node concept="1GjeXE" id="6vgBUsbBQh2" role="2D3W_k">
+        <ref role="1GjeXD" node="6vgBUsbacoE" resolve="LoginButton" />
+      </node>
+      <node concept="1GsJ_2" id="6vgBUsbDn1e" role="2D3W_k">
+        <ref role="1GsJ_1" node="6vgBUsbacoL" resolve="DataNotFound" />
+      </node>
+      <node concept="1GtuZM" id="6vgBUsbE7BH" role="2D3W_k" />
     </node>
   </node>
 </model>

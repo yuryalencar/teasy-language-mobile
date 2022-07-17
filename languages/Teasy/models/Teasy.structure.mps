@@ -796,12 +796,12 @@
     </node>
     <node concept="1TJgyi" id="6vgBUsby9zy" role="1TKVEl">
       <property role="IQ2nx" value="7480654520864250082" />
-      <property role="TrG5h" value="end_x" />
+      <property role="TrG5h" value="offset_x" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="6vgBUsby9zA" role="1TKVEl">
       <property role="IQ2nx" value="7480654520864250086" />
-      <property role="TrG5h" value="end_y" />
+      <property role="TrG5h" value="offset_y" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="6vgBUsby9zF" role="1TKVEl">
@@ -809,6 +809,62 @@
       <property role="TrG5h" value="duration" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsb$VaV">
+    <property role="EcuMT" value="7480654520864977595" />
+    <property role="TrG5h" value="Scroll" />
+    <property role="34LRSv" value="Scroll" />
+    <property role="R4oN_" value="Scrolls from one element to another" />
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyj" id="6vgBUsb$VaW" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520864977596" />
+      <property role="20kJfa" value="start" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+    <node concept="1TJgyj" id="6vgBUsb$VaY" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520864977598" />
+      <property role="20kJfa" value="end" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbB73d">
+    <property role="EcuMT" value="7480654520865550541" />
+    <property role="TrG5h" value="ScrollDown" />
+    <property role="34LRSv" value="Scroll Down" />
+    <property role="R4oN_" value="Scrolls down to component." />
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyj" id="6vgBUsbB73e" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520865550542" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbCAr_">
+    <property role="EcuMT" value="7480654520865941221" />
+    <property role="TrG5h" value="ScrollUp" />
+    <property role="34LRSv" value="Scroll Up" />
+    <property role="R4oN_" value="Scrolls up to component." />
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyj" id="6vgBUsbCArA" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520865941222" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbDn1l">
+    <property role="EcuMT" value="7480654520866140245" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="CapturePageScreenshot" />
+    <property role="34LRSv" value="Capture Page Screenshot" />
+    <property role="R4oN_" value="Takes a screenshot of the current page and embeds it into the log." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
   </node>
 </model>
 

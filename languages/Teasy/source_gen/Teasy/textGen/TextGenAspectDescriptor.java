@@ -25,6 +25,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
+      case LanguageConceptSwitch.CapturePageScreenshot:
+        return new CapturePageScreenshot_TextGen();
       case LanguageConceptSwitch.ClearText:
         return new ClearText_TextGen();
       case LanguageConceptSwitch.ClickAPoint:
@@ -73,8 +75,16 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new PageShouldNotContainText_TextGen();
       case LanguageConceptSwitch.PageToRegister:
         return new PageToRegister_TextGen();
+      case LanguageConceptSwitch.Scroll:
+        return new Scroll_TextGen();
+      case LanguageConceptSwitch.ScrollDown:
+        return new ScrollDown_TextGen();
+      case LanguageConceptSwitch.ScrollUp:
+        return new ScrollUp_TextGen();
       case LanguageConceptSwitch.Sleep:
         return new Sleep_TextGen();
+      case LanguageConceptSwitch.Swipe:
+        return new Swipe_TextGen();
       case LanguageConceptSwitch.Tap:
         return new Tap_TextGen();
       case LanguageConceptSwitch.TapByCoordinates:

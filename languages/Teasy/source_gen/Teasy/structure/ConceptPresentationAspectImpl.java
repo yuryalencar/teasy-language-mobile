@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_CapturePageScreenshot;
   private ConceptPresentation props_ClearText;
   private ConceptPresentation props_ClickAPoint;
   private ConceptPresentation props_ClickElement;
@@ -33,6 +34,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PageShouldNotContainElement;
   private ConceptPresentation props_PageShouldNotContainText;
   private ConceptPresentation props_PageToRegister;
+  private ConceptPresentation props_Scroll;
+  private ConceptPresentation props_ScrollDown;
+  private ConceptPresentation props_ScrollUp;
   private ConceptPresentation props_Sleep;
   private ConceptPresentation props_Step;
   private ConceptPresentation props_Swipe;
@@ -50,6 +54,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.CapturePageScreenshot:
+        if (props_CapturePageScreenshot == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Takes a screenshot of the current page and embeds it into the log.");
+          cpb.rawPresentation("Capture Page Screenshot");
+          props_CapturePageScreenshot = cpb.create();
+        }
+        return props_CapturePageScreenshot;
       case LanguageConceptSwitch.ClearText:
         if (props_ClearText == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -242,6 +254,30 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PageToRegister = cpb.create();
         }
         return props_PageToRegister;
+      case LanguageConceptSwitch.Scroll:
+        if (props_Scroll == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Scrolls from one element to another");
+          cpb.rawPresentation("Scroll");
+          props_Scroll = cpb.create();
+        }
+        return props_Scroll;
+      case LanguageConceptSwitch.ScrollDown:
+        if (props_ScrollDown == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Scrolls down to component.");
+          cpb.rawPresentation("Scroll Down");
+          props_ScrollDown = cpb.create();
+        }
+        return props_ScrollDown;
+      case LanguageConceptSwitch.ScrollUp:
+        if (props_ScrollUp == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Scrolls up to component.");
+          cpb.rawPresentation("Scroll Up");
+          props_ScrollUp = cpb.create();
+        }
+        return props_ScrollUp;
       case LanguageConceptSwitch.Sleep:
         if (props_Sleep == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

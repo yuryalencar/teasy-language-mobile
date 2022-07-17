@@ -42,4 +42,8 @@ TAPS
     Tap    ${None}    x_offset=2.12    y_offset=21321.21    count=3
 
 EXTRA COMMANDS 
-<!TextGen not found for 'Teasy.structure.Step'!>
+    Swipe    500    400    100    100    duration=1000
+    Scroll    ${CpfField}    ${LoginButton}
+    Scroll Down    ${LoginButton}
+    Scroll Up    ${DataNotFound}
+

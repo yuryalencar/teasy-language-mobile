@@ -16,6 +16,7 @@ import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptCapturePageScreenshot = createDescriptorForCapturePageScreenshot();
   /*package*/ final ConceptDescriptor myConceptClearText = createDescriptorForClearText();
   /*package*/ final ConceptDescriptor myConceptClickAPoint = createDescriptorForClickAPoint();
   /*package*/ final ConceptDescriptor myConceptClickElement = createDescriptorForClickElement();
@@ -40,6 +41,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPageShouldNotContainElement = createDescriptorForPageShouldNotContainElement();
   /*package*/ final ConceptDescriptor myConceptPageShouldNotContainText = createDescriptorForPageShouldNotContainText();
   /*package*/ final ConceptDescriptor myConceptPageToRegister = createDescriptorForPageToRegister();
+  /*package*/ final ConceptDescriptor myConceptScroll = createDescriptorForScroll();
+  /*package*/ final ConceptDescriptor myConceptScrollDown = createDescriptorForScrollDown();
+  /*package*/ final ConceptDescriptor myConceptScrollUp = createDescriptorForScrollUp();
   /*package*/ final ConceptDescriptor myConceptSleep = createDescriptorForSleep();
   /*package*/ final ConceptDescriptor myConceptStep = createDescriptorForStep();
   /*package*/ final ConceptDescriptor myConceptSwipe = createDescriptorForSwipe();
@@ -69,13 +73,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClearText, myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputPassword, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContainElement, myConceptPageShouldContainText, myConceptPageShouldNotContainElement, myConceptPageShouldNotContainText, myConceptPageToRegister, myConceptSleep, myConceptStep, myConceptSwipe, myConceptTap, myConceptTapByCoordinates, myConceptTextShouldBeVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
+    return Arrays.asList(myConceptCapturePageScreenshot, myConceptClearText, myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputPassword, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContainElement, myConceptPageShouldContainText, myConceptPageShouldNotContainElement, myConceptPageShouldNotContainText, myConceptPageToRegister, myConceptScroll, myConceptScrollDown, myConceptScrollUp, myConceptSleep, myConceptStep, myConceptSwipe, myConceptTap, myConceptTapByCoordinates, myConceptTextShouldBeVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.CapturePageScreenshot:
+        return myConceptCapturePageScreenshot;
       case LanguageConceptSwitch.ClearText:
         return myConceptClearText;
       case LanguageConceptSwitch.ClickAPoint:
@@ -124,6 +130,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPageShouldNotContainText;
       case LanguageConceptSwitch.PageToRegister:
         return myConceptPageToRegister;
+      case LanguageConceptSwitch.Scroll:
+        return myConceptScroll;
+      case LanguageConceptSwitch.ScrollDown:
+        return myConceptScrollDown;
+      case LanguageConceptSwitch.ScrollUp:
+        return myConceptScrollUp;
       case LanguageConceptSwitch.Sleep:
         return myConceptSleep;
       case LanguageConceptSwitch.Step:
@@ -160,6 +172,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForCapturePageScreenshot() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "CapturePageScreenshot", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70ba57055L);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520866140245");
+    b.version(3);
+    b.alias("Capture Page Screenshot");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForClearText() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ClearText", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f448f8L);
     b.class_(false, false, false);
@@ -421,6 +443,40 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("PageRegister");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForScroll() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "Scroll", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b93b2bbL);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520864977595");
+    b.version(3);
+    b.associate("start", 0x67d09fa70b93b2bcL).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e118846bL).optional(false).origin("7480654520864977596").done();
+    b.associate("end", 0x67d09fa70b93b2beL).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e118846bL).optional(false).origin("7480654520864977598").done();
+    b.alias("Scroll");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForScrollDown() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ScrollDown", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b9c70cdL);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520865550541");
+    b.version(3);
+    b.associate("component", 0x67d09fa70b9c70ceL).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e118846bL).optional(false).origin("7480654520865550542").done();
+    b.alias("Scroll Down");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForScrollUp() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ScrollUp", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70ba266e5L);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520865941221");
+    b.version(3);
+    b.associate("component", 0x67d09fa70ba266e6L).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e118846bL).optional(false).origin("7480654520865941222").done();
+    b.alias("Scroll Up");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForSleep() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "Sleep", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f4486aL);
     b.class_(false, false, false);
@@ -449,8 +505,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.property("start_x", 0x67d09fa70b8898ddL).type(PrimitiveTypeId.STRING).origin("7480654520864250077").done();
     b.property("start_y", 0x67d09fa70b8898dfL).type(PrimitiveTypeId.STRING).origin("7480654520864250079").done();
-    b.property("end_x", 0x67d09fa70b8898e2L).type(PrimitiveTypeId.STRING).origin("7480654520864250082").done();
-    b.property("end_y", 0x67d09fa70b8898e6L).type(PrimitiveTypeId.STRING).origin("7480654520864250086").done();
+    b.property("offset_x", 0x67d09fa70b8898e2L).type(PrimitiveTypeId.STRING).origin("7480654520864250082").done();
+    b.property("offset_y", 0x67d09fa70b8898e6L).type(PrimitiveTypeId.STRING).origin("7480654520864250086").done();
     b.property("duration", 0x67d09fa70b8898ebL).type(PrimitiveTypeId.INTEGER).origin("7480654520864250091").done();
     b.alias("Swipe");
     return b.create();
