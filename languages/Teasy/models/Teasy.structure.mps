@@ -247,17 +247,12 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="InputText" />
     <property role="34LRSv" value="Input Text" />
-    <property role="R4oN_" value="Insertion of text in input element in Web Page.." />
+    <property role="R4oN_" value="Types the given text into text field identified by locator." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="2AKZZM0LVlM" role="1TKVEl">
       <property role="IQ2nx" value="3004182411413534066" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="1FUO_j1V9sD" role="1TKVEl">
-      <property role="IQ2nx" value="1944097450636384041" />
-      <property role="TrG5h" value="clear" />
-      <ref role="AX2Wp" node="6vgBUsbd$Sa" resolve="StringBoolean" />
     </node>
     <node concept="1TJgyj" id="2AKZZM0LVlK" role="1TKVEi">
       <property role="IQ2ns" value="3004182411413534064" />
@@ -745,6 +740,25 @@
       <property role="IQ2nx" value="7480654520860444860" />
       <property role="TrG5h" value="exact_match" />
       <ref role="AX2Wp" node="6vgBUsbd$Sa" resolve="StringBoolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbnZY$">
+    <property role="EcuMT" value="7480654520861589412" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="InputPassword" />
+    <property role="34LRSv" value="Input Password" />
+    <property role="R4oN_" value="Types the given password into text field identified by locator." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbnZY_" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520861589413" />
+      <property role="TrG5h" value="password" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6vgBUsbnZYA" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520861589414" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
     </node>
   </node>
 </model>

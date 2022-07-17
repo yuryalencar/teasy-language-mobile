@@ -8,8 +8,8 @@ Resource            ../components/components.robot
 
 *** Keywords ***
 Alice fills form with invalid data 
-    Input Text    ${CpfField}    00000000010    clear=True
-    Input Text    ${PasswordField}    password    clear=True
+    Input Text    ${CpfField}    000000000-00
+    Input Text    ${PasswordField}    password
 
 Alice clicks to Login 
     Click Element    ${LoginButton}

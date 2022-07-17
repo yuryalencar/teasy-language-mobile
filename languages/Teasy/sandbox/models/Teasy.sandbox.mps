@@ -27,7 +27,6 @@
       </concept>
       <concept id="3004182411413534063" name="Teasy.structure.InputText" flags="ng" index="2DtOEj">
         <property id="3004182411413534066" name="text" index="2DtOEe" />
-        <property id="1944097450636384041" name="clear" index="3r5$lX" />
         <reference id="3004182411413534064" name="component" index="2DtOEc" />
       </concept>
       <concept id="5416749529549730776" name="Teasy.structure.PageToRegister" flags="ng" index="LfPGB">
@@ -67,6 +66,10 @@
       </concept>
       <concept id="4838803795107766633" name="Teasy.structure.Flows" flags="ng" index="1y4Kc3">
         <child id="4838803795107766634" name="flow" index="1y4Kc0" />
+      </concept>
+      <concept id="7480654520861589412" name="Teasy.structure.InputPassword" flags="ng" index="1GzQ03">
+        <property id="7480654520861589413" name="password" index="1GzQ02" />
+        <reference id="7480654520861589414" name="component" index="1GzQ01" />
       </concept>
       <concept id="7480654520859967379" name="Teasy.structure.ExecuteScript" flags="ng" index="1G_U0O">
         <property id="7480654520859967380" name="function" index="1G_U0N" />
@@ -135,14 +138,12 @@
     <property role="TrG5h" value="MySampleLoginPage" />
     <node concept="2D3W_x" id="6vgBUsbaIvf" role="2D3W_o">
       <property role="TrG5h" value="Alice fills form with invalid data" />
-      <node concept="2DtOEj" id="6vgBUsbaIvr" role="2D3W_k">
-        <property role="2DtOEe" value="00000000010" />
-        <property role="3r5$lX" value="6vgBUsbd$Sc/True" />
+      <node concept="2DtOEj" id="6vgBUsbnZYq" role="2D3W_k">
+        <property role="2DtOEe" value="000000000-00" />
         <ref role="2DtOEc" node="6vgBUsbacoC" resolve="CpfField" />
       </node>
-      <node concept="2DtOEj" id="6vgBUsbaIvz" role="2D3W_k">
+      <node concept="2DtOEj" id="6vgBUsbnZYw" role="2D3W_k">
         <property role="2DtOEe" value="password" />
-        <property role="3r5$lX" value="6vgBUsbd$Sc/True" />
         <ref role="2DtOEc" node="6vgBUsbacoH" resolve="PasswordField" />
       </node>
     </node>
@@ -228,6 +229,17 @@
       </node>
       <node concept="3r3IrS" id="6vgBUsbmKhH" role="2D3W_k">
         <ref role="3r3IrT" node="6vgBUsbacoL" resolve="DataNotFound" />
+      </node>
+    </node>
+    <node concept="2D3W_x" id="6vgBUsbnZXY" role="2D3W_o">
+      <property role="TrG5h" value="INPUTS" />
+      <node concept="2DtOEj" id="6vgBUsbnZYk" role="2D3W_k">
+        <property role="2DtOEe" value="000000000-00" />
+        <ref role="2DtOEc" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1GzQ03" id="6vgBUsboDj4" role="2D3W_k">
+        <property role="1GzQ02" value="STRONG.PASSWORD.COM" />
+        <ref role="1GzQ01" node="6vgBUsbacoH" resolve="PasswordField" />
       </node>
     </node>
   </node>

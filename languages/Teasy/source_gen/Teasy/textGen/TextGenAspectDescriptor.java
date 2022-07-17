@@ -51,6 +51,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Flows_TextGen();
       case LanguageConceptSwitch.Hooks:
         return new Hooks_TextGen();
+      case LanguageConceptSwitch.InputPassword:
+        return new InputPassword_TextGen();
       case LanguageConceptSwitch.InputText:
         return new InputText_TextGen();
       case LanguageConceptSwitch.Keyword:

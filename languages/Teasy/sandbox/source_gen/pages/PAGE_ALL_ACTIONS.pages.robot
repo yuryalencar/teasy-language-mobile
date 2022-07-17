@@ -20,6 +20,10 @@ EXECUTES
 SHOULD BE 
     Text Should Be Visible    Sample    exact_match=True
     Page Should Contain Text    Sample
+    Page Should Not Contain Text    Sampl21
     Page Should Contain Element    ${CpfField}
     Page Should Not Contain Element    ${DataNotFound}
+
+INPUTS 
+    Input Text    ${CpfField}    000000000-00
 

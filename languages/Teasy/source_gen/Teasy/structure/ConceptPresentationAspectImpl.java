@@ -22,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FlowItem;
   private ConceptPresentation props_Flows;
   private ConceptPresentation props_Hooks;
+  private ConceptPresentation props_InputPassword;
   private ConceptPresentation props_InputText;
   private ConceptPresentation props_Keyword;
   private ConceptPresentation props_Page;
@@ -151,10 +152,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Hooks = cpb.create();
         }
         return props_Hooks;
+      case LanguageConceptSwitch.InputPassword:
+        if (props_InputPassword == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Types the given password into text field identified by locator.");
+          cpb.rawPresentation("Input Password");
+          props_InputPassword = cpb.create();
+        }
+        return props_InputPassword;
       case LanguageConceptSwitch.InputText:
         if (props_InputText == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Insertion of text in input element in Web Page..");
+          cpb.shortDesc("Types the given text into text field identified by locator.");
           cpb.rawPresentation("Input Text");
           props_InputText = cpb.create();
         }

@@ -51,7 +51,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -1097,23 +1096,8 @@
               </node>
             </node>
           </node>
-          <node concept="la8eA" id="3PbGDxUaxXN" role="lcghm">
-            <property role="lacIc" value="    clear=" />
-          </node>
-          <node concept="l9hG8" id="3PbGDxUayc$" role="lcghm">
-            <node concept="2OqwBi" id="6vgBUsbd_xb" role="lb14g">
-              <node concept="2OqwBi" id="6vgBUsbd_aY" role="2Oq$k0">
-                <node concept="117lpO" id="6vgBUsbd_4r" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6vgBUsbd_jZ" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:1FUO_j1V9sD" resolve="clear" />
-                </node>
-              </node>
-              <node concept="1XCIdh" id="6vgBUsbd_D6" role="2OqNvi" />
-            </node>
-          </node>
           <node concept="l8MVK" id="3PbGDxUawJP" role="lcghm" />
         </node>
-        <node concept="3clFbH" id="3PbGDxUaw$x" role="3cqZAp" />
       </node>
     </node>
   </node>
@@ -2171,6 +2155,44 @@
             </node>
           </node>
           <node concept="l8MVK" id="6vgBUsbjCBw" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbnZZG">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbnZY$" resolve="InputPassword" />
+    <node concept="11bSqf" id="6vgBUsbnZZH" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbnZZI" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbo059" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbo05a" role="lcghm">
+            <property role="lacIc" value="    Input Password    ${" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbo05b" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbo05c" role="lb14g">
+              <node concept="3TrcHB" id="6vgBUsbo05d" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+              <node concept="2OqwBi" id="6vgBUsbo05e" role="2Oq$k0">
+                <node concept="3TrEf2" id="6vgBUsbo05f" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbnZYA" resolve="component" />
+                </node>
+                <node concept="117lpO" id="6vgBUsbo05g" role="2Oq$k0" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbo05h" role="lcghm">
+            <property role="lacIc" value="}    " />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbo05i" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbo05j" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbo05k" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbo05l" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbnZY_" resolve="password" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="6vgBUsbo05m" role="lcghm" />
         </node>
       </node>
     </node>
