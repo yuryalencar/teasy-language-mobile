@@ -203,8 +203,8 @@
     <property role="1GRvdO" value="http://localhost:4723/wd/hub" />
     <property role="22qmr5" value="30" />
     <property role="1GRvd1" value="emulator-5554" />
-    <property role="1GRvdn" value="br.com.condoconta.bank.syndic.hom" />
-    <property role="1GRvds" value="br.com.condoconta.bank.syndic.MainActivity" />
+    <property role="1GRvdn" value="br.com.teasy.solutions.app.hom" />
+    <property role="1GRvds" value="br.com.teasy.solutions.app.MainActivity" />
     <property role="1GW6p7" value="app-hom-release" />
   </node>
   <node concept="2D3W_t" id="6vgBUsbaIve">
