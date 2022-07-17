@@ -250,8 +250,40 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F0ifn" id="6vgBUsb8fBD" role="3EZMnx">
+        <property role="3F0ifm" value="YOUR APK FILENAME:" />
+        <node concept="pVoyu" id="6vgBUsb8fBE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsb8fBF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="6vgBUsb8fBG" role="3F10Kt" />
+        <node concept="VechU" id="6vgBUsb8fBH" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+          <node concept="1iSF2X" id="6vgBUsb8fBI" role="VblUZ">
+            <property role="1iTho6" value="972D35" />
+          </node>
+        </node>
+        <node concept="pVoyu" id="6vgBUsb8fBJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsb8fBK" role="3EZMnx">
+        <property role="1$x2rV" value="Insert here your apk filename (ex.: exampleApkName)" />
+        <ref role="1NtTu8" to="57va:6vgBUsb8fBw" resolve="apk_name" />
+        <node concept="Vb9p2" id="6vgBUsb8fBL" role="3F10Kt">
+          <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsb8fBM" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+          <node concept="1iSF2X" id="6vgBUsb8fBN" role="VblUZ">
+            <property role="1iTho6" value="2AA198" />
+          </node>
+        </node>
+      </node>
       <node concept="3F0ifn" id="7QZy5t8jmSS" role="3EZMnx">
-        <property role="3F0ifm" value="INSERT BROWSER TO RUN TESTS:" />
+        <property role="3F0ifm" value="YOUR APPIUM SERVER:" />
         <node concept="pVoyu" id="7QZy5t8jmT0" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -270,8 +302,8 @@
         </node>
       </node>
       <node concept="3F0A7n" id="7QZy5t8jmTd" role="3EZMnx">
-        <property role="1$x2rV" value="Choose Browser" />
-        <ref role="1NtTu8" to="57va:6dW_Ovx5v5M" resolve="browser" />
+        <property role="1$x2rV" value="Insert here your appium server (ex.: http://localhost:4723/wd/hub)" />
+        <ref role="1NtTu8" to="57va:6vgBUsb3mNj" resolve="appium_server" />
         <node concept="Vb9p2" id="7QZy5t8jmYr" role="3F10Kt">
           <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
         </node>
@@ -283,7 +315,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7QZy5t8jmTQ" role="3EZMnx">
-        <property role="3F0ifm" value="INSERT MAX TIME TO WAIT ELEMENT (SECONDS):" />
+        <property role="3F0ifm" value="MAX TIME TO WAIT ELEMENT (SECONDS):" />
         <node concept="pVoyu" id="4cASACxhAnr" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -315,7 +347,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7QZy5t8jmUJ" role="3EZMnx">
-        <property role="3F0ifm" value="MAX AMOUNT TEST TO GENERATE:" />
+        <property role="3F0ifm" value="YOUR PLATFORM NAME:" />
         <node concept="pVoyu" id="4cASACxhAnB" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -334,8 +366,8 @@
         </node>
       </node>
       <node concept="3F0A7n" id="7QZy5t8jmUj" role="3EZMnx">
-        <property role="1$x2rV" value="Insert a amount (ex: 300)" />
-        <ref role="1NtTu8" to="57va:6dW_Ovx5v66" resolve="max_test_to_generate" />
+        <property role="1$x2rV" value="Select platform to run your tests (in this version teasy supports only Android platform)" />
+        <ref role="1NtTu8" to="57va:6vgBUsb3mNr" resolve="platform_name" />
         <node concept="Vb9p2" id="4cASACxhAmM" role="3F10Kt">
           <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
         </node>
@@ -347,7 +379,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7QZy5t8jmVS" role="3EZMnx">
-        <property role="3F0ifm" value="URL TO ROOT PAGE:" />
+        <property role="3F0ifm" value="YOUR DEVICE NAME:" />
         <node concept="pVoyu" id="4cASACxhAnN" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -366,8 +398,8 @@
         </node>
       </node>
       <node concept="3F0A7n" id="7QZy5t8jmVk" role="3EZMnx">
-        <property role="1$x2rV" value="Insert a url (ex:https://github.com/yuryalencar/Teasy)" />
-        <ref role="1NtTu8" to="57va:6dW_Ovx5v5Z" resolve="url_root_page" />
+        <property role="1$x2rV" value="Insert your device name configured to run your tests (ex:emulator-1234)" />
+        <ref role="1NtTu8" to="57va:6vgBUsb3mNA" resolve="device_name" />
         <node concept="Vb9p2" id="4cASACxhAmS" role="3F10Kt">
           <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
         </node>
@@ -378,75 +410,98 @@
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="6LGi2$_dINQ" role="3EZMnx">
-        <property role="3F0ifm" value="" />
-        <node concept="pVoyu" id="6LGi2$_dIO$" role="3F10Kt">
+      <node concept="3F0ifn" id="6vgBUsb3mUI" role="3EZMnx">
+        <property role="3F0ifm" value="YOUR APPLICATON PACKAGE:" />
+        <node concept="pVoyu" id="6vgBUsb3mUJ" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="lj46D" id="6LGi2$_dIOA" role="3F10Kt">
+        <node concept="lj46D" id="6vgBUsb3mUK" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-      </node>
-      <node concept="3F0ifn" id="6LGi2$_dIPq" role="3EZMnx">
-        <property role="3F0ifm" value="BROWSER CUSTOMER WIDTH:" />
-        <node concept="pVoyu" id="4cASACxhAnZ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="4cASACxhAo0" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="Vb9p2" id="4cASACxhAo1" role="3F10Kt" />
-        <node concept="VechU" id="4cASACxhAo2" role="3F10Kt">
+        <node concept="Vb9p2" id="6vgBUsb3mUL" role="3F10Kt" />
+        <node concept="VechU" id="6vgBUsb3mUM" role="3F10Kt">
           <property role="Vb096" value="g1_eI4o/darkBlue" />
-          <node concept="1iSF2X" id="4cASACxhAo3" role="VblUZ">
+          <node concept="1iSF2X" id="6vgBUsb3mUN" role="VblUZ">
             <property role="1iTho6" value="972D35" />
           </node>
         </node>
-        <node concept="pVoyu" id="4cASACxhAo4" role="3F10Kt">
+        <node concept="pVoyu" id="6vgBUsb3mUO" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="6LGi2$_dIQQ" role="3EZMnx">
-        <property role="1$x2rV" value="Insert resolution width (ex: 1080)" />
-        <ref role="1NtTu8" to="57va:6LGi2$_dIMT" resolve="screen_width" />
-        <node concept="Vb9p2" id="4cASACxhAmY" role="3F10Kt">
+      <node concept="3F0A7n" id="6vgBUsb3mUP" role="3EZMnx">
+        <property role="1$x2rV" value="Insert Application Package of your application (ex:com.example.android.myApp)" />
+        <ref role="1NtTu8" to="57va:6vgBUsb3mNK" resolve="app_package" />
+        <node concept="Vb9p2" id="6vgBUsb3mUQ" role="3F10Kt">
           <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
         </node>
-        <node concept="VechU" id="4cASACxhAmZ" role="3F10Kt">
+        <node concept="VechU" id="6vgBUsb3mUR" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
-          <node concept="1iSF2X" id="4cASACxhAn0" role="VblUZ">
+          <node concept="1iSF2X" id="6vgBUsb3mUS" role="VblUZ">
             <property role="1iTho6" value="2AA198" />
           </node>
         </node>
       </node>
-      <node concept="3F0ifn" id="6LGi2$_dISp" role="3EZMnx">
-        <property role="3F0ifm" value="BROWSER CUSTOMER HEIGHT:" />
-        <node concept="pVoyu" id="4cASACxhAob" role="3F10Kt">
+      <node concept="3F0ifn" id="6vgBUsb3mWh" role="3EZMnx">
+        <property role="3F0ifm" value="YOUR APPLICATION ACTIVITY:" />
+        <node concept="pVoyu" id="6vgBUsb3mWi" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="lj46D" id="4cASACxhAoc" role="3F10Kt">
+        <node concept="lj46D" id="6vgBUsb3mWj" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="Vb9p2" id="4cASACxhAod" role="3F10Kt" />
-        <node concept="VechU" id="4cASACxhAoe" role="3F10Kt">
+        <node concept="Vb9p2" id="6vgBUsb3mWk" role="3F10Kt" />
+        <node concept="VechU" id="6vgBUsb3mWl" role="3F10Kt">
           <property role="Vb096" value="g1_eI4o/darkBlue" />
-          <node concept="1iSF2X" id="4cASACxhAof" role="VblUZ">
+          <node concept="1iSF2X" id="6vgBUsb3mWm" role="VblUZ">
             <property role="1iTho6" value="972D35" />
           </node>
         </node>
-        <node concept="pVoyu" id="4cASACxhAog" role="3F10Kt">
+        <node concept="pVoyu" id="6vgBUsb3mWn" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="6LGi2$_dITV" role="3EZMnx">
-        <property role="1$x2rV" value="Insert resolution width (ex: 720)" />
-        <ref role="1NtTu8" to="57va:6LGi2$_dIN0" resolve="screen_height" />
-        <node concept="Vb9p2" id="4cASACxhAn4" role="3F10Kt">
+      <node concept="3F0A7n" id="6vgBUsb3mWo" role="3EZMnx">
+        <property role="1$x2rV" value="Insert Activity name of your application (ex:com.example.android.myApp.MainActivity)" />
+        <ref role="1NtTu8" to="57va:6vgBUsb3mNV" resolve="app_activity" />
+        <node concept="Vb9p2" id="6vgBUsb3mWp" role="3F10Kt">
           <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
         </node>
-        <node concept="VechU" id="4cASACxhAn5" role="3F10Kt">
+        <node concept="VechU" id="6vgBUsb3mWq" role="3F10Kt">
           <property role="Vb096" value="g1_qRwE/darkGreen" />
-          <node concept="1iSF2X" id="4cASACxhAn6" role="VblUZ">
+          <node concept="1iSF2X" id="6vgBUsb3mWr" role="VblUZ">
+            <property role="1iTho6" value="2AA198" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsb3mXZ" role="3EZMnx">
+        <property role="3F0ifm" value="YOUR AUTOMATOR NAME" />
+        <node concept="pVoyu" id="6vgBUsb3mY0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsb3mY1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="6vgBUsb3mY2" role="3F10Kt" />
+        <node concept="VechU" id="6vgBUsb3mY3" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+          <node concept="1iSF2X" id="6vgBUsb3mY4" role="VblUZ">
+            <property role="1iTho6" value="972D35" />
+          </node>
+        </node>
+        <node concept="pVoyu" id="6vgBUsb3mY5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsb3mY6" role="3EZMnx">
+        <property role="1$x2rV" value="Insert your automator name (this version the teasy supports only UiAutomator2)" />
+        <ref role="1NtTu8" to="57va:6vgBUsb3mO7" resolve="automation_name" />
+        <node concept="Vb9p2" id="6vgBUsb3mY7" role="3F10Kt">
+          <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsb3mY8" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+          <node concept="1iSF2X" id="6vgBUsb3mY9" role="VblUZ">
             <property role="1iTho6" value="2AA198" />
           </node>
         </node>

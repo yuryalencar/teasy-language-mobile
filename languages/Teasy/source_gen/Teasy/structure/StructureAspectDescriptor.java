@@ -43,7 +43,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageContainsElement = createDescriptorForWaitUntilPageContainsElement();
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageDoesNotContain = createDescriptorForWaitUntilPageDoesNotContain();
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageDoesNotContainElement = createDescriptorForWaitUntilPageDoesNotContainElement();
+  /*package*/ final EnumerationDescriptor myEnumerationautomationNames = new EnumerationDescriptor_automationNames();
   /*package*/ final EnumerationDescriptor myEnumerationbrowsers = new EnumerationDescriptor_browsers();
+  /*package*/ final EnumerationDescriptor myEnumerationplataforms = new EnumerationDescriptor_plataforms();
   /*package*/ final EnumerationDescriptor myEnumerationselectors = new EnumerationDescriptor_selectors();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -127,7 +129,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationbrowsers, myEnumerationselectors);
+    return Arrays.asList(myEnumerationautomationNames, myEnumerationbrowsers, myEnumerationplataforms, myEnumerationselectors);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -170,12 +172,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7168771041841770865");
     b.version(3);
-    b.property("browser", 0x637c9747e115f172L).type(MetaIdFactory.dataTypeId(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f174L)).origin("7168771041841770866").done();
-    b.property("url_root_page", 0x637c9747e115f17fL).type(PrimitiveTypeId.STRING).origin("7168771041841770879").done();
+    b.property("apk_name", 0x67d09fa70b20f9e0L).type(PrimitiveTypeId.STRING).origin("7480654520857459168").done();
     b.property("time_to_wait", 0x637c9747e115f182L).type(PrimitiveTypeId.INTEGER).origin("7168771041841770882").done();
-    b.property("max_test_to_generate", 0x637c9747e115f186L).type(PrimitiveTypeId.INTEGER).origin("7168771041841770886").done();
-    b.property("screen_width", 0x6c6c48292536ecb9L).type(PrimitiveTypeId.INTEGER).origin("7812698795136183481").done();
-    b.property("screen_height", 0x6c6c48292536ecc0L).type(PrimitiveTypeId.INTEGER).origin("7812698795136183488").done();
+    b.property("appium_server", 0x67d09fa70b0d6cd3L).type(PrimitiveTypeId.STRING).origin("7480654520856177875").done();
+    b.property("platform_name", 0x67d09fa70b0d6cdbL).type(MetaIdFactory.dataTypeId(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b0d6ce4L)).origin("7480654520856177883").done();
+    b.property("device_name", 0x67d09fa70b0d6ce6L).type(PrimitiveTypeId.STRING).origin("7480654520856177894").done();
+    b.property("app_package", 0x67d09fa70b0d6cf0L).type(PrimitiveTypeId.STRING).origin("7480654520856177904").done();
+    b.property("app_activity", 0x67d09fa70b0d6cfbL).type(PrimitiveTypeId.STRING).origin("7480654520856177915").done();
+    b.property("automation_name", 0x67d09fa70b0d6d07L).type(MetaIdFactory.dataTypeId(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b0d6d5bL)).origin("7480654520856177927").done();
     b.alias("Configuration");
     return b.create();
   }

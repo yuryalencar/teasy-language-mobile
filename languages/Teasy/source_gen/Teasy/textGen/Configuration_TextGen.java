@@ -5,8 +5,8 @@ package Teasy.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -30,32 +30,41 @@ public class Configuration_TextGen extends TextGenDescriptorBase {
     tgs.append("*** Variables ***");
     tgs.newLine();
     tgs.indent();
-    tgs.append("${BROWSER}            ");
-    tgs.append(SEnumOperations.getMemberPresentation(SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.browser$fJbH)));
+    tgs.append("${APPIUM_SERVER}      ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.appium_server$_JsN));
     tgs.newLine();
     tgs.append("${TIME_TO_WAIT}       ");
     tgs.append(Integer.toString(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.time_to_wait$fWMB)));
     tgs.newLine();
-    tgs.append("${MAX_TEST_TO_GEN}    ");
-    tgs.append(Integer.toString(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.max_test_to_generate$fXIF)));
+    tgs.append("${PLATFORM_NAME}      ");
+    tgs.append(SEnumOperations.getMemberPresentation(SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.platform_name$_Qgg)));
     tgs.newLine();
-    tgs.append("${BASE_URL}           ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.url_root_page$fRaf));
+    tgs.append("${DEVICE_NAME}        ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.device_name$_XKK));
     tgs.newLine();
-    tgs.append("${SCREEN_WIDTH}       ");
-    tgs.append(Integer.toString(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.screen_width$7DXt)));
+    tgs.append("${APP_PACKAGE}        ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.app_package$CtLq));
     tgs.newLine();
-    tgs.append("${SCREEN_HEIGHT}      ");
-    tgs.append(Integer.toString(SPropertyOperations.getInteger(ctx.getPrimaryInput(), PROPS.screen_height$7FA$)));
+    tgs.append("${APP_ACTIVITY}       ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.app_activity$C_hU));
+    tgs.newLine();
+    tgs.append("${AUTOMATION_NAME}    ");
+    tgs.append(SEnumOperations.getMemberPresentation(SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.automation_name$CH1r)));
+    tgs.newLine();
+    tgs.append("${APP_PATH}           ${CURDIR}/../resources/");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.apk_name$IhBE));
+    tgs.append(".apk");
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty browser$fJbH = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x637c9747e115f172L, "browser");
+    /*package*/ static final SProperty appium_server$_JsN = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x67d09fa70b0d6cd3L, "appium_server");
     /*package*/ static final SProperty time_to_wait$fWMB = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x637c9747e115f182L, "time_to_wait");
-    /*package*/ static final SProperty max_test_to_generate$fXIF = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x637c9747e115f186L, "max_test_to_generate");
-    /*package*/ static final SProperty url_root_page$fRaf = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x637c9747e115f17fL, "url_root_page");
-    /*package*/ static final SProperty screen_width$7DXt = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x6c6c48292536ecb9L, "screen_width");
-    /*package*/ static final SProperty screen_height$7FA$ = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x6c6c48292536ecc0L, "screen_height");
+    /*package*/ static final SProperty platform_name$_Qgg = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x67d09fa70b0d6cdbL, "platform_name");
+    /*package*/ static final SProperty device_name$_XKK = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x67d09fa70b0d6ce6L, "device_name");
+    /*package*/ static final SProperty app_package$CtLq = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x67d09fa70b0d6cf0L, "app_package");
+    /*package*/ static final SProperty app_activity$C_hU = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x67d09fa70b0d6cfbL, "app_activity");
+    /*package*/ static final SProperty automation_name$CH1r = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x67d09fa70b0d6d07L, "automation_name");
+    /*package*/ static final SProperty apk_name$IhBE = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e115f171L, 0x67d09fa70b20f9e0L, "apk_name");
   }
 }

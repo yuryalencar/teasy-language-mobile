@@ -12,11 +12,12 @@
         <property id="7168771041841939588" name="selector_value" index="22p1f3" />
       </concept>
       <concept id="7168771041841770865" name="Teasy.structure.Configuration" flags="ng" index="22qmoQ">
-        <property id="7168771041841770879" name="url_root_page" index="22qmoS" />
-        <property id="7168771041841770886" name="max_test_to_generate" index="22qmr1" />
         <property id="7168771041841770882" name="time_to_wait" index="22qmr5" />
-        <property id="7812698795136183481" name="screen_width" index="19mEig" />
-        <property id="7812698795136183488" name="screen_height" index="19mEjD" />
+        <property id="7480654520856177894" name="device_name" index="1GRvd1" />
+        <property id="7480654520856177904" name="app_package" index="1GRvdn" />
+        <property id="7480654520856177915" name="app_activity" index="1GRvds" />
+        <property id="7480654520856177875" name="appium_server" index="1GRvdO" />
+        <property id="7480654520857459168" name="apk_name" index="1GW6p7" />
       </concept>
       <concept id="3004182411412977313" name="Teasy.structure.Page" flags="ng" index="2D3W_t">
         <child id="3004182411412977316" name="keyword" index="2D3W_o" />
@@ -108,14 +109,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="22qmoQ" id="3BZt8PImQAz">
-    <property role="22qmr5" value="5" />
-    <property role="22qmr1" value="300" />
-    <property role="22qmoS" value="https://trello.com/login" />
-    <property role="19mEig" value="1080" />
-    <property role="19mEjD" value="720" />
-    <property role="3GE5qa" value="config" />
-  </node>
   <node concept="Pw_x_" id="3BZt8PImQA$">
     <property role="3GE5qa" value="components" />
     <node concept="22p1cG" id="4GGafXU4J_l" role="Pw_x$">
@@ -249,6 +242,15 @@
   </node>
   <node concept="1763Dw" id="3PbGDxUnA1_">
     <property role="3GE5qa" value="pages" />
+  </node>
+  <node concept="22qmoQ" id="6vgBUsb3X7$">
+    <property role="3GE5qa" value="config" />
+    <property role="1GRvdO" value="http://localhost:4723/wd/hub" />
+    <property role="22qmr5" value="30" />
+    <property role="1GRvd1" value="emulator-5554" />
+    <property role="1GRvdn" value="br.com.condoconta.bank.syndic.hom" />
+    <property role="1GRvds" value="br.com.condoconta.bank.syndic.MainActivity" />
+    <property role="1GW6p7" value="app-hom-release" />
   </node>
 </model>
 

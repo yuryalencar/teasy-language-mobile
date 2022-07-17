@@ -66,14 +66,9 @@
     <property role="34LRSv" value="Configuration" />
     <property role="R4oN_" value="Configuration for running tests" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6dW_Ovx5v5M" role="1TKVEl">
-      <property role="IQ2nx" value="7168771041841770866" />
-      <property role="TrG5h" value="browser" />
-      <ref role="AX2Wp" node="6dW_Ovx5v5O" resolve="browsers" />
-    </node>
-    <node concept="1TJgyi" id="6dW_Ovx5v5Z" role="1TKVEl">
-      <property role="IQ2nx" value="7168771041841770879" />
-      <property role="TrG5h" value="url_root_page" />
+    <node concept="1TJgyi" id="6vgBUsb8fBw" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520857459168" />
+      <property role="TrG5h" value="apk_name" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="6dW_Ovx5v62" role="1TKVEl">
@@ -81,20 +76,35 @@
       <property role="TrG5h" value="time_to_wait" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="6dW_Ovx5v66" role="1TKVEl">
-      <property role="IQ2nx" value="7168771041841770886" />
-      <property role="TrG5h" value="max_test_to_generate" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyi" id="6vgBUsb3mNj" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520856177875" />
+      <property role="TrG5h" value="appium_server" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="6LGi2$_dIMT" role="1TKVEl">
-      <property role="IQ2nx" value="7812698795136183481" />
-      <property role="TrG5h" value="screen_width" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyi" id="6vgBUsb3mNr" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520856177883" />
+      <property role="TrG5h" value="platform_name" />
+      <ref role="AX2Wp" node="6vgBUsb3mN$" resolve="plataforms" />
     </node>
-    <node concept="1TJgyi" id="6LGi2$_dIN0" role="1TKVEl">
-      <property role="IQ2nx" value="7812698795136183488" />
-      <property role="TrG5h" value="screen_height" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyi" id="6vgBUsb3mNA" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520856177894" />
+      <property role="TrG5h" value="device_name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsb3mNK" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520856177904" />
+      <property role="TrG5h" value="app_package" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsb3mNV" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520856177915" />
+      <property role="TrG5h" value="app_activity" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsb3mO7" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520856177927" />
+      <property role="TrG5h" value="automation_name" />
+      <ref role="AX2Wp" node="6vgBUsb3mPr" resolve="automationNames" />
     </node>
   </node>
   <node concept="25R3W" id="6dW_Ovx5v5O">
@@ -564,6 +574,51 @@
     <property role="34LRSv" value="Hooks" />
     <property role="R4oN_" value="Hooks configure your start and end tests" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="25R3W" id="6vgBUsb3mN$">
+    <property role="3F6X1D" value="7480654520856177892" />
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="plataforms" />
+    <ref role="1H5jkz" node="6vgBUsb3mN_" resolve="Android" />
+    <node concept="25R33" id="6vgBUsb3mN_" role="25R1y">
+      <property role="3tVfz5" value="7480654520856177893" />
+      <property role="TrG5h" value="Android" />
+    </node>
+    <node concept="25R33" id="6vgBUsb3mPJ" role="25R1y">
+      <property role="3tVfz5" value="7480654520856178031" />
+      <property role="TrG5h" value="iOS" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6vgBUsb3mPr">
+    <property role="3F6X1D" value="7480654520856178011" />
+    <property role="3GE5qa" value="config" />
+    <property role="TrG5h" value="automationNames" />
+    <ref role="1H5jkz" node="6vgBUsb3mPw" resolve="UiAutomator2" />
+    <node concept="25R33" id="6vgBUsb3mPs" role="25R1y">
+      <property role="3tVfz5" value="7480654520856178012" />
+      <property role="TrG5h" value="XCUITest" />
+      <property role="1L1pqM" value="XCUITest (iOS)" />
+    </node>
+    <node concept="25R33" id="6vgBUsb3mPt" role="25R1y">
+      <property role="3tVfz5" value="7480654520856178013" />
+      <property role="TrG5h" value="Instruments" />
+      <property role="1L1pqM" value="Instruments (iOS)" />
+    </node>
+    <node concept="25R33" id="6vgBUsb3mPw" role="25R1y">
+      <property role="3tVfz5" value="7480654520856178016" />
+      <property role="TrG5h" value="UiAutomator2" />
+      <property role="1L1pqM" value="UiAutomator2 (Android)" />
+    </node>
+    <node concept="25R33" id="6vgBUsb3mP$" role="25R1y">
+      <property role="3tVfz5" value="7480654520856178020" />
+      <property role="TrG5h" value="Espresso" />
+      <property role="1L1pqM" value="Espresso (Android)" />
+    </node>
+    <node concept="25R33" id="6vgBUsb3mPD" role="25R1y">
+      <property role="3tVfz5" value="7480654520856178025" />
+      <property role="TrG5h" value="UiAutomator1" />
+      <property role="1L1pqM" value="UiAutomator1 (Android)" />
+    </node>
   </node>
 </model>
 

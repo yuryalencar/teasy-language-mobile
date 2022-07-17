@@ -1478,16 +1478,13 @@
         </node>
         <node concept="lc7rE" id="4HtHGBKP4Lh" role="3cqZAp">
           <node concept="la8eA" id="4HtHGBKP4Lg" role="lcghm">
-            <property role="lacIc" value="${BROWSER}            " />
+            <property role="lacIc" value="${APPIUM_SERVER}      " />
           </node>
           <node concept="l9hG8" id="4HtHGBKP4Lo" role="lcghm">
-            <node concept="2OqwBi" id="4HtHGBKP4Ln" role="lb14g">
-              <node concept="1XCIdh" id="4HtHGBKP4Lm" role="2OqNvi" />
-              <node concept="2OqwBi" id="4HtHGBKP4Ll" role="2Oq$k0">
-                <node concept="3TrcHB" id="4HtHGBKP4Lk" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:6dW_Ovx5v5M" resolve="browser" />
-                </node>
-                <node concept="117lpO" id="4HtHGBKP4Lj" role="2Oq$k0" />
+            <node concept="2OqwBi" id="6vgBUsb9c6C" role="lb14g">
+              <node concept="117lpO" id="4HtHGBKP4Lj" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsb9c8j" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsb3mNj" resolve="appium_server" />
               </node>
             </node>
           </node>
@@ -1513,30 +1510,29 @@
         </node>
         <node concept="lc7rE" id="4HtHGBKP4Mo" role="3cqZAp">
           <node concept="la8eA" id="4HtHGBKP4Mn" role="lcghm">
-            <property role="lacIc" value="${MAX_TEST_TO_GEN}    " />
+            <property role="lacIc" value="${PLATFORM_NAME}      " />
           </node>
           <node concept="l9hG8" id="4HtHGBKP4Mu" role="lcghm">
-            <node concept="2YIFZM" id="4HtHGBKP4Mt" role="lb14g">
-              <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-              <node concept="2OqwBi" id="4HtHGBKP4Ms" role="37wK5m">
-                <node concept="3TrcHB" id="4HtHGBKP4Mr" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:6dW_Ovx5v66" resolve="max_test_to_generate" />
+            <node concept="2OqwBi" id="6vgBUsb9cLR" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsb9ct8" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsb9cn7" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6vgBUsb9c$N" role="2OqNvi">
+                  <ref role="3TsBF5" to="57va:6vgBUsb3mNr" resolve="platform_name" />
                 </node>
-                <node concept="117lpO" id="4HtHGBKP4Mq" role="2Oq$k0" />
               </node>
+              <node concept="1XCIdh" id="6vgBUsb9cWY" role="2OqNvi" />
             </node>
           </node>
           <node concept="l8MVK" id="4HtHGBKP4MJ" role="lcghm" />
         </node>
         <node concept="lc7rE" id="4HtHGBKP4MV" role="3cqZAp">
           <node concept="la8eA" id="4HtHGBKP4MU" role="lcghm">
-            <property role="lacIc" value="${BASE_URL}           " />
+            <property role="lacIc" value="${DEVICE_NAME}        " />
           </node>
           <node concept="l9hG8" id="4HtHGBKP4N0" role="lcghm">
             <node concept="2OqwBi" id="4HtHGBKP4MZ" role="lb14g">
               <node concept="3TrcHB" id="4HtHGBKP4MY" role="2OqNvi">
-                <ref role="3TsBF5" to="57va:6dW_Ovx5v5Z" resolve="url_root_page" />
+                <ref role="3TsBF5" to="57va:6vgBUsb3mNA" resolve="device_name" />
               </node>
               <node concept="117lpO" id="4HtHGBKP4MX" role="2Oq$k0" />
             </node>
@@ -1545,17 +1541,13 @@
         </node>
         <node concept="lc7rE" id="4HtHGBKP4NG" role="3cqZAp">
           <node concept="la8eA" id="4HtHGBKP4NF" role="lcghm">
-            <property role="lacIc" value="${SCREEN_WIDTH}       " />
+            <property role="lacIc" value="${APP_PACKAGE}        " />
           </node>
           <node concept="l9hG8" id="4HtHGBKP4NM" role="lcghm">
-            <node concept="2YIFZM" id="4HtHGBKP4NL" role="lb14g">
-              <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-              <node concept="2OqwBi" id="4HtHGBKP4NK" role="37wK5m">
-                <node concept="3TrcHB" id="4HtHGBKP4NJ" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:6LGi2$_dIMT" resolve="screen_width" />
-                </node>
-                <node concept="117lpO" id="4HtHGBKP4NI" role="2Oq$k0" />
+            <node concept="2OqwBi" id="6vgBUsb9dsW" role="lb14g">
+              <node concept="117lpO" id="6vgBUsb9dmV" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsb9dAN" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsb3mNK" resolve="app_package" />
               </node>
             </node>
           </node>
@@ -1563,21 +1555,51 @@
         </node>
         <node concept="lc7rE" id="4HtHGBKP4Of" role="3cqZAp">
           <node concept="la8eA" id="4HtHGBKP4Oe" role="lcghm">
-            <property role="lacIc" value="${SCREEN_HEIGHT}      " />
+            <property role="lacIc" value="${APP_ACTIVITY}       " />
           </node>
           <node concept="l9hG8" id="4HtHGBKP4Ol" role="lcghm">
-            <node concept="2YIFZM" id="4HtHGBKP4Ok" role="lb14g">
-              <ref role="37wK5l" to="wyt6:~Integer.toString(int)" resolve="toString" />
-              <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-              <node concept="2OqwBi" id="4HtHGBKP4Oj" role="37wK5m">
-                <node concept="3TrcHB" id="4HtHGBKP4Oi" role="2OqNvi">
-                  <ref role="3TsBF5" to="57va:6LGi2$_dIN0" resolve="screen_height" />
-                </node>
-                <node concept="117lpO" id="4HtHGBKP4Oh" role="2Oq$k0" />
+            <node concept="2OqwBi" id="6vgBUsb9dRi" role="lb14g">
+              <node concept="117lpO" id="6vgBUsb9dLh" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsb9e7H" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsb3mNV" resolve="app_activity" />
               </node>
             </node>
           </node>
           <node concept="l8MVK" id="3PbGDxUoQTV" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6vgBUsb9efq" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb9eje" role="lcghm">
+            <property role="lacIc" value="${AUTOMATION_NAME}    " />
+          </node>
+          <node concept="l9hG8" id="6vgBUsb9ep7" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsb9eO$" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsb9eww" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsb9eqv" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6vgBUsb9eDh" role="2OqNvi">
+                  <ref role="3TsBF5" to="57va:6vgBUsb3mO7" resolve="automation_name" />
+                </node>
+              </node>
+              <node concept="1XCIdh" id="6vgBUsb9f7I" role="2OqNvi" />
+            </node>
+          </node>
+          <node concept="l8MVK" id="6vgBUsb9fd6" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6vgBUsb9fq$" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb9fwH" role="lcghm">
+            <property role="lacIc" value="${APP_PATH}           ${CURDIR}/../resources/" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsb9f$P" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsb9fJz" role="lb14g">
+              <node concept="117lpO" id="6vgBUsb9fDy" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsb9fRe" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsb8fBw" resolve="apk_name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsb9fT9" role="lcghm">
+            <property role="lacIc" value=".apk" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb9fZu" role="lcghm" />
         </node>
       </node>
     </node>
@@ -1763,7 +1785,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="3PbGDxUkSzT">
-    <property role="3GE5qa" value="config" />
+    <property role="3GE5qa" value="core" />
     <ref role="WuzLi" to="57va:3PbGDxUkSzS" resolve="Hooks" />
     <node concept="11bSqf" id="3PbGDxUkSzU" role="11c4hB">
       <node concept="3clFbS" id="3PbGDxUkSzV" role="2VODD2">
@@ -1776,7 +1798,7 @@
         </node>
         <node concept="lc7rE" id="3PbGDxUkSTf" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUkSTg" role="lcghm">
-            <property role="lacIc" value="\nDocumentation       Global Hooks" />
+            <property role="lacIc" value="\nDocumentation       Global Hooks (Run appium with this arg &quot;--relaxed-security&quot;)" />
           </node>
           <node concept="l8MVK" id="3PbGDxUkSTh" role="lcghm" />
           <node concept="2BGw6n" id="3PbGDxUkSTi" role="lcghm" />
@@ -1798,14 +1820,14 @@
         </node>
         <node concept="lc7rE" id="3PbGDxUo8_D" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo8_E" role="lcghm">
-            <property role="lacIc" value="...                   we can use hooks to open the browser" />
+            <property role="lacIc" value="...                   we can use hooks to open the application" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo8_F" role="lcghm" />
           <node concept="2BGw6n" id="3PbGDxUo8_G" role="lcghm" />
         </node>
         <node concept="lc7rE" id="3PbGDxUo8As" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo8At" role="lcghm">
-            <property role="lacIc" value="...                   on the home page and close the browser at the end of the tests." />
+            <property role="lacIc" value="...                   and close the application at the end of the tests." />
           </node>
           <node concept="l8MVK" id="3PbGDxUo8Au" role="lcghm" />
           <node concept="2BGw6n" id="3PbGDxUo8Av" role="lcghm" />
@@ -1834,7 +1856,7 @@
         </node>
         <node concept="lc7rE" id="3PbGDxUo8M0" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo8NE" role="lcghm">
-            <property role="lacIc" value="Library               SeleniumLibrary" />
+            <property role="lacIc" value="Library               AppiumLibrary" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo8Pc" role="lcghm" />
         </node>
@@ -1854,32 +1876,75 @@
         </node>
         <node concept="lc7rE" id="3PbGDxUo8Up" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo8Vv" role="lcghm">
-            <property role="lacIc" value="Start Test" />
+            <property role="lacIc" value="ANDROID TEST SETUP" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo8Wz" role="lcghm" />
         </node>
         <node concept="lc7rE" id="3PbGDxUo9Ib" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo9Ic" role="lcghm">
-            <property role="lacIc" value="    Open Browser                  ${BASE_URL}        ${BROWSER}" />
+            <property role="lacIc" value="    Open Application    ${APPIUM_SERVER}" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo9Id" role="lcghm" />
         </node>
         <node concept="lc7rE" id="3PbGDxUo9MT" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo9MU" role="lcghm">
-            <property role="lacIc" value="    Set Window Size               ${SCREEN_WIDTH}    ${SCREEN_HEIGHT}" />
+            <property role="lacIc" value="    ...                 platformName=${PLATFORM_NAME}" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo9MV" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="6vgBUsb1xaw" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb1xax" role="lcghm">
+            <property role="lacIc" value="    ...                 deviceName=${DEVICE_NAME}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb1xay" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6vgBUsb1xc0" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb1xc1" role="lcghm">
+            <property role="lacIc" value="    ...                 appPackage=${APP_PACKAGE}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb1xc2" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6vgBUsb1xgz" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb1xg$" role="lcghm">
+            <property role="lacIc" value="    ...                 appActivity=${APP_ACTIVITY}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb1xg_" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6vgBUsb1xdz" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb1xd$" role="lcghm">
+            <property role="lacIc" value="    ...                 automationName=${AUTOMATION_NAME}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb1xd_" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="3PbGDxUo8XT" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo8ZC" role="lcghm">
-            <property role="lacIc" value="    Set Selenium Implicit Wait    ${TIME_TO_WAIT}" />
+            <property role="lacIc" value="    ...                 app=${APP_PATH}" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo9HR" role="lcghm" />
           <node concept="l8MVK" id="3PbGDxUo9S4" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="6vgBUsb1xkd" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb1xke" role="lcghm">
+            <property role="lacIc" value="ANDROID TEST SETUP" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb1xkf" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6vgBUsb1xkg" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb1xkh" role="lcghm">
+            <property role="lacIc" value="    Set Appium Timeout  ${TIME_TO_WAIT}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb1xki" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="6vgBUsb1xkj" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsb1xkk" role="lcghm">
+            <property role="lacIc" value="    Launch Application" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsb1xkl" role="lcghm" />
+          <node concept="l8MVK" id="6vgBUsb1xm_" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="3PbGDxUo9T_" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo9TA" role="lcghm">
-            <property role="lacIc" value="Finish Test" />
+            <property role="lacIc" value="END TEST" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo9TB" role="lcghm" />
         </node>
@@ -1891,7 +1956,7 @@
         </node>
         <node concept="lc7rE" id="3PbGDxUo9TF" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo9TG" role="lcghm">
-            <property role="lacIc" value="    Close Browser" />
+            <property role="lacIc" value="    Quit Application" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo9TH" role="lcghm" />
         </node>
