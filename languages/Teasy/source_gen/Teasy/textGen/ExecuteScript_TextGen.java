@@ -9,16 +9,16 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class ExecuteJavascript_TextGen extends TextGenDescriptorBase {
+public class ExecuteScript_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("    Execute Javascript    ");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.function$9UQd));
+    tgs.append("    Execute Script    ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.function$sJB2));
     tgs.newLine();
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty function$9UQd = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f432fbL, 0x1afad254c1f432fcL, "function");
+    /*package*/ static final SProperty function$sJB2 = MetaAdapterFactory.getProperty(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b473f93L, 0x67d09fa70b473f94L, "function");
   }
 }

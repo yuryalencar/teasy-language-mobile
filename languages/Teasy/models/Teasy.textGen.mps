@@ -1003,18 +1003,29 @@
   </node>
   <node concept="WtQ9Q" id="4HtHGBKP4Wl">
     <property role="3GE5qa" value="steps_types" />
-    <ref role="WuzLi" to="57va:1FUO_j1X3bV" resolve="ExecuteJavascript" />
+    <ref role="WuzLi" to="57va:1FUO_j1X3bV" resolve="ExecuteAdbShell" />
     <node concept="11bSqf" id="4HtHGBKP4Wm" role="11c4hB">
       <node concept="3clFbS" id="4HtHGBKP4Wn" role="2VODD2">
         <node concept="lc7rE" id="3PbGDxUdWUV" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUdWUW" role="lcghm">
-            <property role="lacIc" value="    Execute Javascript    " />
+            <property role="lacIc" value="    Execute Adb Shell    " />
           </node>
           <node concept="l9hG8" id="3PbGDxUdWUX" role="lcghm">
             <node concept="2OqwBi" id="3PbGDxUdWV0" role="lb14g">
               <node concept="117lpO" id="3PbGDxUdWV2" role="2Oq$k0" />
               <node concept="3TrcHB" id="3PbGDxUdXfU" role="2OqNvi">
                 <ref role="3TsBF5" to="57va:1FUO_j1X3bW" resolve="function" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbgB5v" role="lcghm">
+            <property role="lacIc" value="    " />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbgB8r" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbgBgj" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbgB9K" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbgBy0" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbgB1N" resolve="arguments" />
               </node>
             </node>
           </node>
@@ -2102,6 +2113,28 @@
             </node>
           </node>
           <node concept="l8MVK" id="6vgBUsbg15s" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbhNZY">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbhNYj" resolve="ExecuteScript" />
+    <node concept="11bSqf" id="6vgBUsbhNZZ" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbhO00" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbhO3D" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbhO3E" role="lcghm">
+            <property role="lacIc" value="    Execute Script    " />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbhO3F" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbhO3G" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbhO3H" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbhO3I" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbhNYk" resolve="function" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="6vgBUsbhO3O" role="lcghm" />
         </node>
       </node>
     </node>

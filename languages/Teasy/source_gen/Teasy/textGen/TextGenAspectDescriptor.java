@@ -39,8 +39,10 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Components_TextGen();
       case LanguageConceptSwitch.Configuration:
         return new Configuration_TextGen();
-      case LanguageConceptSwitch.ExecuteJavascript:
-        return new ExecuteJavascript_TextGen();
+      case LanguageConceptSwitch.ExecuteAdbShell:
+        return new ExecuteAdbShell_TextGen();
+      case LanguageConceptSwitch.ExecuteScript:
+        return new ExecuteScript_TextGen();
       case LanguageConceptSwitch.Flow:
         return new Flow_TextGen();
       case LanguageConceptSwitch.FlowItem:

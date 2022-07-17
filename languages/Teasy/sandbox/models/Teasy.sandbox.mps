@@ -40,6 +40,10 @@
         <child id="9061110883748270131" name="components" index="Pw_x$" />
       </concept>
       <concept id="4416820227523971320" name="Teasy.structure.Hooks" flags="ng" index="1763Dw" />
+      <concept id="1944097450636882683" name="Teasy.structure.ExecuteAdbShell" flags="ng" index="3r3I2J">
+        <property id="1944097450636882684" name="function" index="3r3I2C" />
+        <property id="7480654520859652211" name="arguments" index="1G$IZk" />
+      </concept>
       <concept id="1944097450636882605" name="Teasy.structure.ClickElement" flags="ng" index="3r3I3T">
         <reference id="1944097450636882608" name="component" index="3r3I3$" />
       </concept>
@@ -54,6 +58,9 @@
       </concept>
       <concept id="4838803795107766633" name="Teasy.structure.Flows" flags="ng" index="1y4Kc3">
         <child id="4838803795107766634" name="flow" index="1y4Kc0" />
+      </concept>
+      <concept id="7480654520859967379" name="Teasy.structure.ExecuteScript" flags="ng" index="1G_U0O">
+        <property id="7480654520859967380" name="function" index="1G_U0N" />
       </concept>
       <concept id="7480654520858856496" name="Teasy.structure.ClickText" flags="ng" index="1GTHen">
         <property id="7480654520858856497" name="text" index="1GTHem" />
@@ -181,6 +188,16 @@
       <node concept="1GVirb" id="6vgBUsbg0UR" role="2D3W_k">
         <property role="1GVir9" value="2" />
         <property role="1GVirn" value="21" />
+      </node>
+    </node>
+    <node concept="2D3W_x" id="6vgBUsbgBC7" role="2D3W_o">
+      <property role="TrG5h" value="EXECUTES" />
+      <node concept="3r3I2J" id="6vgBUsbhdNk" role="2D3W_k">
+        <property role="3r3I2C" value="example adb script" />
+        <property role="1G$IZk" value="param1 param2" />
+      </node>
+      <node concept="1G_U0O" id="6vgBUsbiqYG" role="2D3W_k">
+        <property role="1G_U0N" value="document.querySelector(&quot;sample&quot;)" />
       </node>
     </node>
   </node>

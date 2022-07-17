@@ -23,7 +23,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptComponent = createDescriptorForComponent();
   /*package*/ final ConceptDescriptor myConceptComponents = createDescriptorForComponents();
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
-  /*package*/ final ConceptDescriptor myConceptExecuteJavascript = createDescriptorForExecuteJavascript();
+  /*package*/ final ConceptDescriptor myConceptExecuteAdbShell = createDescriptorForExecuteAdbShell();
+  /*package*/ final ConceptDescriptor myConceptExecuteScript = createDescriptorForExecuteScript();
   /*package*/ final ConceptDescriptor myConceptFlow = createDescriptorForFlow();
   /*package*/ final ConceptDescriptor myConceptFlowItem = createDescriptorForFlowItem();
   /*package*/ final ConceptDescriptor myConceptFlows = createDescriptorForFlows();
@@ -64,7 +65,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteJavascript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContain, myConceptPageShouldContainElement, myConceptPageShouldNotContain, myConceptPageShouldNotContainElement, myConceptPageToRegister, myConceptStep, myConceptWaitForCondition, myConceptWaitUntilElementIsEnabled, myConceptWaitUntilElementIsNotVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
+    return Arrays.asList(myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContain, myConceptPageShouldContainElement, myConceptPageShouldNotContain, myConceptPageShouldNotContainElement, myConceptPageToRegister, myConceptStep, myConceptWaitForCondition, myConceptWaitUntilElementIsEnabled, myConceptWaitUntilElementIsNotVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
   }
 
   @Override
@@ -85,8 +86,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptComponents;
       case LanguageConceptSwitch.Configuration:
         return myConceptConfiguration;
-      case LanguageConceptSwitch.ExecuteJavascript:
-        return myConceptExecuteJavascript;
+      case LanguageConceptSwitch.ExecuteAdbShell:
+        return myConceptExecuteAdbShell;
+      case LanguageConceptSwitch.ExecuteScript:
+        return myConceptExecuteScript;
       case LanguageConceptSwitch.Flow:
         return myConceptFlow;
       case LanguageConceptSwitch.FlowItem:
@@ -229,15 +232,27 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Configuration");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForExecuteJavascript() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ExecuteJavascript", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f432fbL);
+  private static ConceptDescriptor createDescriptorForExecuteAdbShell() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ExecuteAdbShell", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f432fbL);
     b.class_(false, false, false);
     // extends: Teasy.structure.Step
     b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
     b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/1944097450636882683");
     b.version(3);
     b.property("function", 0x1afad254c1f432fcL).type(PrimitiveTypeId.STRING).origin("1944097450636882684").done();
-    b.alias("Execute JavaScript");
+    b.property("arguments", 0x67d09fa70b427073L).type(PrimitiveTypeId.STRING).origin("7480654520859652211").done();
+    b.alias("Execute Adb Shell");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForExecuteScript() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ExecuteScript", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b473f93L);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520859967379");
+    b.version(3);
+    b.property("function", 0x67d09fa70b473f94L).type(PrimitiveTypeId.STRING).origin("7480654520859967380").done();
+    b.alias("Execute Script");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFlow() {

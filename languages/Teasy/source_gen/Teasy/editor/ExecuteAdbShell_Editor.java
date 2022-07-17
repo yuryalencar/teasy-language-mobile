@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ExecuteJavascript_Editor extends DefaultNodeEditor {
+public class ExecuteAdbShell_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new ExecuteJavascript_EditorBuilder_a(editorContext, node).createCell();
+    return new ExecuteAdbShell_EditorBuilder_a(editorContext, node).createCell();
   }
 }

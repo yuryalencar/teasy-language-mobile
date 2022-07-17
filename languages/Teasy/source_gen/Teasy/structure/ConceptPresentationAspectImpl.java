@@ -16,7 +16,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Component;
   private ConceptPresentation props_Components;
   private ConceptPresentation props_Configuration;
-  private ConceptPresentation props_ExecuteJavascript;
+  private ConceptPresentation props_ExecuteAdbShell;
+  private ConceptPresentation props_ExecuteScript;
   private ConceptPresentation props_Flow;
   private ConceptPresentation props_FlowItem;
   private ConceptPresentation props_Flows;
@@ -101,14 +102,22 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Configuration = cpb.create();
         }
         return props_Configuration;
-      case LanguageConceptSwitch.ExecuteJavascript:
-        if (props_ExecuteJavascript == null) {
+      case LanguageConceptSwitch.ExecuteAdbShell:
+        if (props_ExecuteAdbShell == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("A short code in Javascript for execute in Web Page.");
-          cpb.rawPresentation("Execute JavaScript");
-          props_ExecuteJavascript = cpb.create();
+          cpb.shortDesc("Execute ADB shell commands (Android Only): Requires server flag --relaxed-security to be set on Appium server.");
+          cpb.rawPresentation("Execute Adb Shell");
+          props_ExecuteAdbShell = cpb.create();
         }
-        return props_ExecuteJavascript;
+        return props_ExecuteAdbShell;
+      case LanguageConceptSwitch.ExecuteScript:
+        if (props_ExecuteScript == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame (Web context only).\n\n");
+          cpb.rawPresentation("Execute Script");
+          props_ExecuteScript = cpb.create();
+        }
+        return props_ExecuteScript;
       case LanguageConceptSwitch.Flow:
         if (props_Flow == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

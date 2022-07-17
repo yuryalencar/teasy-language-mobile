@@ -753,10 +753,10 @@
   </node>
   <node concept="24kQdi" id="1FUO_j1X3cp">
     <property role="3GE5qa" value="steps_types" />
-    <ref role="1XX52x" to="57va:1FUO_j1X3bV" resolve="ExecuteJavascript" />
+    <ref role="1XX52x" to="57va:1FUO_j1X3bV" resolve="ExecuteAdbShell" />
     <node concept="3EZMnI" id="1FUO_j1X3cr" role="2wV5jI">
       <node concept="3F0ifn" id="1FUO_j1X3cy" role="3EZMnx">
-        <property role="3F0ifm" value="EXECUTE JAVASCRIPT" />
+        <property role="3F0ifm" value="EXECUTE ADB SHELL" />
         <node concept="pVoyu" id="1FUO_j1X3dl" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -786,7 +786,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="1FUO_j1X3db" role="3EZMnx">
-        <property role="1$x2rV" value="Write a Javascript code" />
+        <property role="1$x2rV" value="The ABD shell command\n" />
         <ref role="1NtTu8" to="57va:1FUO_j1X3bW" resolve="function" />
         <node concept="Vb9p2" id="1FUO_j1X3dz" role="3F10Kt">
           <property role="Vbekb" value="g1_kEg4/ITALIC" />
@@ -798,9 +798,30 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0ifn" id="4cASACx4$Oh" role="3EZMnx">
-        <property role="3F0ifm" value="" />
-        <node concept="lj46D" id="4cASACx4$Oz" role="3F10Kt">
+      <node concept="3F0ifn" id="6vgBUsbgB$S" role="3EZMnx">
+        <property role="3F0ifm" value="ARGUMENTS" />
+        <node concept="lj46D" id="6vgBUsbgBA0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="6vgBUsbgBA5" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsbgBA8" role="3EZMnx">
+        <property role="1$x2rV" value="Arguments to send to command" />
+        <ref role="1NtTu8" to="57va:6vgBUsbgB1N" resolve="arguments" />
+        <node concept="Vb9p2" id="6vgBUsbgBAt" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsbgBAu" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbgBAR" role="3EZMnx">
+        <node concept="pVoyu" id="6vgBUsbgBBe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbgBC4" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -2052,6 +2073,64 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vgBUsbj1Lx">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbhNYj" resolve="ExecuteScript" />
+    <node concept="3EZMnI" id="6vgBUsbhNYB" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbhNYC" role="3EZMnx">
+        <property role="3F0ifm" value="EXECUTE SCRIPT" />
+        <node concept="pVoyu" id="6vgBUsbhNYD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Vb9p2" id="6vgBUsbhNYE" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbhNYF" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbhNYG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbhNYH" role="3EZMnx">
+        <property role="3F0ifm" value="SCRIPT:" />
+        <node concept="pVoyu" id="6vgBUsbhNYI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbhNYJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="VechU" id="6vgBUsbhNYK" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+        <node concept="pVoyu" id="6vgBUsbhNYL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsbhNYM" role="3EZMnx">
+        <property role="1$x2rV" value="The ABD shell command\n" />
+        <ref role="1NtTu8" to="57va:6vgBUsbhNYk" resolve="function" />
+        <node concept="Vb9p2" id="6vgBUsbhNYN" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsbhNYO" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+        <node concept="ljvvj" id="6vgBUsbhNYP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbhNYW" role="3EZMnx">
+        <node concept="pVoyu" id="6vgBUsbhNYX" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbhNYY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbhNYZ" role="2iSdaV" />
     </node>
   </node>
 </model>

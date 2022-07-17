@@ -292,13 +292,18 @@
   <node concept="1TIwiD" id="1FUO_j1X3bV">
     <property role="EcuMT" value="1944097450636882683" />
     <property role="3GE5qa" value="steps_types" />
-    <property role="TrG5h" value="ExecuteJavascript" />
-    <property role="34LRSv" value="Execute JavaScript" />
-    <property role="R4oN_" value="A short code in Javascript for execute in Web Page." />
+    <property role="TrG5h" value="ExecuteAdbShell" />
+    <property role="34LRSv" value="Execute Adb Shell" />
+    <property role="R4oN_" value="Execute ADB shell commands (Android Only): Requires server flag --relaxed-security to be set on Appium server." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyi" id="1FUO_j1X3bW" role="1TKVEl">
       <property role="IQ2nx" value="1944097450636882684" />
       <property role="TrG5h" value="function" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbgB1N" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520859652211" />
+      <property role="TrG5h" value="arguments" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
@@ -708,6 +713,19 @@
     <node concept="1TJgyi" id="6vgBUsbfr_K" role="1TKVEl">
       <property role="IQ2nx" value="7480654520859343216" />
       <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbhNYj">
+    <property role="EcuMT" value="7480654520859967379" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ExecuteScript" />
+    <property role="34LRSv" value="Execute Script" />
+    <property role="R4oN_" value="Inject a snippet of JavaScript into the page for execution in the context of the currently selected frame (Web context only).\n\n" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbhNYk" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520859967380" />
+      <property role="TrG5h" value="function" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
