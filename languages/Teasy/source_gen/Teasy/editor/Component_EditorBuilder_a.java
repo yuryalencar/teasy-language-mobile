@@ -168,7 +168,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       final SProperty property = PROPS.selector_value$4j4J;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("Insert value to find (ex: button[name^=login])");
+      editorCell.setDefaultText("Insert value to find (ex: .green_button)");
       editorCell.setCellId("property_selector_value");
       Style style = new StyleImpl();
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD_ITALIC);

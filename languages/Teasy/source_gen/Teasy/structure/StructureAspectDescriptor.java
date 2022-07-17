@@ -44,7 +44,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageDoesNotContain = createDescriptorForWaitUntilPageDoesNotContain();
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageDoesNotContainElement = createDescriptorForWaitUntilPageDoesNotContainElement();
   /*package*/ final EnumerationDescriptor myEnumerationautomationNames = new EnumerationDescriptor_automationNames();
-  /*package*/ final EnumerationDescriptor myEnumerationbrowsers = new EnumerationDescriptor_browsers();
   /*package*/ final EnumerationDescriptor myEnumerationplataforms = new EnumerationDescriptor_plataforms();
   /*package*/ final EnumerationDescriptor myEnumerationselectors = new EnumerationDescriptor_selectors();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -129,7 +128,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationautomationNames, myEnumerationbrowsers, myEnumerationplataforms, myEnumerationselectors);
+    return Arrays.asList(myEnumerationautomationNames, myEnumerationplataforms, myEnumerationselectors);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {

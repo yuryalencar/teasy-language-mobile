@@ -162,7 +162,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="7QZy5t8ft0$" role="3EZMnx">
-        <property role="1$x2rV" value="Insert value to find (ex: button[name^=login])" />
+        <property role="1$x2rV" value="Insert value to find (ex: .green_button)" />
         <ref role="1NtTu8" to="57va:6dW_Ovx68i4" resolve="selector_value" />
         <node concept="Vb9p2" id="4cASACxjArM" role="3F10Kt">
           <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />

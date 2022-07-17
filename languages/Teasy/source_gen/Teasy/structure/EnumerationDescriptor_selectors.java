@@ -15,19 +15,25 @@ public class EnumerationDescriptor_selectors extends EnumerationDescriptorBase {
     super(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e1188470L, "selectors", "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7168771041841939568");
   }
 
-  private final EnumerationDescriptor.MemberDescriptor myMember_id_0 = new EnumerationDescriptor.MemberDescriptor("id", "id", 0x637c9747e1188472L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7168771041841939570");
-  private final EnumerationDescriptor.MemberDescriptor myMember_xpath_0 = new EnumerationDescriptor.MemberDescriptor("xpath", "xpath", 0x637c9747e1188475L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7168771041841939573");
-  private final EnumerationDescriptor.MemberDescriptor myMember_css_0 = new EnumerationDescriptor.MemberDescriptor("css", "css", 0x637c9747e1188471L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7168771041841939569");
-  private final EnumerationDescriptor.MemberDescriptor myMember_name_0 = new EnumerationDescriptor.MemberDescriptor("name", "name", 0x637c9747e1188479L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7168771041841939577");
-  private final EnumerationDescriptor.MemberDescriptor myMember_class_0 = new EnumerationDescriptor.MemberDescriptor("class", "class", 0x637c9747e118847eL, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7168771041841939582");
+  private final EnumerationDescriptor.MemberDescriptor myMember_identifier_0 = new EnumerationDescriptor.MemberDescriptor("identifier", "identifier", 0x67d09fa70b272220L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862688");
+  private final EnumerationDescriptor.MemberDescriptor myMember_id_0 = new EnumerationDescriptor.MemberDescriptor("id", "id", 0x67d09fa70b272236L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862710");
+  private final EnumerationDescriptor.MemberDescriptor myMember_accessibility_id_0 = new EnumerationDescriptor.MemberDescriptor("accessibility_id", "accessibility_id", 0x67d09fa70b272239L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862713");
+  private final EnumerationDescriptor.MemberDescriptor myMember_xpath_0 = new EnumerationDescriptor.MemberDescriptor("xpath", "xpath", 0x67d09fa70b27223dL, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862717");
+  private final EnumerationDescriptor.MemberDescriptor myMember_class_0 = new EnumerationDescriptor.MemberDescriptor("class", "class", 0x67d09fa70b272242L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862722");
+  private final EnumerationDescriptor.MemberDescriptor myMember_android_0 = new EnumerationDescriptor.MemberDescriptor("android", "android", 0x67d09fa70b272248L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862728");
+  private final EnumerationDescriptor.MemberDescriptor myMember_ios_0 = new EnumerationDescriptor.MemberDescriptor("ios", "ios", 0x67d09fa70b27224fL, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862735");
+  private final EnumerationDescriptor.MemberDescriptor myMember_nsp_0 = new EnumerationDescriptor.MemberDescriptor("nsp", "nsp", 0x67d09fa70b27228bL, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862795");
+  private final EnumerationDescriptor.MemberDescriptor myMember_chain_0 = new EnumerationDescriptor.MemberDescriptor("chain", "chain", 0x67d09fa70b272294L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862804");
+  private final EnumerationDescriptor.MemberDescriptor myMember_css_0 = new EnumerationDescriptor.MemberDescriptor("css", "css", 0x67d09fa70b2722b2L, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862834");
+  private final EnumerationDescriptor.MemberDescriptor myMember_name_0 = new EnumerationDescriptor.MemberDescriptor("name", "name", 0x67d09fa70b2722bdL, "r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520857862845");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e1188470L, 0x637c9747e1188472L, 0x637c9747e1188475L, 0x637c9747e1188471L, 0x637c9747e1188479L, 0x637c9747e118847eL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_id_0, myMember_xpath_0, myMember_css_0, myMember_name_0, myMember_class_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e1188470L, 0x67d09fa70b272220L, 0x67d09fa70b272236L, 0x67d09fa70b272239L, 0x67d09fa70b27223dL, 0x67d09fa70b272242L, 0x67d09fa70b272248L, 0x67d09fa70b27224fL, 0x67d09fa70b27228bL, 0x67d09fa70b272294L, 0x67d09fa70b2722b2L, 0x67d09fa70b2722bdL);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_identifier_0, myMember_id_0, myMember_accessibility_id_0, myMember_xpath_0, myMember_class_0, myMember_android_0, myMember_ios_0, myMember_nsp_0, myMember_chain_0, myMember_css_0, myMember_name_0);
 
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return myMember_id_0;
+    return myMember_accessibility_id_0;
   }
 
   @NotNull
@@ -43,16 +49,28 @@ public class EnumerationDescriptor_selectors extends EnumerationDescriptorBase {
       return null;
     }
     switch (memberName) {
+      case "identifier":
+        return myMember_identifier_0;
       case "id":
         return myMember_id_0;
+      case "accessibility_id":
+        return myMember_accessibility_id_0;
       case "xpath":
         return myMember_xpath_0;
+      case "class":
+        return myMember_class_0;
+      case "android":
+        return myMember_android_0;
+      case "ios":
+        return myMember_ios_0;
+      case "nsp":
+        return myMember_nsp_0;
+      case "chain":
+        return myMember_chain_0;
       case "css":
         return myMember_css_0;
       case "name":
         return myMember_name_0;
-      case "class":
-        return myMember_class_0;
     }
     return null;
   }

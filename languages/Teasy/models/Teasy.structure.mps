@@ -107,20 +107,6 @@
       <ref role="AX2Wp" node="6vgBUsb3mPr" resolve="automationNames" />
     </node>
   </node>
-  <node concept="25R3W" id="6dW_Ovx5v5O">
-    <property role="3F6X1D" value="7168771041841770868" />
-    <property role="3GE5qa" value="config" />
-    <property role="TrG5h" value="browsers" />
-    <ref role="1H5jkz" node="6dW_Ovx5v5P" resolve="chrome" />
-    <node concept="25R33" id="6dW_Ovx5v5P" role="25R1y">
-      <property role="3tVfz5" value="7168771041841770869" />
-      <property role="TrG5h" value="chrome" />
-    </node>
-    <node concept="25R33" id="6dW_Ovx5v5Q" role="25R1y">
-      <property role="3tVfz5" value="7168771041841770870" />
-      <property role="TrG5h" value="firefox" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6dW_Ovx68hF">
     <property role="EcuMT" value="7168771041841939563" />
     <property role="3GE5qa" value="components" />
@@ -146,31 +132,61 @@
     <property role="3F6X1D" value="7168771041841939568" />
     <property role="3GE5qa" value="core" />
     <property role="TrG5h" value="selectors" />
-    <ref role="1H5jkz" node="6dW_Ovx68hM" resolve="id" />
-    <node concept="25R33" id="6dW_Ovx68hM" role="25R1y">
-      <property role="3tVfz5" value="7168771041841939570" />
+    <ref role="1H5jkz" node="6vgBUsb9M8T" resolve="accessibility_id" />
+    <node concept="25R33" id="6vgBUsb9M8w" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862688" />
+      <property role="TrG5h" value="identifier" />
+      <property role="1L1pqM" value="identifier" />
+    </node>
+    <node concept="25R33" id="6vgBUsb9M8Q" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862710" />
       <property role="TrG5h" value="id" />
       <property role="1L1pqM" value="id" />
     </node>
-    <node concept="25R33" id="6dW_Ovx68hP" role="25R1y">
-      <property role="3tVfz5" value="7168771041841939573" />
+    <node concept="25R33" id="6vgBUsb9M8T" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862713" />
+      <property role="TrG5h" value="accessibility_id" />
+      <property role="1L1pqM" value="accessibility_id" />
+    </node>
+    <node concept="25R33" id="6vgBUsb9M8X" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862717" />
       <property role="TrG5h" value="xpath" />
       <property role="1L1pqM" value="xpath" />
     </node>
-    <node concept="25R33" id="6dW_Ovx68hL" role="25R1y">
-      <property role="3tVfz5" value="7168771041841939569" />
+    <node concept="25R33" id="6vgBUsb9M92" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862722" />
+      <property role="TrG5h" value="class" />
+      <property role="1L1pqM" value="class" />
+    </node>
+    <node concept="25R33" id="6vgBUsb9M98" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862728" />
+      <property role="TrG5h" value="android" />
+      <property role="1L1pqM" value="android" />
+    </node>
+    <node concept="25R33" id="6vgBUsb9M9f" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862735" />
+      <property role="TrG5h" value="ios" />
+      <property role="1L1pqM" value="ios" />
+    </node>
+    <node concept="25R33" id="6vgBUsb9Mab" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862795" />
+      <property role="TrG5h" value="nsp" />
+      <property role="1L1pqM" value="nsp" />
+    </node>
+    <node concept="25R33" id="6vgBUsb9Mak" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862804" />
+      <property role="TrG5h" value="chain" />
+      <property role="1L1pqM" value="chain" />
+    </node>
+    <node concept="25R33" id="6vgBUsb9MaM" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862834" />
       <property role="TrG5h" value="css" />
       <property role="1L1pqM" value="css" />
     </node>
-    <node concept="25R33" id="6dW_Ovx68hT" role="25R1y">
-      <property role="3tVfz5" value="7168771041841939577" />
+    <node concept="25R33" id="6vgBUsb9MaX" role="25R1y">
+      <property role="3tVfz5" value="7480654520857862845" />
       <property role="TrG5h" value="name" />
       <property role="1L1pqM" value="name" />
-    </node>
-    <node concept="25R33" id="6dW_Ovx68hY" role="25R1y">
-      <property role="3tVfz5" value="7168771041841939582" />
-      <property role="TrG5h" value="class" />
-      <property role="1L1pqM" value="class" />
     </node>
   </node>
   <node concept="1TIwiD" id="7QZy5t8ft0M">
