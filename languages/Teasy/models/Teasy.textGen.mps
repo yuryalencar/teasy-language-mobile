@@ -2411,5 +2411,209 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6vgBUsbE7Cs">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbE7BO" resolve="ElementShouldBeDisabled" />
+    <node concept="11bSqf" id="6vgBUsbE7Ct" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbE7Cu" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbE7Cw" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbE7Cx" role="lcghm">
+            <property role="lacIc" value="    Element Should Be Disabled    ${" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbE7Cy" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbE7Cz" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsbE7C$" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsbE7C_" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6vgBUsbE7CA" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbE7BP" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6vgBUsbE7CB" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbE7CC" role="lcghm">
+            <property role="lacIc" value="}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsbE7CD" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbETph">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbEToE" resolve="ElementShouldBeEnabled" />
+    <node concept="11bSqf" id="6vgBUsbETpi" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbETpj" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbETpm" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbETpn" role="lcghm">
+            <property role="lacIc" value="    Element Should Be Enabled    ${" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbETpo" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbETpp" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsbETpq" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsbETpr" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6vgBUsbETps" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbEToF" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6vgBUsbETpt" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbETpu" role="lcghm">
+            <property role="lacIc" value="}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsbETpv" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbFGiX">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbFGid" resolve="ElementShouldBeVisible" />
+    <node concept="11bSqf" id="6vgBUsbFGiY" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbFGiZ" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbFGj2" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbFGj3" role="lcghm">
+            <property role="lacIc" value="    Element Should Be Visible    ${" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbFGj4" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbFGj5" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsbFGj6" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsbFGj7" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6vgBUsbFGj8" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbFGie" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6vgBUsbFGj9" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbFGja" role="lcghm">
+            <property role="lacIc" value="}" />
+          </node>
+          <node concept="l8MVK" id="6vgBUsbFGjb" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbGwpy">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbGwm2" resolve="ElementShouldContainText" />
+    <node concept="11bSqf" id="6vgBUsbGwpA" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbGwpB" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbGwpG" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbGwpH" role="lcghm">
+            <property role="lacIc" value="    Element Should Contain Text    ${" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbGwpI" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbGwpJ" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsbGwpK" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsbGwpL" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6vgBUsbGwpM" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbGwm3" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6vgBUsbGwpN" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbGwpO" role="lcghm">
+            <property role="lacIc" value="}    " />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbGwqS" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbGwyd" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbGwr8" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbGwF2" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbGwpc" resolve="text" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="6vgBUsbGwpP" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbIPM3">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbIPLe" resolve="ElementShouldNotContainText" />
+    <node concept="11bSqf" id="6vgBUsbIPM4" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbIPM5" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbIPM7" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbIPM8" role="lcghm">
+            <property role="lacIc" value="    Element Should Not Contain Text    ${" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbIPM9" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbIPMa" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsbIPMb" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsbIPMc" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6vgBUsbIPMd" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbIPLg" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6vgBUsbIPMe" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbIPMf" role="lcghm">
+            <property role="lacIc" value="}    " />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbIPMg" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbIPMh" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbIPMi" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbIPMj" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbIPLf" resolve="text" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="6vgBUsbIPMk" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6vgBUsbJHo2">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:6vgBUsbJHne" resolve="ElementTextShouldBe" />
+    <node concept="11bSqf" id="6vgBUsbJHo3" role="11c4hB">
+      <node concept="3clFbS" id="6vgBUsbJHo4" role="2VODD2">
+        <node concept="lc7rE" id="6vgBUsbJHo7" role="3cqZAp">
+          <node concept="la8eA" id="6vgBUsbJHo8" role="lcghm">
+            <property role="lacIc" value="    Element Text Should Be    ${" />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbJHo9" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbJHoa" role="lb14g">
+              <node concept="2OqwBi" id="6vgBUsbJHob" role="2Oq$k0">
+                <node concept="117lpO" id="6vgBUsbJHoc" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6vgBUsbJHod" role="2OqNvi">
+                  <ref role="3Tt5mk" to="57va:6vgBUsbJHng" resolve="component" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6vgBUsbJHoe" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6vgBUsbJHof" role="lcghm">
+            <property role="lacIc" value="}    " />
+          </node>
+          <node concept="l9hG8" id="6vgBUsbJHog" role="lcghm">
+            <node concept="2OqwBi" id="6vgBUsbJHoh" role="lb14g">
+              <node concept="117lpO" id="6vgBUsbJHoi" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6vgBUsbJHoj" role="2OqNvi">
+                <ref role="3TsBF5" to="57va:6vgBUsbJHnf" resolve="text" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="6vgBUsbJHok" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -18,6 +18,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Component;
   private ConceptPresentation props_Components;
   private ConceptPresentation props_Configuration;
+  private ConceptPresentation props_ElementShouldBeDisabled;
+  private ConceptPresentation props_ElementShouldBeEnabled;
+  private ConceptPresentation props_ElementShouldBeVisible;
+  private ConceptPresentation props_ElementShouldContainText;
+  private ConceptPresentation props_ElementShouldNotContainText;
+  private ConceptPresentation props_ElementTextShouldBe;
   private ConceptPresentation props_ExecuteAdbShell;
   private ConceptPresentation props_ExecuteScript;
   private ConceptPresentation props_Flow;
@@ -126,6 +132,54 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Configuration = cpb.create();
         }
         return props_Configuration;
+      case LanguageConceptSwitch.ElementShouldBeDisabled:
+        if (props_ElementShouldBeDisabled == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Verifies that element identified with component is disabled.");
+          cpb.rawPresentation("Element Should Be Disabled");
+          props_ElementShouldBeDisabled = cpb.create();
+        }
+        return props_ElementShouldBeDisabled;
+      case LanguageConceptSwitch.ElementShouldBeEnabled:
+        if (props_ElementShouldBeEnabled == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Verifies that element identified with component is enabled.");
+          cpb.rawPresentation("Element Should Be Enabled");
+          props_ElementShouldBeEnabled = cpb.create();
+        }
+        return props_ElementShouldBeEnabled;
+      case LanguageConceptSwitch.ElementShouldBeVisible:
+        if (props_ElementShouldBeVisible == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Verifies that element identified with component is visible.");
+          cpb.rawPresentation("Element Should Be Visible");
+          props_ElementShouldBeVisible = cpb.create();
+        }
+        return props_ElementShouldBeVisible;
+      case LanguageConceptSwitch.ElementShouldContainText:
+        if (props_ElementShouldContainText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Verifies element identified by component contains text expected.");
+          cpb.rawPresentation("Element Should Contain Text");
+          props_ElementShouldContainText = cpb.create();
+        }
+        return props_ElementShouldContainText;
+      case LanguageConceptSwitch.ElementShouldNotContainText:
+        if (props_ElementShouldNotContainText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Verifies element identified by component does not contain text expected.");
+          cpb.rawPresentation("Element Should Not Contain Text");
+          props_ElementShouldNotContainText = cpb.create();
+        }
+        return props_ElementShouldNotContainText;
+      case LanguageConceptSwitch.ElementTextShouldBe:
+        if (props_ElementTextShouldBe == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Verifies element identified by component exactly contains text expected.");
+          cpb.rawPresentation("Element Text Should Be");
+          props_ElementTextShouldBe = cpb.create();
+        }
+        return props_ElementTextShouldBe;
       case LanguageConceptSwitch.ExecuteAdbShell:
         if (props_ExecuteAdbShell == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

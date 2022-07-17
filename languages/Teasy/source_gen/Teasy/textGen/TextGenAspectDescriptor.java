@@ -43,6 +43,18 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Components_TextGen();
       case LanguageConceptSwitch.Configuration:
         return new Configuration_TextGen();
+      case LanguageConceptSwitch.ElementShouldBeDisabled:
+        return new ElementShouldBeDisabled_TextGen();
+      case LanguageConceptSwitch.ElementShouldBeEnabled:
+        return new ElementShouldBeEnabled_TextGen();
+      case LanguageConceptSwitch.ElementShouldBeVisible:
+        return new ElementShouldBeVisible_TextGen();
+      case LanguageConceptSwitch.ElementShouldContainText:
+        return new ElementShouldContainText_TextGen();
+      case LanguageConceptSwitch.ElementShouldNotContainText:
+        return new ElementShouldNotContainText_TextGen();
+      case LanguageConceptSwitch.ElementTextShouldBe:
+        return new ElementTextShouldBe_TextGen();
       case LanguageConceptSwitch.ExecuteAdbShell:
         return new ExecuteAdbShell_TextGen();
       case LanguageConceptSwitch.ExecuteScript:

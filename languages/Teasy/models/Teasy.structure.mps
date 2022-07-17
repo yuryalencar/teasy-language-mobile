@@ -866,5 +866,104 @@
     <property role="R4oN_" value="Takes a screenshot of the current page and embeds it into the log." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
   </node>
+  <node concept="1TIwiD" id="6vgBUsbE7BO">
+    <property role="EcuMT" value="7480654520866339316" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ElementShouldBeDisabled" />
+    <property role="34LRSv" value="Element Should Be Disabled" />
+    <property role="R4oN_" value="Verifies that element identified with component is disabled." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyj" id="6vgBUsbE7BP" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520866339317" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbEToE">
+    <property role="EcuMT" value="7480654520866543146" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ElementShouldBeEnabled" />
+    <property role="34LRSv" value="Element Should Be Enabled" />
+    <property role="R4oN_" value="Verifies that element identified with component is enabled." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyj" id="6vgBUsbEToF" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520866543147" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbFGid">
+    <property role="EcuMT" value="7480654520866751629" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ElementShouldBeVisible" />
+    <property role="34LRSv" value="Element Should Be Visible" />
+    <property role="R4oN_" value="Verifies that element identified with component is visible." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyj" id="6vgBUsbFGie" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520866751630" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbGwm2">
+    <property role="EcuMT" value="7480654520866964866" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ElementShouldContainText" />
+    <property role="34LRSv" value="Element Should Contain Text" />
+    <property role="R4oN_" value="Verifies element identified by component contains text expected." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbGwpc" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520866965068" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6vgBUsbGwm3" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520866964867" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbIPLe">
+    <property role="EcuMT" value="7480654520867576910" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ElementShouldNotContainText" />
+    <property role="34LRSv" value="Element Should Not Contain Text" />
+    <property role="R4oN_" value="Verifies element identified by component does not contain text expected." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbIPLf" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520867576911" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6vgBUsbIPLg" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520867576912" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbJHne">
+    <property role="EcuMT" value="7480654520867804622" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ElementTextShouldBe" />
+    <property role="34LRSv" value="Element Text Should Be" />
+    <property role="R4oN_" value="Verifies element identified by component exactly contains text expected." />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbJHnf" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520867804623" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6vgBUsbJHng" role="1TKVEi">
+      <property role="IQ2ns" value="7480654520867804624" />
+      <property role="20kJfa" value="component" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
+    </node>
+  </node>
 </model>
 

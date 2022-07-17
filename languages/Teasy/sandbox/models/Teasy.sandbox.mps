@@ -116,10 +116,31 @@
         <property id="7480654520864250079" name="start_y" index="1Gm0tS" />
         <property id="7480654520864250077" name="start_x" index="1Gm0tU" />
       </concept>
+      <concept id="7480654520866964866" name="Teasy.structure.ElementShouldContainText" flags="ng" index="1GoDC_">
+        <property id="7480654520866965068" name="text" index="1GoDBF" />
+        <reference id="7480654520866964867" name="component" index="1GoDC$" />
+      </concept>
+      <concept id="7480654520867576910" name="Teasy.structure.ElementShouldNotContainText" flags="ng" index="1GqWfD">
+        <property id="7480654520867576911" name="text" index="1GqWfC" />
+        <reference id="7480654520867576912" name="component" index="1GqWfR" />
+      </concept>
+      <concept id="7480654520867804622" name="Teasy.structure.ElementTextShouldBe" flags="ng" index="1Gr$DD">
+        <property id="7480654520867804623" name="text" index="1Gr$DC" />
+        <reference id="7480654520867804624" name="component" index="1Gr$DR" />
+      </concept>
       <concept id="7480654520865941221" name="Teasy.structure.ScrollUp" flags="ng" index="1GsJ_2">
         <reference id="7480654520865941222" name="component" index="1GsJ_1" />
       </concept>
       <concept id="7480654520866140245" name="Teasy.structure.CapturePageScreenshot" flags="ng" index="1GtuZM" />
+      <concept id="7480654520866339316" name="Teasy.structure.ElementShouldBeDisabled" flags="ng" index="1Guepj">
+        <reference id="7480654520866339317" name="component" index="1Guepi" />
+      </concept>
+      <concept id="7480654520866543146" name="Teasy.structure.ElementShouldBeEnabled" flags="ng" index="1GuKAd">
+        <reference id="7480654520866543147" name="component" index="1GuKAc" />
+      </concept>
+      <concept id="7480654520866751629" name="Teasy.structure.ElementShouldBeVisible" flags="ng" index="1Gv_GE">
+        <reference id="7480654520866751630" name="component" index="1Gv_GD" />
+      </concept>
       <concept id="7480654520861589412" name="Teasy.structure.InputPassword" flags="ng" index="1GzQ03">
         <property id="7480654520861589413" name="password" index="1GzQ02" />
         <reference id="7480654520861589414" name="component" index="1GzQ01" />
@@ -239,7 +260,7 @@
     <property role="3GE5qa" value="pages" />
     <property role="TrG5h" value="PAGE_ALL_ACTIONS" />
     <node concept="2D3W_x" id="6vgBUsbbOh2" role="2D3W_o">
-      <property role="TrG5h" value="CLICKS" />
+      <property role="TrG5h" value="CLICK COMMANDS" />
       <node concept="3r3I3T" id="6vgBUsbbOh4" role="2D3W_k">
         <ref role="3r3I3$" node="6vgBUsbacoC" resolve="CpfField" />
       </node>
@@ -257,7 +278,7 @@
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsbgBC7" role="2D3W_o">
-      <property role="TrG5h" value="EXECUTES" />
+      <property role="TrG5h" value="EXECUTE COMMANDS" />
       <node concept="3r3I2J" id="6vgBUsbhdNk" role="2D3W_k">
         <property role="3r3I2C" value="example adb script" />
         <property role="1G$IZk" value="param1 param2" />
@@ -267,7 +288,7 @@
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsbjCGs" role="2D3W_o">
-      <property role="TrG5h" value="SHOULD BE" />
+      <property role="TrG5h" value="PAGE OR TEXT SHOULD BE COMMANDS" />
       <node concept="1GBxst" id="6vgBUsbkgwQ" role="2D3W_k">
         <property role="1GBxss" value="Sample" />
       </node>
@@ -285,7 +306,7 @@
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsbnZXY" role="2D3W_o">
-      <property role="TrG5h" value="INPUTS" />
+      <property role="TrG5h" value="INPUT COMMANDS" />
       <node concept="2DtOEj" id="6vgBUsbnZYk" role="2D3W_k">
         <property role="2DtOEe" value="000000000-00" />
         <ref role="2DtOEc" node="6vgBUsbacoC" resolve="CpfField" />
@@ -299,7 +320,7 @@
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsbpiuj" role="2D3W_o">
-      <property role="TrG5h" value="WAITS" />
+      <property role="TrG5h" value="WAIT COMMANDS" />
       <node concept="3r3DCY" id="6vgBUsbt8NQ" role="2D3W_k">
         <property role="3r3DG4" value="123" />
       </node>
@@ -325,7 +346,7 @@
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsbtKYm" role="2D3W_o">
-      <property role="TrG5h" value="TAPS" />
+      <property role="TrG5h" value="TAPS COMMANDS" />
       <node concept="3r3I4Z" id="6vgBUsbv2Qs" role="2D3W_k">
         <property role="3r3I4U" value="1" />
         <ref role="1GDTdp" node="6vgBUsbacoC" resolve="CpfField" />
@@ -334,6 +355,30 @@
         <property role="1Gk3Y9" value="2.12" />
         <property role="1Gk3Ym" value="21321.21" />
         <property role="1Gk3Ya" value="3" />
+      </node>
+    </node>
+    <node concept="2D3W_x" id="6vgBUsbE7Dw" role="2D3W_o">
+      <property role="TrG5h" value="ELEMENTS COMMANDS" />
+      <node concept="1Guepj" id="6vgBUsbEToB" role="2D3W_k">
+        <ref role="1Guepi" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1GuKAd" id="6vgBUsbFGi9" role="2D3W_k">
+        <ref role="1GuKAc" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1Gv_GE" id="6vgBUsbGwlX" role="2D3W_k">
+        <ref role="1Gv_GD" node="6vgBUsbacoL" resolve="DataNotFound" />
+      </node>
+      <node concept="1GoDC_" id="6vgBUsbHmh9" role="2D3W_k">
+        <property role="1GoDBF" value="Example" />
+        <ref role="1GoDC$" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1GqWfD" id="6vgBUsbJHn7" role="2D3W_k">
+        <property role="1GqWfC" value="Não" />
+        <ref role="1GqWfR" node="6vgBUsbacoL" resolve="DataNotFound" />
+      </node>
+      <node concept="1Gr$DD" id="6vgBUsbKAH_" role="2D3W_k">
+        <property role="1Gr$DC" value="Encontrado" />
+        <ref role="1Gr$DR" node="6vgBUsbacoL" resolve="DataNotFound" />
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsby9L2" role="2D3W_o">

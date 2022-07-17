@@ -2644,5 +2644,323 @@
       <node concept="l2Vlx" id="6vgBUsbDn1O" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6vgBUsbE7BX">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbE7BO" resolve="ElementShouldBeDisabled" />
+    <node concept="3EZMnI" id="6vgBUsbE7BZ" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbE7C0" role="3EZMnx">
+        <property role="3F0ifm" value="ELEMENT SHOULD BE DISABLED: " />
+        <node concept="Vb9p2" id="6vgBUsbE7C1" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbE7C2" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbE7C3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6vgBUsbE7C4" role="3EZMnx">
+        <property role="1$x2rV" value="Choose Component" />
+        <ref role="1NtTu8" to="57va:6vgBUsbE7BP" resolve="component" />
+        <node concept="1sVBvm" id="6vgBUsbE7C5" role="1sWHZn">
+          <node concept="3F0A7n" id="6vgBUsbE7C6" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="Choose Component" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="6vgBUsbE7C7" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+            <node concept="VechU" id="6vgBUsbE7C8" role="3F10Kt">
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
+            </node>
+          </node>
+        </node>
+        <node concept="ljvvj" id="6vgBUsbE7C9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbE7Ca" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="lj46D" id="6vgBUsbE7Cb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbE7Cc" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vgBUsbEToN">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbEToE" resolve="ElementShouldBeEnabled" />
+    <node concept="3EZMnI" id="6vgBUsbEToP" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbEToQ" role="3EZMnx">
+        <property role="3F0ifm" value="ELEMENT SHOULD BE ENABLED: " />
+        <node concept="Vb9p2" id="6vgBUsbEToR" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbEToS" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbEToT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6vgBUsbEToU" role="3EZMnx">
+        <property role="1$x2rV" value="Choose Component" />
+        <ref role="1NtTu8" to="57va:6vgBUsbEToF" resolve="component" />
+        <node concept="1sVBvm" id="6vgBUsbEToV" role="1sWHZn">
+          <node concept="3F0A7n" id="6vgBUsbEToW" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="Choose Component" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="6vgBUsbEToX" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+            <node concept="VechU" id="6vgBUsbEToY" role="3F10Kt">
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
+            </node>
+          </node>
+        </node>
+        <node concept="ljvvj" id="6vgBUsbEToZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbETp0" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="lj46D" id="6vgBUsbETp1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbETp2" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vgBUsbFGiv">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbFGid" resolve="ElementShouldBeVisible" />
+    <node concept="3EZMnI" id="6vgBUsbFGix" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbFGiy" role="3EZMnx">
+        <property role="3F0ifm" value="ELEMENT SHOULD BE VISIBLE: " />
+        <node concept="Vb9p2" id="6vgBUsbFGiz" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbFGi$" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbFGi_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6vgBUsbFGiA" role="3EZMnx">
+        <property role="1$x2rV" value="Choose Component" />
+        <ref role="1NtTu8" to="57va:6vgBUsbFGie" resolve="component" />
+        <node concept="1sVBvm" id="6vgBUsbFGiB" role="1sWHZn">
+          <node concept="3F0A7n" id="6vgBUsbFGiC" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="Choose Component" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="6vgBUsbFGiD" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+            <node concept="VechU" id="6vgBUsbFGiE" role="3F10Kt">
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
+            </node>
+          </node>
+        </node>
+        <node concept="ljvvj" id="6vgBUsbFGiF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbFGiG" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="lj46D" id="6vgBUsbFGiH" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbFGiI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vgBUsbGwmc">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbGwm2" resolve="ElementShouldContainText" />
+    <node concept="3EZMnI" id="6vgBUsbGwme" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbGwmf" role="3EZMnx">
+        <property role="3F0ifm" value="ELEMENT SHOULD CONTAIN TEXT: " />
+        <node concept="Vb9p2" id="6vgBUsbGwmg" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbGwmh" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbGwmi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6vgBUsbGwmj" role="3EZMnx">
+        <property role="1$x2rV" value="Choose Component" />
+        <ref role="1NtTu8" to="57va:6vgBUsbGwm3" resolve="component" />
+        <node concept="1sVBvm" id="6vgBUsbGwmk" role="1sWHZn">
+          <node concept="3F0A7n" id="6vgBUsbGwml" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="Choose Component" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="6vgBUsbGwmm" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+            <node concept="VechU" id="6vgBUsbGwmn" role="3F10Kt">
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbGwoa" role="3EZMnx" />
+      <node concept="3F0ifn" id="6vgBUsbGwoM" role="3EZMnx">
+        <property role="3F0ifm" value="EXPECTED TEXT:" />
+        <node concept="VechU" id="6vgBUsbGwpw" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsbGwpe" role="3EZMnx">
+        <property role="1$x2rV" value="Text to contains in element" />
+        <ref role="1NtTu8" to="57va:6vgBUsbGwpc" resolve="text" />
+        <node concept="Vb9p2" id="6vgBUsbGwps" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsbGwpt" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbIbSW" role="3EZMnx">
+        <node concept="pVoyu" id="6vgBUsbIbU2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbIbUS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbGwmr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vgBUsbIPLo">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbIPLe" resolve="ElementShouldNotContainText" />
+    <node concept="3EZMnI" id="6vgBUsbIPLq" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbIPLr" role="3EZMnx">
+        <property role="3F0ifm" value="ELEMENT SHOULD NOT CONTAIN TEXT: " />
+        <node concept="Vb9p2" id="6vgBUsbIPLs" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbIPLt" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbIPLu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6vgBUsbIPLv" role="3EZMnx">
+        <property role="1$x2rV" value="Choose Component" />
+        <ref role="1NtTu8" to="57va:6vgBUsbIPLg" resolve="component" />
+        <node concept="1sVBvm" id="6vgBUsbIPLw" role="1sWHZn">
+          <node concept="3F0A7n" id="6vgBUsbIPLx" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="Choose Component" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="6vgBUsbIPLy" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+            <node concept="VechU" id="6vgBUsbIPLz" role="3F10Kt">
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbIPL$" role="3EZMnx" />
+      <node concept="3F0ifn" id="6vgBUsbIPL_" role="3EZMnx">
+        <property role="3F0ifm" value="EXPECTED TEXT:" />
+        <node concept="VechU" id="6vgBUsbIPLA" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsbIPLB" role="3EZMnx">
+        <property role="1$x2rV" value="Text to contains in element" />
+        <ref role="1NtTu8" to="57va:6vgBUsbIPLf" resolve="text" />
+        <node concept="Vb9p2" id="6vgBUsbIPLC" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsbIPLD" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbIPLE" role="3EZMnx">
+        <node concept="pVoyu" id="6vgBUsbIPLF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbIPLG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbIPLH" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6vgBUsbJHno">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:6vgBUsbJHne" resolve="ElementTextShouldBe" />
+    <node concept="3EZMnI" id="6vgBUsbJHnq" role="2wV5jI">
+      <node concept="3F0ifn" id="6vgBUsbJHnr" role="3EZMnx">
+        <property role="3F0ifm" value="ELEMENT TEXT SHOULD BE: " />
+        <node concept="Vb9p2" id="6vgBUsbJHns" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="6vgBUsbJHnt" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbJHnu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6vgBUsbJHnv" role="3EZMnx">
+        <property role="1$x2rV" value="Choose Component" />
+        <ref role="1NtTu8" to="57va:6vgBUsbJHng" resolve="component" />
+        <node concept="1sVBvm" id="6vgBUsbJHnw" role="1sWHZn">
+          <node concept="3F0A7n" id="6vgBUsbJHnx" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <property role="1$x2rV" value="Choose Component" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="6vgBUsbJHny" role="3F10Kt">
+              <property role="Vbekb" value="g1_kEg4/ITALIC" />
+            </node>
+            <node concept="VechU" id="6vgBUsbJHnz" role="3F10Kt">
+              <property role="Vb096" value="g1_qRwE/darkGreen" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbJHn$" role="3EZMnx" />
+      <node concept="3F0ifn" id="6vgBUsbJHn_" role="3EZMnx">
+        <property role="3F0ifm" value="EXPECTED TEXT:" />
+        <node concept="VechU" id="6vgBUsbJHnA" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6vgBUsbJHnB" role="3EZMnx">
+        <property role="1$x2rV" value="Exactly text in element" />
+        <ref role="1NtTu8" to="57va:6vgBUsbJHnf" resolve="text" />
+        <node concept="Vb9p2" id="6vgBUsbJHnC" role="3F10Kt">
+          <property role="Vbekb" value="g1_kEg4/ITALIC" />
+        </node>
+        <node concept="VechU" id="6vgBUsbJHnD" role="3F10Kt">
+          <property role="Vb096" value="g1_qRwE/darkGreen" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6vgBUsbJHnE" role="3EZMnx">
+        <node concept="pVoyu" id="6vgBUsbJHnF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6vgBUsbJHnG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="6vgBUsbJHnH" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
