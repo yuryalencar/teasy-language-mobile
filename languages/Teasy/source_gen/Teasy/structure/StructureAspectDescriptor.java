@@ -12,11 +12,14 @@ import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
-import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptClickAPoint = createDescriptorForClickAPoint();
   /*package*/ final ConceptDescriptor myConceptClickElement = createDescriptorForClickElement();
+  /*package*/ final ConceptDescriptor myConceptClickElementAtCoordinates = createDescriptorForClickElementAtCoordinates();
+  /*package*/ final ConceptDescriptor myConceptClickText = createDescriptorForClickText();
   /*package*/ final ConceptDescriptor myConceptComponent = createDescriptorForComponent();
   /*package*/ final ConceptDescriptor myConceptComponents = createDescriptorForComponents();
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
@@ -43,6 +46,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageContainsElement = createDescriptorForWaitUntilPageContainsElement();
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageDoesNotContain = createDescriptorForWaitUntilPageDoesNotContain();
   /*package*/ final ConceptDescriptor myConceptWaitUntilPageDoesNotContainElement = createDescriptorForWaitUntilPageDoesNotContainElement();
+  /*package*/ final EnumerationDescriptor myEnumerationStringBoolean = new EnumerationDescriptor_StringBoolean();
   /*package*/ final EnumerationDescriptor myEnumerationautomationNames = new EnumerationDescriptor_automationNames();
   /*package*/ final EnumerationDescriptor myEnumerationplataforms = new EnumerationDescriptor_plataforms();
   /*package*/ final EnumerationDescriptor myEnumerationselectors = new EnumerationDescriptor_selectors();
@@ -60,15 +64,21 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptClickElement, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteJavascript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContain, myConceptPageShouldContainElement, myConceptPageShouldNotContain, myConceptPageShouldNotContainElement, myConceptPageToRegister, myConceptStep, myConceptWaitForCondition, myConceptWaitUntilElementIsEnabled, myConceptWaitUntilElementIsNotVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
+    return Arrays.asList(myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptExecuteJavascript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContain, myConceptPageShouldContainElement, myConceptPageShouldNotContain, myConceptPageShouldNotContainElement, myConceptPageToRegister, myConceptStep, myConceptWaitForCondition, myConceptWaitUntilElementIsEnabled, myConceptWaitUntilElementIsNotVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.ClickAPoint:
+        return myConceptClickAPoint;
       case LanguageConceptSwitch.ClickElement:
         return myConceptClickElement;
+      case LanguageConceptSwitch.ClickElementAtCoordinates:
+        return myConceptClickElementAtCoordinates;
+      case LanguageConceptSwitch.ClickText:
+        return myConceptClickText;
       case LanguageConceptSwitch.Component:
         return myConceptComponent;
       case LanguageConceptSwitch.Components:
@@ -128,13 +138,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationautomationNames, myEnumerationplataforms, myEnumerationselectors);
+    return Arrays.asList(myEnumerationStringBoolean, myEnumerationautomationNames, myEnumerationplataforms, myEnumerationselectors);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForClickAPoint() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ClickAPoint", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b2d0adaL);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520858249946");
+    b.version(3);
+    b.property("x", 0x67d09fa70b2d0adbL).type(PrimitiveTypeId.STRING).origin("7480654520858249947").done();
+    b.property("y", 0x67d09fa70b2d0addL).type(PrimitiveTypeId.STRING).origin("7480654520858249949").done();
+    b.property("duration", 0x67d09fa70b2d0ae0L).type(PrimitiveTypeId.INTEGER).origin("7480654520858249952").done();
+    b.alias("Click A Point");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForClickElement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ClickElement", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x1afad254c1f432adL);
     b.class_(false, false, false);
@@ -144,6 +167,30 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.associate("component", 0x1afad254c1f432b0L).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e118846bL).optional(false).origin("1944097450636882608").done();
     b.alias("Click Element");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForClickElementAtCoordinates() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ClickElementAtCoordinates", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b3db96cL);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520859343212");
+    b.version(3);
+    b.property("x", 0x67d09fa70b3db96eL).type(PrimitiveTypeId.STRING).origin("7480654520859343214").done();
+    b.property("y", 0x67d09fa70b3db970L).type(PrimitiveTypeId.STRING).origin("7480654520859343216").done();
+    b.alias("Click Element At Coordinates");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForClickText() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "ClickText", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b364c30L);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/7480654520858856496");
+    b.version(3);
+    b.property("text", 0x67d09fa70b364c31L).type(PrimitiveTypeId.STRING).origin("7480654520858856497").done();
+    b.property("exact_match", 0x67d09fa70b364c32L).type(MetaIdFactory.dataTypeId(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b364e0aL)).origin("7480654520858856498").done();
+    b.alias("Click Text");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForComponent() {
@@ -238,7 +285,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/3004182411413534063");
     b.version(3);
     b.property("text", 0x29b0fffc80c7b572L).type(PrimitiveTypeId.STRING).origin("3004182411413534066").done();
-    b.property("clear", 0x1afad254c1ec9729L).type(PrimitiveTypeId.BOOLEAN).origin("1944097450636384041").done();
+    b.property("clear", 0x1afad254c1ec9729L).type(MetaIdFactory.dataTypeId(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x67d09fa70b364e0aL)).origin("1944097450636384041").done();
     b.associate("component", 0x29b0fffc80c7b570L).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x637c9747e118846bL).optional(false).origin("3004182411413534064").done();
     b.alias("Input Text");
     return b.create();

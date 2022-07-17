@@ -257,7 +257,7 @@
     <node concept="1TJgyi" id="1FUO_j1V9sD" role="1TKVEl">
       <property role="IQ2nx" value="1944097450636384041" />
       <property role="TrG5h" value="clear" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+      <ref role="AX2Wp" node="6vgBUsbd$Sa" resolve="StringBoolean" />
     </node>
     <node concept="1TJgyj" id="2AKZZM0LVlK" role="1TKVEi">
       <property role="IQ2ns" value="3004182411413534064" />
@@ -280,7 +280,7 @@
     <property role="3GE5qa" value="steps_types" />
     <property role="TrG5h" value="ClickElement" />
     <property role="34LRSv" value="Click Element" />
-    <property role="R4oN_" value="Click for a element in Web Page." />
+    <property role="R4oN_" value="Click for a element in Application." />
     <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
     <node concept="1TJgyj" id="1FUO_j1X3aK" role="1TKVEi">
       <property role="IQ2ns" value="1944097450636882608" />
@@ -634,6 +634,81 @@
       <property role="3tVfz5" value="7480654520856178025" />
       <property role="TrG5h" value="UiAutomator1" />
       <property role="1L1pqM" value="UiAutomator1 (Android)" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbbgFq">
+    <property role="EcuMT" value="7480654520858249946" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ClickAPoint" />
+    <property role="34LRSv" value="Click A Point" />
+    <property role="R4oN_" value="To click in a point by specific time" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbbgFr" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520858249947" />
+      <property role="TrG5h" value="x" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbbgFt" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520858249949" />
+      <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbbgFw" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520858249952" />
+      <property role="TrG5h" value="duration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbd$KK">
+    <property role="EcuMT" value="7480654520858856496" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ClickText" />
+    <property role="34LRSv" value="Click Text" />
+    <property role="R4oN_" value="To click by contains or exact text" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbd$KL" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520858856497" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbd$KM" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520858856498" />
+      <property role="TrG5h" value="exact_match" />
+      <ref role="AX2Wp" node="6vgBUsbd$Sa" resolve="StringBoolean" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6vgBUsbd$Sa">
+    <property role="3F6X1D" value="7480654520858856970" />
+    <property role="3GE5qa" value="core" />
+    <property role="TrG5h" value="StringBoolean" />
+    <ref role="1H5jkz" node="6vgBUsbd$Sc" resolve="True" />
+    <node concept="25R33" id="6vgBUsbd$Sc" role="25R1y">
+      <property role="3tVfz5" value="7480654520858856972" />
+      <property role="TrG5h" value="True" />
+      <property role="1L1pqM" value="True" />
+    </node>
+    <node concept="25R33" id="6vgBUsbd$Se" role="25R1y">
+      <property role="3tVfz5" value="7480654520858856974" />
+      <property role="TrG5h" value="False" />
+      <property role="1L1pqM" value="False" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6vgBUsbfr_G">
+    <property role="EcuMT" value="7480654520859343212" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="ClickElementAtCoordinates" />
+    <property role="R4oN_" value="Click for a element by your coordinates." />
+    <property role="34LRSv" value="Click Element At Coordinates" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
+    <node concept="1TJgyi" id="6vgBUsbfr_I" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520859343214" />
+      <property role="TrG5h" value="x" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6vgBUsbfr_K" role="1TKVEl">
+      <property role="IQ2nx" value="7480654520859343216" />
+      <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

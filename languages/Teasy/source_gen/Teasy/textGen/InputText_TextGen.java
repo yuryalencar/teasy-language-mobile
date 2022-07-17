@@ -7,6 +7,7 @@ import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -20,7 +21,7 @@ public class InputText_TextGen extends TextGenDescriptorBase {
     tgs.append("}    ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.text$QoUf));
     tgs.append("    clear=");
-    tgs.append(Boolean.toString(SPropertyOperations.getBoolean(ctx.getPrimaryInput(), PROPS.clear$sEdR)));
+    tgs.append(SEnumOperations.getMemberPresentation(SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.clear$sEdR)));
     tgs.newLine();
 
   }

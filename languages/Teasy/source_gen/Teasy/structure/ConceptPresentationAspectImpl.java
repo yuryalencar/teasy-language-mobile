@@ -9,7 +9,10 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ClickAPoint;
   private ConceptPresentation props_ClickElement;
+  private ConceptPresentation props_ClickElementAtCoordinates;
+  private ConceptPresentation props_ClickText;
   private ConceptPresentation props_Component;
   private ConceptPresentation props_Components;
   private ConceptPresentation props_Configuration;
@@ -42,14 +45,38 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ClickAPoint:
+        if (props_ClickAPoint == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("To click in a point by specific time");
+          cpb.rawPresentation("Click A Point");
+          props_ClickAPoint = cpb.create();
+        }
+        return props_ClickAPoint;
       case LanguageConceptSwitch.ClickElement:
         if (props_ClickElement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Click for a element in Web Page.");
+          cpb.shortDesc("Click for a element in Application.");
           cpb.rawPresentation("Click Element");
           props_ClickElement = cpb.create();
         }
         return props_ClickElement;
+      case LanguageConceptSwitch.ClickElementAtCoordinates:
+        if (props_ClickElementAtCoordinates == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Click for a element by your coordinates.");
+          cpb.rawPresentation("Click Element At Coordinates");
+          props_ClickElementAtCoordinates = cpb.create();
+        }
+        return props_ClickElementAtCoordinates;
+      case LanguageConceptSwitch.ClickText:
+        if (props_ClickText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("To click by contains or exact text");
+          cpb.rawPresentation("Click Text");
+          props_ClickText = cpb.create();
+        }
+        return props_ClickText;
       case LanguageConceptSwitch.Component:
         if (props_Component == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

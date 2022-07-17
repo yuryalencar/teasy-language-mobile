@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-wprrcwk0mlbscvwv9kj1p0taae1s09">
-  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_automationNames.java:EnumerationDescriptor_plataforms.java:EnumerationDescriptor_selectors.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
+<product version="3" modelHash="esmuy48bqsenx8eu4giqvhyu3k8u4o7">
+  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_StringBoolean.java:EnumerationDescriptor_automationNames.java:EnumerationDescriptor_plataforms.java:EnumerationDescriptor_selectors.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
 </product>
 

@@ -55,6 +55,18 @@
       <concept id="4838803795107766633" name="Teasy.structure.Flows" flags="ng" index="1y4Kc3">
         <child id="4838803795107766634" name="flow" index="1y4Kc0" />
       </concept>
+      <concept id="7480654520858856496" name="Teasy.structure.ClickText" flags="ng" index="1GTHen">
+        <property id="7480654520858856497" name="text" index="1GTHem" />
+      </concept>
+      <concept id="7480654520859343212" name="Teasy.structure.ClickElementAtCoordinates" flags="ng" index="1GVirb">
+        <property id="7480654520859343214" name="x" index="1GVir9" />
+        <property id="7480654520859343216" name="y" index="1GVirn" />
+      </concept>
+      <concept id="7480654520858249946" name="Teasy.structure.ClickAPoint" flags="ng" index="1GZplX">
+        <property id="7480654520858249952" name="duration" index="1GZpl7" />
+        <property id="7480654520858249949" name="y" index="1GZplU" />
+        <property id="7480654520858249947" name="x" index="1GZplW" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -106,12 +118,12 @@
       <property role="TrG5h" value="Alice fills form with invalid data" />
       <node concept="2DtOEj" id="6vgBUsbaIvr" role="2D3W_k">
         <property role="2DtOEe" value="00000000010" />
-        <property role="3r5$lX" value="true" />
+        <property role="3r5$lX" value="6vgBUsbd$Sc/True" />
         <ref role="2DtOEc" node="6vgBUsbacoC" resolve="CpfField" />
       </node>
       <node concept="2DtOEj" id="6vgBUsbaIvz" role="2D3W_k">
         <property role="2DtOEe" value="password" />
-        <property role="3r5$lX" value="true" />
+        <property role="3r5$lX" value="6vgBUsbd$Sc/True" />
         <ref role="2DtOEc" node="6vgBUsbacoH" resolve="PasswordField" />
       </node>
     </node>
@@ -147,6 +159,28 @@
       </node>
       <node concept="1y1gdb" id="6vgBUsbaIwm" role="1y1gc8">
         <ref role="1y1gd2" node="6vgBUsbaIw2" resolve="Alice sees data not found message" />
+      </node>
+    </node>
+  </node>
+  <node concept="2D3W_t" id="6vgBUsbbOh1">
+    <property role="3GE5qa" value="pages" />
+    <property role="TrG5h" value="PAGE_ALL_ACTIONS" />
+    <node concept="2D3W_x" id="6vgBUsbbOh2" role="2D3W_o">
+      <property role="TrG5h" value="CLICKS" />
+      <node concept="3r3I3T" id="6vgBUsbbOh4" role="2D3W_k">
+        <ref role="3r3I3$" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="1GZplX" id="6vgBUsbcsel" role="2D3W_k">
+        <property role="1GZplW" value="2" />
+        <property role="1GZplU" value="2.2" />
+        <property role="1GZpl7" value="200" />
+      </node>
+      <node concept="1GTHen" id="6vgBUsbfi5O" role="2D3W_k">
+        <property role="1GTHem" value="Login" />
+      </node>
+      <node concept="1GVirb" id="6vgBUsbg0UR" role="2D3W_k">
+        <property role="1GVir9" value="2" />
+        <property role="1GVirn" value="21" />
       </node>
     </node>
   </node>
