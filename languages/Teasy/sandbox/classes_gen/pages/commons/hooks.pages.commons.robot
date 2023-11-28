@@ -14,7 +14,7 @@ Library               AppiumLibrary
 Resource              ../../config/config.robot
 
 *** Keywords ***
-ANDROID TEST SETUP
+ANDROID SUITE SETUP
     Open Application    ${APPIUM_SERVER}
     ...                 platformName=${PLATFORM_NAME}
     ...                 deviceName=${DEVICE_NAME}

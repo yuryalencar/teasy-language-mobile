@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-4tpe755otav99feng8fs708qzab3xtg">
+<product version="3" modelHash="31f4r6k78kmrwpjk2gvqd0ubuwajyyp">
   <files dir="components" names="components.robot" />
   <files dir="config" names="config.robot:page_register.config.robot" />
-  <files dir="pages" names="MySampleLoginPage.pages.robot:PAGE_ALL_ACTIONS.pages.robot" />
+  <files dir="pages" names="HomePage.pages.robot:LoginPage.pages.robot:PAGE_ALL_ACTIONS.pages.robot" />
   <files dir="pages/commons" names="hooks.pages.commons.robot" />
   <files dir="tests" names="LoginTests.tests.robot" />
 </product>

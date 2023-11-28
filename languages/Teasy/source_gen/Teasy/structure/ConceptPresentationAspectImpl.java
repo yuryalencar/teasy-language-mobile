@@ -29,6 +29,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Flow;
   private ConceptPresentation props_FlowItem;
   private ConceptPresentation props_Flows;
+  private ConceptPresentation props_HideKeyboard;
   private ConceptPresentation props_Hooks;
   private ConceptPresentation props_InputPassword;
   private ConceptPresentation props_InputText;
@@ -220,6 +221,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Flows = cpb.create();
         }
         return props_Flows;
+      case LanguageConceptSwitch.HideKeyboard:
+        if (props_HideKeyboard == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Hides the software keyboard on the device");
+          cpb.rawPresentation("Hide Keyboard");
+          props_HideKeyboard = cpb.create();
+        }
+        return props_HideKeyboard;
       case LanguageConceptSwitch.Hooks:
         if (props_Hooks == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

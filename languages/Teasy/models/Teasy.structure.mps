@@ -572,6 +572,7 @@
     <node concept="1TJgyj" id="4GGafXU4Rfq" role="1TKVEi">
       <property role="IQ2ns" value="5416749529549730778" />
       <property role="20kJfa" value="page_name" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2AKZZM0JNqx" resolve="Page" />
     </node>
   </node>
@@ -964,6 +965,14 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6dW_Ovx68hF" resolve="Component" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3AFUXTUGdth">
+    <property role="EcuMT" value="4155674421953091409" />
+    <property role="3GE5qa" value="steps_types" />
+    <property role="TrG5h" value="HideKeyboard" />
+    <property role="34LRSv" value="Hide Keyboard" />
+    <property role="R4oN_" value="Hides the software keyboard on the device" />
+    <ref role="1TJDcQ" node="2AKZZM0JNqw" resolve="Step" />
   </node>
 </model>
 

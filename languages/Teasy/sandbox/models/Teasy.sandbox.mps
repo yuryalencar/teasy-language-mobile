@@ -38,6 +38,7 @@
       <concept id="9061110883748270130" name="Teasy.structure.Components" flags="ng" index="Pw_x_">
         <child id="9061110883748270131" name="components" index="Pw_x$" />
       </concept>
+      <concept id="4155674421953091409" name="Teasy.structure.HideKeyboard" flags="ng" index="136NMf" />
       <concept id="4416820227523971320" name="Teasy.structure.Hooks" flags="ng" index="1763Dw" />
       <concept id="1944097450636888169" name="Teasy.structure.WaitUntilElementIsVisible" flags="ng" index="3r3DCX">
         <property id="1944097450636888402" name="timeout" index="3r3DG6" />
@@ -65,9 +66,6 @@
       </concept>
       <concept id="1944097450636882973" name="Teasy.structure.PageShouldContainText" flags="ng" index="3r3Ip9">
         <property id="1944097450636882974" name="text" index="3r3Ipa" />
-      </concept>
-      <concept id="1944097450636883116" name="Teasy.structure.PageShouldNotContainElement" flags="ng" index="3r3IrS">
-        <reference id="1944097450636883117" name="component" index="3r3IrT" />
       </concept>
       <concept id="1944097450636883114" name="Teasy.structure.PageShouldNotContainText" flags="ng" index="3r3IrY">
         <property id="1944097450636883115" name="text" index="3r3IrZ" />
@@ -97,13 +95,6 @@
       <concept id="4838803795107766633" name="Teasy.structure.Flows" flags="ng" index="1y4Kc3">
         <child id="4838803795107766634" name="flow" index="1y4Kc0" />
       </concept>
-      <concept id="7480654520864977595" name="Teasy.structure.Scroll" flags="ng" index="1GgMOs">
-        <reference id="7480654520864977598" name="end" index="1GgMOp" />
-        <reference id="7480654520864977596" name="start" index="1GgMOr" />
-      </concept>
-      <concept id="7480654520865550541" name="Teasy.structure.ScrollDown" flags="ng" index="1GjeXE">
-        <reference id="7480654520865550542" name="component" index="1GjeXD" />
-      </concept>
       <concept id="7480654520863727659" name="Teasy.structure.TapByCoordinates" flags="ng" index="1Gk3Yc">
         <property id="7480654520863727662" name="x" index="1Gk3Y9" />
         <property id="7480654520863727661" name="count" index="1Gk3Ya" />
@@ -120,26 +111,12 @@
         <property id="7480654520866965068" name="text" index="1GoDBF" />
         <reference id="7480654520866964867" name="component" index="1GoDC$" />
       </concept>
-      <concept id="7480654520867576910" name="Teasy.structure.ElementShouldNotContainText" flags="ng" index="1GqWfD">
-        <property id="7480654520867576911" name="text" index="1GqWfC" />
-        <reference id="7480654520867576912" name="component" index="1GqWfR" />
-      </concept>
-      <concept id="7480654520867804622" name="Teasy.structure.ElementTextShouldBe" flags="ng" index="1Gr$DD">
-        <property id="7480654520867804623" name="text" index="1Gr$DC" />
-        <reference id="7480654520867804624" name="component" index="1Gr$DR" />
-      </concept>
-      <concept id="7480654520865941221" name="Teasy.structure.ScrollUp" flags="ng" index="1GsJ_2">
-        <reference id="7480654520865941222" name="component" index="1GsJ_1" />
-      </concept>
       <concept id="7480654520866140245" name="Teasy.structure.CapturePageScreenshot" flags="ng" index="1GtuZM" />
       <concept id="7480654520866339316" name="Teasy.structure.ElementShouldBeDisabled" flags="ng" index="1Guepj">
         <reference id="7480654520866339317" name="component" index="1Guepi" />
       </concept>
       <concept id="7480654520866543146" name="Teasy.structure.ElementShouldBeEnabled" flags="ng" index="1GuKAd">
         <reference id="7480654520866543147" name="component" index="1GuKAc" />
-      </concept>
-      <concept id="7480654520866751629" name="Teasy.structure.ElementShouldBeVisible" flags="ng" index="1Gv_GE">
-        <reference id="7480654520866751630" name="component" index="1Gv_GD" />
       </concept>
       <concept id="7480654520861589412" name="Teasy.structure.InputPassword" flags="ng" index="1GzQ03">
         <property id="7480654520861589413" name="password" index="1GzQ02" />
@@ -176,61 +153,67 @@
   <node concept="Pw_x_" id="3BZt8PImQA$">
     <property role="3GE5qa" value="components" />
     <node concept="22p1cG" id="6vgBUsbacoC" role="Pw_x$">
-      <property role="TrG5h" value="CpfField" />
+      <property role="TrG5h" value="LoginCpfField" />
       <property role="22p1cD" value="6vgBUsb9M8X/xpath" />
-      <property role="22p1f3" value="//*[contains(@class, 'android.widget.EditText')[1] and (@text(),'000.000')]" />
-    </node>
-    <node concept="22p1cG" id="6vgBUsbacoE" role="Pw_x$">
-      <property role="TrG5h" value="LoginButton" />
-      <property role="22p1cD" value="6vgBUsb9M8X/xpath" />
-      <property role="22p1f3" value="//android.widget.Button[@index='15']" />
+      <property role="22p1f3" value="//android.widget.EditText[1]" />
     </node>
     <node concept="22p1cG" id="6vgBUsbacoH" role="Pw_x$">
-      <property role="TrG5h" value="PasswordField" />
+      <property role="TrG5h" value="LoginPasswordField" />
       <property role="22p1cD" value="6vgBUsb9M8X/xpath" />
-      <property role="22p1f3" value="//android.widget.EditText[@index='13']" />
+      <property role="22p1f3" value="//android.widget.EditText[2]" />
     </node>
-    <node concept="22p1cG" id="6vgBUsbacoL" role="Pw_x$">
-      <property role="TrG5h" value="DataNotFound" />
-      <property role="22p1f3" value="Dados não encontrados" />
+    <node concept="22p1cG" id="3AFUXTUEUQr" role="Pw_x$">
+      <property role="TrG5h" value="HomeEntryButton" />
+      <property role="22p1f3" value="Entrar" />
     </node>
-  </node>
-  <node concept="1763Dw" id="3PbGDxUnA1_">
-    <property role="3GE5qa" value="config" />
   </node>
   <node concept="22qmoQ" id="6vgBUsb3X7$">
     <property role="3GE5qa" value="config" />
     <property role="1GRvdO" value="http://localhost:4723/wd/hub" />
     <property role="22qmr5" value="30" />
     <property role="1GRvd1" value="emulator-5554" />
-    <property role="1GRvdn" value="br.com.teasy.solutions.app.hom" />
-    <property role="1GRvds" value="br.com.teasy.solutions.app.MainActivity" />
+    <property role="1GRvdn" value="com.condoconta.bank" />
+    <property role="1GRvds" value="com.condoconta.bank.MainActivity.kt" />
     <property role="1GW6p7" value="app-hom-release" />
   </node>
   <node concept="2D3W_t" id="6vgBUsbaIve">
     <property role="3GE5qa" value="pages" />
-    <property role="TrG5h" value="MySampleLoginPage" />
+    <property role="TrG5h" value="LoginPage" />
     <node concept="2D3W_x" id="6vgBUsbaIvf" role="2D3W_o">
-      <property role="TrG5h" value="Alice fills form with invalid data" />
+      <property role="TrG5h" value="Alice fills form with valid data" />
+      <node concept="3r3DCX" id="3AFUXTUHpuH" role="2D3W_k">
+        <property role="3r3DG6" value="2" />
+        <ref role="3r3DCZ" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
+      <node concept="3r3I3T" id="3AFUXTUHpuY" role="2D3W_k">
+        <ref role="3r3I3$" node="6vgBUsbacoC" resolve="CpfField" />
+      </node>
       <node concept="2DtOEj" id="6vgBUsbnZYq" role="2D3W_k">
-        <property role="2DtOEe" value="000000000-00" />
+        <property role="2DtOEe" value="03360598091" />
         <ref role="2DtOEc" node="6vgBUsbacoC" resolve="CpfField" />
       </node>
+      <node concept="3r3I3T" id="3AFUXTUHpva" role="2D3W_k">
+        <ref role="3r3I3$" node="6vgBUsbacoH" resolve="PasswordField" />
+      </node>
       <node concept="2DtOEj" id="6vgBUsbnZYw" role="2D3W_k">
-        <property role="2DtOEe" value="password" />
+        <property role="2DtOEe" value="Teste@00" />
         <ref role="2DtOEc" node="6vgBUsbacoH" resolve="PasswordField" />
       </node>
     </node>
-    <node concept="2D3W_x" id="6vgBUsbaIvS" role="2D3W_o">
-      <property role="TrG5h" value="Alice clicks to Login" />
-      <node concept="3r3I3T" id="6vgBUsbaIvZ" role="2D3W_k">
-        <ref role="3r3I3$" node="6vgBUsbacoE" resolve="LoginButton" />
+    <node concept="2D3W_x" id="3AFUXTUEUQc" role="2D3W_o">
+      <property role="TrG5h" value="Alice clicks to procced with authentication in login page" />
+      <node concept="1GVirb" id="atuDJMcThe" role="2D3W_k">
+        <property role="1GVir9" value="1320" />
+        <property role="1GVirn" value="1715" />
       </node>
     </node>
-    <node concept="2D3W_x" id="6vgBUsbaIw2" role="2D3W_o">
-      <property role="TrG5h" value="Alice sees data not found message" />
-      <node concept="3r3Ioa" id="6vgBUsbaIwb" role="2D3W_k">
-        <ref role="3r3Iob" node="6vgBUsbacoL" resolve="DataNotFound" />
+    <node concept="2D3W_x" id="atuDJMcTgB" role="2D3W_o">
+      <property role="TrG5h" value="Alice waits login finish with successfully" />
+      <node concept="3r3DCY" id="atuDJMcTih" role="2D3W_k">
+        <property role="3r3DG4" value="10" />
+      </node>
+      <node concept="3r3Ip9" id="atuDJMcTi9" role="2D3W_k">
+        <property role="3r3Ipa" value="Teste" />
       </node>
     </node>
   </node>
@@ -239,20 +222,26 @@
     <node concept="LfPGB" id="6vgBUsbaIwf" role="LfPGD">
       <ref role="LfPG_" node="6vgBUsbaIve" resolve="MySampleLoginPage" />
     </node>
+    <node concept="LfPGB" id="atuDJMboTI" role="LfPGD">
+      <ref role="LfPG_" node="atuDJMboTC" resolve="HomePage" />
+    </node>
   </node>
   <node concept="1y4Kc3" id="6vgBUsbaIwg">
     <property role="TrG5h" value="LoginTests" />
     <property role="3GE5qa" value="tests" />
     <node concept="1y1gcR" id="6vgBUsbaIwh" role="1y4Kc0">
       <property role="TrG5h" value="Scenario: Test invalid login" />
+      <node concept="1y1gdb" id="3AFUXTUF1AV" role="1y1gc8">
+        <ref role="1y1gd2" node="atuDJMboTD" resolve="Alice clicks to entry in syndic App" />
+      </node>
       <node concept="1y1gdb" id="6vgBUsbaIwi" role="1y1gc8">
         <ref role="1y1gd2" node="6vgBUsbaIvf" resolve="Alice fills form with invalid data" />
       </node>
       <node concept="1y1gdb" id="6vgBUsbaIwj" role="1y1gc8">
-        <ref role="1y1gd2" node="6vgBUsbaIvS" resolve="Alice clicks to Login" />
+        <ref role="1y1gd2" node="3AFUXTUEUQc" resolve="Alice clicks to procced with authentication in login page" />
       </node>
-      <node concept="1y1gdb" id="6vgBUsbaIwm" role="1y1gc8">
-        <ref role="1y1gd2" node="6vgBUsbaIw2" resolve="Alice sees data not found message" />
+      <node concept="1y1gdb" id="atuDJMcTh5" role="1y1gc8">
+        <ref role="1y1gd2" node="atuDJMcTgB" resolve="Alice waits login finish with successfully" />
       </node>
     </node>
   </node>
@@ -300,9 +289,6 @@
       </node>
       <node concept="3r3Ioa" id="6vgBUsbm8jS" role="2D3W_k">
         <ref role="3r3Iob" node="6vgBUsbacoC" resolve="CpfField" />
-      </node>
-      <node concept="3r3IrS" id="6vgBUsbmKhH" role="2D3W_k">
-        <ref role="3r3IrT" node="6vgBUsbacoL" resolve="DataNotFound" />
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsbnZXY" role="2D3W_o">
@@ -365,20 +351,9 @@
       <node concept="1GuKAd" id="6vgBUsbFGi9" role="2D3W_k">
         <ref role="1GuKAc" node="6vgBUsbacoC" resolve="CpfField" />
       </node>
-      <node concept="1Gv_GE" id="6vgBUsbGwlX" role="2D3W_k">
-        <ref role="1Gv_GD" node="6vgBUsbacoL" resolve="DataNotFound" />
-      </node>
       <node concept="1GoDC_" id="6vgBUsbHmh9" role="2D3W_k">
         <property role="1GoDBF" value="Example" />
         <ref role="1GoDC$" node="6vgBUsbacoC" resolve="CpfField" />
-      </node>
-      <node concept="1GqWfD" id="6vgBUsbJHn7" role="2D3W_k">
-        <property role="1GqWfC" value="Não" />
-        <ref role="1GqWfR" node="6vgBUsbacoL" resolve="DataNotFound" />
-      </node>
-      <node concept="1Gr$DD" id="6vgBUsbKAH_" role="2D3W_k">
-        <property role="1Gr$DC" value="Encontrado" />
-        <ref role="1Gr$DR" node="6vgBUsbacoL" resolve="DataNotFound" />
       </node>
     </node>
     <node concept="2D3W_x" id="6vgBUsby9L2" role="2D3W_o">
@@ -390,17 +365,25 @@
         <property role="1Gm0t1" value="100" />
         <property role="1Gm0tc" value="1000" />
       </node>
-      <node concept="1GgMOs" id="6vgBUsb_EI2" role="2D3W_k">
-        <ref role="1GgMOr" node="6vgBUsbacoC" resolve="CpfField" />
-        <ref role="1GgMOp" node="6vgBUsbacoE" resolve="LoginButton" />
-      </node>
-      <node concept="1GjeXE" id="6vgBUsbBQh2" role="2D3W_k">
-        <ref role="1GjeXD" node="6vgBUsbacoE" resolve="LoginButton" />
-      </node>
-      <node concept="1GsJ_2" id="6vgBUsbDn1e" role="2D3W_k">
-        <ref role="1GsJ_1" node="6vgBUsbacoL" resolve="DataNotFound" />
-      </node>
       <node concept="1GtuZM" id="6vgBUsbE7BH" role="2D3W_k" />
+      <node concept="136NMf" id="3AFUXTUHpvv" role="2D3W_k" />
+    </node>
+  </node>
+  <node concept="1763Dw" id="2RwKRS0auZE">
+    <property role="3GE5qa" value="config" />
+  </node>
+  <node concept="2D3W_t" id="atuDJMboTC">
+    <property role="3GE5qa" value="pages" />
+    <property role="TrG5h" value="HomePage" />
+    <node concept="2D3W_x" id="atuDJMboTD" role="2D3W_o">
+      <property role="TrG5h" value="Alice clicks to entry in syndic App" />
+      <node concept="3r3DCX" id="atuDJMboTO" role="2D3W_k">
+        <property role="3r3DG6" value="2" />
+        <ref role="3r3DCZ" node="3AFUXTUEUQr" resolve="HomeEntryButton" />
+      </node>
+      <node concept="3r3I3T" id="atuDJMboTF" role="2D3W_k">
+        <ref role="3r3I3$" node="3AFUXTUEUQr" resolve="HomeEntryButton" />
+      </node>
     </node>
   </node>
 </model>

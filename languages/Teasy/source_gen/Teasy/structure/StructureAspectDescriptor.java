@@ -36,6 +36,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFlow = createDescriptorForFlow();
   /*package*/ final ConceptDescriptor myConceptFlowItem = createDescriptorForFlowItem();
   /*package*/ final ConceptDescriptor myConceptFlows = createDescriptorForFlows();
+  /*package*/ final ConceptDescriptor myConceptHideKeyboard = createDescriptorForHideKeyboard();
   /*package*/ final ConceptDescriptor myConceptHooks = createDescriptorForHooks();
   /*package*/ final ConceptDescriptor myConceptInputPassword = createDescriptorForInputPassword();
   /*package*/ final ConceptDescriptor myConceptInputText = createDescriptorForInputText();
@@ -79,7 +80,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCapturePageScreenshot, myConceptClearText, myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptElementShouldBeDisabled, myConceptElementShouldBeEnabled, myConceptElementShouldBeVisible, myConceptElementShouldContainText, myConceptElementShouldNotContainText, myConceptElementTextShouldBe, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHooks, myConceptInputPassword, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContainElement, myConceptPageShouldContainText, myConceptPageShouldNotContainElement, myConceptPageShouldNotContainText, myConceptPageToRegister, myConceptScroll, myConceptScrollDown, myConceptScrollUp, myConceptSleep, myConceptStep, myConceptSwipe, myConceptTap, myConceptTapByCoordinates, myConceptTextShouldBeVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
+    return Arrays.asList(myConceptCapturePageScreenshot, myConceptClearText, myConceptClickAPoint, myConceptClickElement, myConceptClickElementAtCoordinates, myConceptClickText, myConceptComponent, myConceptComponents, myConceptConfiguration, myConceptElementShouldBeDisabled, myConceptElementShouldBeEnabled, myConceptElementShouldBeVisible, myConceptElementShouldContainText, myConceptElementShouldNotContainText, myConceptElementTextShouldBe, myConceptExecuteAdbShell, myConceptExecuteScript, myConceptFlow, myConceptFlowItem, myConceptFlows, myConceptHideKeyboard, myConceptHooks, myConceptInputPassword, myConceptInputText, myConceptKeyword, myConceptPage, myConceptPageRegisterConfig, myConceptPageShouldContainElement, myConceptPageShouldContainText, myConceptPageShouldNotContainElement, myConceptPageShouldNotContainText, myConceptPageToRegister, myConceptScroll, myConceptScrollDown, myConceptScrollUp, myConceptSleep, myConceptStep, myConceptSwipe, myConceptTap, myConceptTapByCoordinates, myConceptTextShouldBeVisible, myConceptWaitUntilElementIsVisible, myConceptWaitUntilPageContains, myConceptWaitUntilPageContainsElement, myConceptWaitUntilPageDoesNotContain, myConceptWaitUntilPageDoesNotContainElement);
   }
 
   @Override
@@ -126,6 +127,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFlowItem;
       case LanguageConceptSwitch.Flows:
         return myConceptFlows;
+      case LanguageConceptSwitch.HideKeyboard:
+        return myConceptHideKeyboard;
       case LanguageConceptSwitch.Hooks:
         return myConceptHooks;
       case LanguageConceptSwitch.InputPassword:
@@ -416,6 +419,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Flows");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForHideKeyboard() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "HideKeyboard", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x39abebde7ab0d751L);
+    b.class_(false, false, false);
+    // extends: Teasy.structure.Step
+    b.super_(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a0L);
+    b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/4155674421953091409");
+    b.version(3);
+    b.alias("Hide Keyboard");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForHooks() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Teasy", "Hooks", 0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x3d4bb2987a5388f8L);
     b.class_(false, false, true);
@@ -526,7 +539,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:fa4deac7-a8d4-4bef-9b2d-db266658ed18(Teasy.structure)/5416749529549730776");
     b.version(3);
-    b.associate("page_name", 0x4b2c28ff7a1373daL).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a1L).optional(true).origin("5416749529549730778").done();
+    b.associate("page_name", 0x4b2c28ff7a1373daL).target(0x67c1fa65c7ac493dL, 0xb11b664188147c91L, 0x29b0fffc80bf36a1L).optional(false).origin("5416749529549730778").done();
     b.alias("PageRegister");
     return b.create();
   }

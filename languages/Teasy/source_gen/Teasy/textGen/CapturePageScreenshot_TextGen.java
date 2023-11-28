@@ -11,5 +11,6 @@ public class CapturePageScreenshot_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("    Capture Page Screenshot");
+    tgs.newLine();
   }
 }

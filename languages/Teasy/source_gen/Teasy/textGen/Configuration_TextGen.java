@@ -49,7 +49,7 @@ public class Configuration_TextGen extends TextGenDescriptorBase {
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.app_activity$C_hU));
     tgs.newLine();
     tgs.append("${AUTOMATION_NAME}    ");
-    tgs.append(SEnumOperations.getMemberPresentation(SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.automation_name$CH1r)));
+    tgs.append(SEnumOperations.getMemberName0(SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.automation_name$CH1r)));
     tgs.newLine();
     tgs.append("${APP_PATH}           ${CURDIR}/../resources/");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.apk_name$IhBE));

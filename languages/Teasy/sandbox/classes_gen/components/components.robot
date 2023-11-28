@@ -9,3 +9,4 @@ ${CpfField}      xpath=//*[contains(@class, 'android.widget.EditText')[1] and (@
 ${LoginButton}      xpath=//android.widget.Button[@index='15']
 ${PasswordField}      xpath=//android.widget.EditText[@index='13']
 ${DataNotFound}      accessibility_id=Dados não encontrados
+${EnterButton}      accessibility_id=ENTRAR

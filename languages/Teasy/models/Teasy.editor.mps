@@ -2962,5 +2962,34 @@
       <node concept="l2Vlx" id="6vgBUsbJHnH" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3AFUXTUGdtp">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="1XX52x" to="57va:3AFUXTUGdth" resolve="HideKeyboard" />
+    <node concept="3EZMnI" id="3AFUXTUGdtr" role="2wV5jI">
+      <node concept="3F0ifn" id="3AFUXTUGdts" role="3EZMnx">
+        <property role="3F0ifm" value="HIDE KEYBOARD" />
+        <node concept="pVoyu" id="3AFUXTUGdtt" role="3F10Kt" />
+        <node concept="Vb9p2" id="3AFUXTUGdtu" role="3F10Kt">
+          <property role="Vbekb" value="g1_k_vY/BOLD" />
+        </node>
+        <node concept="VechU" id="3AFUXTUGdtv" role="3F10Kt">
+          <property role="Vb096" value="g1_qVrt/darkMagenta" />
+        </node>
+        <node concept="lj46D" id="3AFUXTUGdtw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3AFUXTUGdtx" role="3EZMnx">
+        <property role="3F0ifm" value="" />
+        <node concept="lj46D" id="3AFUXTUGdty" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pVoyu" id="3AFUXTUGdtz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3AFUXTUGdt$" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

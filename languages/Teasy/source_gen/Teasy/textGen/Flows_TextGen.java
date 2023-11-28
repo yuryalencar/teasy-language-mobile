@@ -35,10 +35,12 @@ public class Flows_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.newLine();
     tgs.indent();
-    tgs.append("Test Setup          Start Test");
+    tgs.append("Suite Setup         ANDROID SUITE SETUP");
+    tgs.newLine();
+    tgs.append("Test Setup          ANDROID TEST SETUP");
     tgs.newLine();
     tgs.indent();
-    tgs.append("Test Teardown       Finish Test");
+    tgs.append("Test Teardown       END TEST");
     tgs.newLine();
     tgs.newLine();
     tgs.indent();

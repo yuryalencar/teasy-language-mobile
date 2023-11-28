@@ -109,6 +109,7 @@
       <concept id="7844911294523361055" name="jetbrains.mps.lang.textGen.structure.FilePathQuery" flags="ig" index="1KnnTt" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1966870290083281362" name="jetbrains.mps.lang.smodel.structure.EnumMember_NameOperation" flags="ng" index="24Tkf9" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -123,9 +124,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -312,16 +321,22 @@
           <node concept="l8MVK" id="3PbGDxU8QNS" role="lcghm" />
           <node concept="2BGw6n" id="3PbGDxU8Qn_" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="3AFUXTUBPkj" role="3cqZAp">
+          <node concept="la8eA" id="3AFUXTUBPqe" role="lcghm">
+            <property role="lacIc" value="Suite Setup         ANDROID SUITE SETUP" />
+          </node>
+          <node concept="l8MVK" id="3AFUXTUDxEI" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="3PbGDxU8R1Z" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxU8R20" role="lcghm">
-            <property role="lacIc" value="Test Setup          Start Test" />
+            <property role="lacIc" value="Test Setup          ANDROID TEST SETUP" />
           </node>
           <node concept="l8MVK" id="3PbGDxU8R21" role="lcghm" />
           <node concept="2BGw6n" id="3PbGDxU8R23" role="lcghm" />
         </node>
         <node concept="lc7rE" id="3PbGDxU8R31" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxU8Rb_" role="lcghm">
-            <property role="lacIc" value="Test Teardown       Finish Test" />
+            <property role="lacIc" value="Test Teardown       END TEST" />
           </node>
           <node concept="l8MVK" id="3PbGDxU8R33" role="lcghm" />
           <node concept="l8MVK" id="3PbGDxU8R34" role="lcghm" />
@@ -1543,14 +1558,14 @@
             <property role="lacIc" value="${AUTOMATION_NAME}    " />
           </node>
           <node concept="l9hG8" id="6vgBUsb9ep7" role="lcghm">
-            <node concept="2OqwBi" id="6vgBUsb9eO$" role="lb14g">
+            <node concept="2OqwBi" id="3AFUXTUBQub" role="lb14g">
               <node concept="2OqwBi" id="6vgBUsb9eww" role="2Oq$k0">
                 <node concept="117lpO" id="6vgBUsb9eqv" role="2Oq$k0" />
                 <node concept="3TrcHB" id="6vgBUsb9eDh" role="2OqNvi">
                   <ref role="3TsBF5" to="57va:6vgBUsb3mO7" resolve="automation_name" />
                 </node>
               </node>
-              <node concept="1XCIdh" id="6vgBUsb9f7I" role="2OqNvi" />
+              <node concept="24Tkf9" id="3AFUXTUBQA6" role="2OqNvi" />
             </node>
           </node>
           <node concept="l8MVK" id="6vgBUsb9fd6" role="lcghm" />
@@ -1847,7 +1862,7 @@
         </node>
         <node concept="lc7rE" id="3PbGDxUo8Up" role="3cqZAp">
           <node concept="la8eA" id="3PbGDxUo8Vv" role="lcghm">
-            <property role="lacIc" value="ANDROID TEST SETUP" />
+            <property role="lacIc" value="ANDROID SUITE SETUP" />
           </node>
           <node concept="l8MVK" id="3PbGDxUo8Wz" role="lcghm" />
         </node>
@@ -1869,17 +1884,25 @@
           </node>
           <node concept="l8MVK" id="6vgBUsb1xay" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="6vgBUsb1xc0" role="3cqZAp">
-          <node concept="la8eA" id="6vgBUsb1xc1" role="lcghm">
-            <property role="lacIc" value="    ...                 appPackage=${APP_PACKAGE}" />
+        <node concept="1X3_iC" id="atuDJMbvqn" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="lc7rE" id="6vgBUsb1xc0" role="8Wnug">
+            <node concept="la8eA" id="6vgBUsb1xc1" role="lcghm">
+              <property role="lacIc" value="    ...                 appPackage=${APP_PACKAGE}" />
+            </node>
+            <node concept="l8MVK" id="6vgBUsb1xc2" role="lcghm" />
           </node>
-          <node concept="l8MVK" id="6vgBUsb1xc2" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="6vgBUsb1xgz" role="3cqZAp">
-          <node concept="la8eA" id="6vgBUsb1xg$" role="lcghm">
-            <property role="lacIc" value="    ...                 appActivity=${APP_ACTIVITY}" />
+        <node concept="1X3_iC" id="atuDJMbvni" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="lc7rE" id="6vgBUsb1xgz" role="8Wnug">
+            <node concept="la8eA" id="6vgBUsb1xg$" role="lcghm">
+              <property role="lacIc" value="    ...                 appActivity=${APP_ACTIVITY}" />
+            </node>
+            <node concept="l8MVK" id="6vgBUsb1xg_" role="lcghm" />
           </node>
-          <node concept="l8MVK" id="6vgBUsb1xg_" role="lcghm" />
         </node>
         <node concept="lc7rE" id="6vgBUsb1xdz" role="3cqZAp">
           <node concept="la8eA" id="6vgBUsb1xd$" role="lcghm">
@@ -2407,6 +2430,7 @@
           <node concept="la8eA" id="6vgBUsbDn2l" role="lcghm">
             <property role="lacIc" value="    Capture Page Screenshot" />
           </node>
+          <node concept="l8MVK" id="3AFUXTUGduC" role="lcghm" />
         </node>
       </node>
     </node>
@@ -2611,6 +2635,20 @@
             </node>
           </node>
           <node concept="l8MVK" id="6vgBUsbJHok" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="3AFUXTUGdtJ">
+    <property role="3GE5qa" value="steps_types" />
+    <ref role="WuzLi" to="57va:3AFUXTUGdth" resolve="HideKeyboard" />
+    <node concept="11bSqf" id="3AFUXTUGdtK" role="11c4hB">
+      <node concept="3clFbS" id="3AFUXTUGdtL" role="2VODD2">
+        <node concept="lc7rE" id="3AFUXTUGduW" role="3cqZAp">
+          <node concept="la8eA" id="3AFUXTUGduX" role="lcghm">
+            <property role="lacIc" value="    Hide Keyboard" />
+          </node>
+          <node concept="l8MVK" id="3AFUXTUGdvz" role="lcghm" />
         </node>
       </node>
     </node>

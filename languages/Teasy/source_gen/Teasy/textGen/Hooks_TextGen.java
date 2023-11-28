@@ -47,17 +47,13 @@ public class Hooks_TextGen extends TextGenDescriptorBase {
     tgs.append("*** Keywords ***");
     tgs.newLine();
     tgs.indent();
-    tgs.append("ANDROID TEST SETUP");
+    tgs.append("ANDROID SUITE SETUP");
     tgs.newLine();
     tgs.append("    Open Application    ${APPIUM_SERVER}");
     tgs.newLine();
     tgs.append("    ...                 platformName=${PLATFORM_NAME}");
     tgs.newLine();
     tgs.append("    ...                 deviceName=${DEVICE_NAME}");
-    tgs.newLine();
-    tgs.append("    ...                 appPackage=${APP_PACKAGE}");
-    tgs.newLine();
-    tgs.append("    ...                 appActivity=${APP_ACTIVITY}");
     tgs.newLine();
     tgs.append("    ...                 automationName=${AUTOMATION_NAME}");
     tgs.newLine();
